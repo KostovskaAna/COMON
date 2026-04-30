@@ -1,0 +1,153 @@
+@prefix sh:     <http://www.w3.org/ns/shacl#> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix OBO:    <http://purl.obolibrary.org/obo/> .
+@prefix COMON:  <http://w3id.org/COMON/> .
+
+# ===========================================================
+# Shape: CMOAlgorithm
+# ===========================================================
+
+COMON:CMOAlgorithmShape
+    a sh:NodeShape ;
+    sh:targetClass COMON:COMON_000001 ;
+    rdfs:label "CMO Algorithm Shape" ;
+
+    # --- rdfs:label (Mandatory, exactly 1, xsd:string) ---
+    sh:property [
+        sh:path rdfs:label ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "A CMOAlgorithm must have exactly one rdfs:label of type xsd:string." ;
+    ] ;
+
+    # --- is_concretized_as (Mandatory, exactly 1, CMOAlgorithmImplementation) ---
+    sh:property [
+        sh:path OBO:OBI_0000297 ;
+        sh:class COMON:COMON_000004 ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "A CMOAlgorithm must have exactly one is_concretized_as linking to a CMOAlgorithmImplementation." ;
+    ] ;
+
+    # --- isMemberOfAlgorithmFamily (Optional, if present must link to AlgorithmFamily) ---
+    sh:property [
+        sh:path COMON:COMON_000066 ;
+        sh:class COMON:COMON_000065 ;
+        sh:message "isMemberOfAlgorithmFamily must link to an AlgorithmFamily." ;
+    ] .
+
+
+# ===========================================================
+# Shape: AlgorithmType1
+# ===========================================================
+
+COMON:AlgorithmType1Shape
+    a sh:NodeShape ;
+    sh:targetClass COMON:COMON_000058 ;
+    sh:node COMON:CMOAlgorithmShape .
+
+
+# ===========================================================
+# Shape: AlgorithmType2
+# ===========================================================
+
+COMON:AlgorithmType2Shape
+    a sh:NodeShape ;
+    sh:targetClass COMON:COMON_000059 ;
+    sh:node COMON:CMOAlgorithmShape .
+
+
+# ===========================================================
+# Shape: AlgorithmType3
+# ===========================================================
+
+COMON:AlgorithmType3Shape
+    a sh:NodeShape ;
+    sh:targetClass COMON:COMON_000061 ;
+    sh:node COMON:CMOAlgorithmShape .
+
+
+# ===========================================================
+# Shape: AlgorithmType4
+# ===========================================================
+
+COMON:AlgorithmType4Shape
+    a sh:NodeShape ;
+    sh:targetClass COMON:COMON_000063 ;
+    sh:node COMON:CMOAlgorithmShape .
+
+
+# ===========================================================
+# Shape: AlgorithmType5
+# ===========================================================
+
+COMON:AlgorithmType5Shape
+    a sh:NodeShape ;
+    sh:targetClass COMON:COMON_000064 ;
+    sh:node COMON:CMOAlgorithmShape .
+
+
+# ===========================================================
+# Shape: CMOAlgorithmImplementation
+# ===========================================================
+
+COMON:CMOAlgorithmImplementationShape
+    a sh:NodeShape ;
+    sh:targetClass COMON:COMON_000004 ;
+
+    # --- rdfs:label (Optional, if present must be xsd:string, at most 1) ---
+    sh:property [
+        sh:path rdfs:label ;
+        sh:datatype xsd:string ;
+        sh:message "CMOAlgorithmImplementation rdfs:label must be of type xsd:string." ;
+    ] .
+
+
+# ===========================================================
+# Shape: AlgorithmFamily
+# ===========================================================
+
+COMON:AlgorithmFamilyShape
+    a sh:NodeShape ;
+    sh:targetClass COMON:COMON_000065 ;
+
+    sh:property [
+        sh:path rdfs:label ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "AlgorithmFamily must have exactly one rdfs:label of type xsd:string." ;
+    ] .
+
+
+# ===========================================================
+# Shape: SoftwareLibrary
+# ===========================================================
+
+COMON:SoftwareLibraryShape
+    a sh:NodeShape ;
+    sh:targetClass OBO:IAO_0000593 ;
+
+    # --- rdfs:label (Optional, if present must be xsd:string, at most 1) ---
+    sh:property [
+        sh:path rdfs:label ;
+        sh:datatype xsd:string ;
+        sh:message "SoftwareLibrary rdfs:label must be of type xsd:string." ;
+    ] ;
+
+    # --- is_about (Optional, if present must link to CMOAlgorithmImplementation, at most 1) ---
+    sh:property [
+        sh:path OBO:IAO_0000136 ;
+        sh:class COMON:COMON_000004 ;
+        sh:message "SoftwareLibrary is_about must link to a CMOAlgorithmImplementation." ;
+    ] ;
+
+    # --- implementedInLanguage (Optional, if present must link to ProgrammingLanguage, at most 1) ---
+    sh:property [
+        sh:path COMON:COMON_000068 ;
+        sh:class OBO:IAO_0000025 ;
+        sh:message "SoftwareLibrary implementedInLanguage must link to a ProgrammingLanguage." ;
+    ] .

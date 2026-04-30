@@ -1,0 +1,302 @@
+@prefix sh:       <http://www.w3.org/ns/shacl#> .
+@prefix owl:      <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc:       <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+@prefix dcat:     <http://www.w3.org/ns/dcat#> .
+@prefix adms:     <http://www.w3.org/ns/adms#> .
+@prefix vcard:    <http://www.w3.org/2006/vcard/ns#> .
+@prefix foaf:     <http://xmlns.com/foaf/0.1/> .
+@prefix OBO:      <http://purl.obolibrary.org/obo/> .
+@prefix COMON:    <http://w3id.org/COMON/> .
+
+# ===========================================================
+# Shape: CMO_experiment
+# ===========================================================
+
+COMON:CMOExperimentShape
+    a sh:NodeShape ;
+    sh:targetClass COMON:COMON_000002 ;
+    rdfs:label "CMO Experiment Shape" ;
+
+    # --- rdfs:label (Mandatory, exactly 1, xsd:string) ---
+    sh:property [
+        sh:path rdfs:label ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "A CMO_experiment must have exactly one rdfs:label of type xsd:string." ;
+    ] ;
+
+    # --- maxNumberOfSolutionEvaluations (Mandatory, exactly 1, xsd:integer) ---
+    sh:property [
+        sh:path COMON:COMON_000069 ;
+        sh:datatype xsd:integer ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "A CMO_experiment must have exactly one maxNumberOfSolutionEvaluations of type xsd:integer." ;
+    ] ;
+
+    # --- maxTimePerRun (Optional, if present must be xsd:duration) ---
+    sh:property [
+        sh:path COMON:COMON_000070 ;
+        sh:datatype xsd:duration ;
+        sh:message "maxTimePerRun must be of type xsd:duration." ;
+    ] ;
+
+    # --- costModel (Optional, if present must be xsd:string) ---
+    sh:property [
+        sh:path COMON:COMON_000071 ;
+        sh:datatype xsd:string ;
+        sh:message "costModel must be of type xsd:string." ;
+    ] ;
+
+    # --- stoppingCriteria (Optional, if present must be xsd:string) ---
+    sh:property [
+        sh:path COMON:COMON_000072 ;
+        sh:datatype xsd:string ;
+        sh:message "stoppingCriteria must be of type xsd:string." ;
+    ] ;
+
+    # --- algorithmParameterSettings (Optional, if present must be xsd:string) ---
+    sh:property [
+        sh:path COMON:COMON_000073 ;
+        sh:datatype xsd:string ;
+        sh:message "algorithmParameterSettings must be of type xsd:string." ;
+    ] ;
+
+    # --- is_concretized_as (Mandatory, exactly 1, CMO_experiment_implementation) ---
+    sh:property [
+        sh:path OBO:OBI_0000297 ;
+        sh:class COMON:COMON_000015 ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "A CMO_experiment must have exactly one is_concretized_as linking to a CMO_experiment_implementation." ;
+    ] ;
+
+    # --- has-specified-input (Mandatory, at least 3) ---
+    sh:property [
+        sh:path OBO:OBI_0000293 ;
+        sh:minCount 3 ;
+        sh:message "A CMO_experiment must have at least three has-specified-input." ;
+    ] .
+
+
+# ===========================================================
+# Shape: CMO_experiment_implementation
+# ===========================================================
+
+COMON:CMOExperimentImplementationShape
+    a sh:NodeShape ;
+    sh:targetClass COMON:COMON_000015 ;
+
+    # --- rdfs:label (Optional, if present must be xsd:string) ---
+    sh:property [
+        sh:path rdfs:label ;
+        sh:datatype xsd:string ;
+        sh:message "CMO_experiment_implementation rdfs:label must be of type xsd:string." ;
+    ] ;
+
+    # --- uses (Mandatory, at least 1) ---
+    sh:property [
+        sh:path COMON:COMON_000078 ;
+        sh:minCount 1 ;
+        sh:message "A CMO_experiment_implementation must have at least one uses link." ;
+    ] ;
+
+    # --- implementedInLanguage (Optional, if present must link to ProgrammingLanguage) ---
+    sh:property [
+        sh:path COMON:COMON_000068 ;
+        sh:class OBO:IAO_0000025 ;
+        sh:message "implementedInLanguage must link to a ProgrammingLanguage." ;
+    ] .
+
+
+# ===========================================================
+# Shape: CMO_experiment_execution
+# ===========================================================
+
+COMON:CMOExperimentExecutionShape
+    a sh:NodeShape ;
+    sh:targetClass COMON:COMON_000014 ;
+
+    # --- rdfs:label (Optional, if present must be xsd:string) ---
+    sh:property [
+        sh:path rdfs:label ;
+        sh:datatype xsd:string ;
+        sh:message "CMO_experiment_execution rdfs:label must be of type xsd:string." ;
+    ] ;
+
+    # --- hasLogLevel (Mandatory, exactly 1, IRI - no type check) ---
+    sh:property [
+        sh:path COMON:COMON_000081 ;
+        sh:nodeKind sh:IRI ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "A CMO_experiment_execution must have exactly one hasLogLevel." ;
+    ] ;
+
+    # --- realizes (Mandatory, exactly 1, CMO_experiment_implementation) ---
+    sh:property [
+        sh:path OBO:OBI_0000308 ;
+        sh:class COMON:COMON_000015 ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "A CMO_experiment_execution must have exactly one realizes linking to a CMO_experiment_implementation." ;
+    ] ;
+
+    # --- has-specified-output (Mandatory, exactly 1, dcat:Dataset) ---
+    sh:property [
+        sh:path OBO:OBI_0000299 ;
+        sh:class dcat:Dataset ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "A CMO_experiment_execution must have exactly one has-specified-output linking to a dcat:Dataset." ;
+    ] .
+
+
+# ===========================================================
+# Shape: dcat:Dataset
+# ===========================================================
+
+COMON:DatasetShape
+    a sh:NodeShape ;
+    sh:targetClass dcat:Dataset ;
+
+    # --- rdfs:label (Optional, if present must be xsd:string) ---
+    sh:property [
+        sh:path rdfs:label ;
+        sh:datatype xsd:string ;
+        sh:message "dcat:Dataset rdfs:label must be of type xsd:string." ;
+    ] ;
+
+    # --- dcat:version (Mandatory, exactly 1, xsd:string) ---
+    sh:property [
+        sh:path dcat:version ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "A dcat:Dataset must have exactly one dcat:version of type xsd:string." ;
+    ] ;
+
+    # --- dcat:keyword (Optional, if present must be xsd:string) ---
+    sh:property [
+        sh:path dcat:keyword ;
+        sh:datatype xsd:string ;
+        sh:message "dcat:keyword values must be of type xsd:string." ;
+    ] ;
+
+    # --- adms:versionNotes (Optional, if present must be xsd:string) ---
+    sh:property [
+        sh:path adms:versionNotes ;
+        sh:datatype xsd:string ;
+        sh:message "adms:versionNotes must be of type xsd:string." ;
+    ] ;
+
+    # --- dcterms:relation (Optional, if present must be IRI) ---
+    sh:property [
+        sh:path dcterms:relation ;
+        sh:nodeKind sh:IRI ;
+        sh:message "dcterms:relation must be an IRI." ;
+    ] ;
+
+    # --- dcat:contactPoint (Optional, if present must link to vcard:Individual or vcard:Organization) ---
+    sh:property [
+        sh:path dcat:contactPoint ;
+        sh:or (
+            [ sh:class vcard:Individual ]
+            [ sh:class vcard:Organization ]
+        ) ;
+        sh:message "dcat:contactPoint must link to a vcard:Individual or vcard:Organization." ;
+    ] ;
+
+    # --- dcterms:creator (Mandatory, at least 1, foaf:Person or foaf:Organization) ---
+    sh:property [
+        sh:path dcterms:creator ;
+        sh:or (
+            [ sh:class foaf:Person ]
+            [ sh:class foaf:Organization ]
+        ) ;
+        sh:minCount 1 ;
+        sh:message "A dcat:Dataset must have at least one dcterms:creator of type foaf:Person or foaf:Organization." ;
+    ] ;
+
+    # --- dcterms:references (Optional, if present must link to dcterms:BibliographicResource) ---
+    sh:property [
+        sh:path dcterms:references ;
+        sh:class dcterms:BibliographicResource ;
+        sh:message "dcterms:references must link to a dcterms:BibliographicResource." ;
+    ] .
+
+
+# ===========================================================
+# Shape: dcterms:BibliographicResource
+# ===========================================================
+
+COMON:BibliographicResourceShape
+    a sh:NodeShape ;
+    sh:targetClass dcterms:BibliographicResource ;
+
+    # --- dcterms:title (Mandatory, exactly 1, xsd:string) ---
+    sh:property [
+        sh:path dcterms:title ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "A BibliographicResource must have exactly one dcterms:title of type xsd:string." ;
+    ] ;
+
+    # --- dcterms:identifier (Mandatory, at least 1, xsd:string) ---
+    sh:property [
+        sh:path dcterms:identifier ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:message "A BibliographicResource must have at least one dcterms:identifier of type xsd:string." ;
+    ] ;
+
+    # --- dcterms:creator (Optional, if present must link to foaf:Person or foaf:Organization) ---
+    sh:property [
+        sh:path dcterms:creator ;
+        sh:or (
+            [ sh:class foaf:Person ]
+            [ sh:class foaf:Organization ]
+        ) ;
+        sh:message "dcterms:creator must link to a foaf:Person or foaf:Organization." ;
+    ] .
+
+
+# ===========================================================
+# Shape: vcard:Individual
+# ===========================================================
+
+COMON:VCardIndividualShape
+    a sh:NodeShape ;
+    sh:targetClass vcard:Individual ;
+
+    # --- vcard:fn (Mandatory, exactly 1, xsd:string) ---
+    sh:property [
+        sh:path vcard:fn ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "A vcard:Individual must have exactly one vcard:fn of type xsd:string." ;
+    ] .
+
+
+# ===========================================================
+# Shape: vcard:Organization
+# ===========================================================
+
+COMON:VCardOrganizationShape
+    a sh:NodeShape ;
+    sh:targetClass vcard:Organization ;
+
+    # --- vcard:fn (Mandatory, exactly 1, xsd:string) ---
+    sh:property [
+        sh:path vcard:fn ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "A vcard:Organization must have exactly one vcard:fn of type xsd:string." ;
+    ] .

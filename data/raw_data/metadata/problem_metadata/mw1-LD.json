@@ -1,0 +1,384 @@
+{
+  "@context": {
+    "owl":  "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd":  "http://www.w3.org/2001/XMLSchema#",
+    "OPTION": "http://w3id.org/ontoopt/",
+    "dc":   "http://purl.org/dc/elements/1.1/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "OBO":  "http://purl.obolibrary.org/obo/",
+    "COMON":"http://w3id.org/COMON/",
+
+
+    "identifier": { "@id": "dc:identifier" },
+    "label":      { "@id": "rdfs:label" },
+
+    "hasPart":                 "OBO:BFO_0000051",
+    "isMemberOfProblemFamily": "COMON:COMON_000044",
+    "isMemberOfProblemSuite":  "COMON:COMON_000052",
+    "hasConstraintForm":       "COMON:COMON_000054",
+    "hasConstraintStrictness": "COMON:COMON_000055",
+    "is_concretized_as":       "OBO:OBI_0000297",
+    "is_about": "OBO:IAO_0000136",
+    "implementedInLanguage": "COMON:COMON_000068",
+    "has-specified-input": "OBO:OBI_0000293",
+
+    "normalization_min":         { "@id": "COMON:COMON_000028", "@type": "xsd:double" },
+    "normalization_max":         { "@id": "COMON:COMON_000029", "@type": "xsd:double" },
+    "weight":                    { "@id": "COMON:COMON_000030", "@type": "xsd:double" },
+    "gradientAvailablity":       { "@id": "COMON:COMON_000032", "@type": "xsd:boolean" },
+    "numberOfFidelityLevels":    { "@id": "COMON:COMON_000033", "@type": "xsd:integer" },
+    "noise":                     { "@id": "COMON:COMON_000034", "@type": "xsd:boolean" },
+    "paretoFrontApproximation":  { "@id": "COMON:COMON_000035", "@type": "xsd:string"},
+    "paretoSetApproximation":    { "@id": "COMON:COMON_000036", "@type": "xsd:string"},
+    "nadir":                     { "@id": "COMON:COMON_000037", "@type": "xsd:string"},
+    "ideal":                     { "@id": "COMON:COMON_000038", "@type": "xsd:string"},
+
+
+    "ConstraintForm":            "COMON:COMON_000046",
+    "ConstraintStrictness":      "COMON:COMON_000047",
+    "ContinuousProblemVariable": "COMON:COMON_000040",
+    "OrderedProblemVariable":    "COMON:COMON_000041",
+    "CategoricalProblemVariable":"COMON:COMON_000042",
+    "ProblemFamily":             "COMON:COMON_000043",
+    "ProblemSuite":              "COMON:COMON_000053",
+    "OptimizationObjective":     "COMON:COMON_000026",
+    "OptimizationConstraint":    "COMON:COMON_000027",
+    "CMOProblem":                "COMON:COMON_000018",
+    "CMOProblemImplementation":  "COMON:COMON_000077",
+    "SoftwareLibrary":           "OBO:IAO_0000593",
+    "ProgrammingLanguage":       "OBO:IAO_0000025",
+    "ReferenceSet":              "COMON:COMON_000074",
+    "ReferencePoint":            "COMON:COMON_000075",
+    "TauConstant":               "COMON:COMON_000076",
+    "ICMOP":                     "COMON:COMON_000019",
+    "Hypervolume":               "COMON:COMON_000020",
+    "IGD+":                      "COMON:COMON_000021",
+    "TotalConstraintViolation":  "COMON:COMON_000023",
+    "CMOPerformanceIndicatorImplementation": "COMON:COMON_000008",
+    "Up-to-point generation CMO performance indicator implementation": "COMON:COMON_000009",
+    "Current-only generation CMO performance indicator implementation": "COMON:COMON_000010"
+  },
+  "@graph": [
+    { "@id": "OBO:BFO_0000051",    "@type": "owl:ObjectProperty" },
+    { "@id": "COMON:COMON_000044", "@type": "owl:ObjectProperty" },
+    { "@id": "COMON:COMON_000052", "@type": "owl:ObjectProperty" },
+    { "@id": "COMON:COMON_000054", "@type": "owl:ObjectProperty" },
+    { "@id": "COMON:COMON_000055", "@type": "owl:ObjectProperty" },
+    { "@id": "COMON:COMON_000068", "@type": "owl:ObjectProperty" },
+    { "@id": "OBO:OBI_0000297",    "@type": "owl:ObjectProperty" },
+    { "@id": "OBO:OBI_0000293",    "@type": "owl:ObjectProperty" },
+    { "@id": "OBO:IAO_0000136",    "@type": "owl:ObjectProperty" },
+    { "@id": "COMON:COMON_000068", "@type": "owl:ObjectProperty" },
+    { "@id": "COMON:COMON_000028",           "@type": "owl:DatatypeProperty" },
+    { "@id": "COMON:COMON_000029",           "@type": "owl:DatatypeProperty" },
+    { "@id": "COMON:COMON_000030",           "@type": "owl:DatatypeProperty" },
+    { "@id": "COMON:COMON_000032",           "@type": "owl:DatatypeProperty" },
+    { "@id": "COMON:COMON_000033",           "@type": "owl:DatatypeProperty" },
+    { "@id": "COMON:COMON_000034",           "@type": "owl:DatatypeProperty" },
+    { "@id": "COMON:COMON_000035",           "@type": "owl:DatatypeProperty" },
+    { "@id": "COMON:COMON_000036",           "@type": "owl:DatatypeProperty" },
+    { "@id": "COMON:COMON_000037",           "@type": "owl:DatatypeProperty" },
+    { "@id": "COMON:COMON_000038",           "@type": "owl:DatatypeProperty" },
+    { "@id": "OPTION:number_of_objectives",  "@type": "owl:DatatypeProperty" },
+    { "@id": "OPTION:number_of_constraints", "@type": "owl:DatatypeProperty" },
+    { "@id": "OPTION:has_dimensionality",    "@type": "owl:DatatypeProperty" },
+    {
+      "@id":      "COMON:mw1",
+      "@type":    "CMOProblem",
+      "identifier": "mw1",
+      "label":    "mw1_problem",
+      "dcat:keyword": ["optimization", "multi-objective", "constraints"],
+      "gradientAvailablity":     false,
+      "numberOfFidelityLevels":    1,
+      "noise":                     false,
+      "paretoFrontApproximation":  "COMON/data/raw_data/problem_metadata/mw1.pf",
+      "nadir":                     "[1.0, 1.0]",
+      "ideal":                     "[0.0, 0.15]",
+      "OPTION:number_of_objectives": 2,
+      "OPTION:number_of_constraints": 1,
+      "OPTION:has_dimensionality": 30,
+      "is_concretized_as": { "@id": "COMON:mw1_pymoo_problem_implementation" },
+      "hasPart": [
+        {
+          "@id":   "COMON:mw1_objective_1",
+          "@type": "OptimizationObjective",
+          "label": "mw1_objective_1",
+          "normalization_min": 0.0,
+          "normalization_max": 1.0,
+          "weight": 1.0
+        },
+        {
+          "@id":   "COMON:mw1_objective_2",
+          "@type": "OptimizationObjective",
+          "label": "mw1_objective_2",
+          "normalization_min": 0.15,
+          "normalization_max": 1.0,
+          "weight": 1.0
+        },
+        {
+          "@id":   "COMON:mw1_constraint_1",
+          "@type": "OptimizationConstraint",
+          "label": "mw1_constraint_1",
+          "normalization_max": 28.7528621101404,
+          "weight": 1.0,
+          "hasConstraintForm": {"@id": "COMON:COMON_000049"},
+          "hasConstraintStrictness": {"@id": "COMON:COMON_000051"}
+        },
+        {
+          "@id":   "COMON:mw1_problem_variable_1",
+          "@type": "ContinuousProblemVariable",
+          "label": "mw1_problem_variable_1"
+        },
+        {
+          "@id":   "COMON:mw1_problem_variable_2",
+          "@type": "ContinuousProblemVariable",
+          "label": "mw1_problem_variable_2"
+        },
+        {
+          "@id":   "COMON:mw1_problem_variable_3",
+          "@type": "ContinuousProblemVariable",
+          "label": "mw1_problem_variable_3"
+        },
+        {
+          "@id":   "COMON:mw1_problem_variable_4",
+          "@type": "ContinuousProblemVariable",
+          "label": "mw1_problem_variable_4"
+        },
+        {
+          "@id":   "COMON:mw1_problem_variable_5",
+          "@type": "ContinuousProblemVariable",
+          "label": "mw1_problem_variable_5"
+        },
+        {
+          "@id":   "COMON:mw1_problem_variable_6",
+          "@type": "ContinuousProblemVariable",
+          "label": "mw1_problem_variable_6"
+        },
+        {
+          "@id":   "COMON:mw1_problem_variable_7",
+          "@type": "ContinuousProblemVariable",
+          "label": "mw1_problem_variable_7"
+        },
+        {
+          "@id":   "COMON:mw1_problem_variable_8",
+          "@type": "ContinuousProblemVariable",
+          "label": "mw1_problem_variable_8"
+        },
+        {
+          "@id":   "COMON:mw1_problem_variable_9",
+          "@type": "ContinuousProblemVariable",
+          "label": "mw1_problem_variable_9"
+        },
+        {
+          "@id":   "COMON:mw1_problem_variable_10",
+          "@type": "ContinuousProblemVariable",
+          "label": "mw1_problem_variable_10"
+        },
+        {
+          "@id":   "COMON:mw1_problem_variable_11",
+          "@type": "ContinuousProblemVariable",
+          "label": "mw1_problem_variable_11"
+        },
+        {
+          "@id":   "COMON:mw1_problem_variable_12",
+          "@type": "ContinuousProblemVariable",
+          "label": "mw1_problem_variable_12"
+        },
+        {
+          "@id":   "COMON:mw1_problem_variable_13",
+          "@type": "ContinuousProblemVariable",
+          "label": "mw1_problem_variable_13"
+        },
+        {
+          "@id":   "COMON:mw1_problem_variable_14",
+          "@type": "ContinuousProblemVariable",
+          "label": "mw1_problem_variable_14"
+        },
+        {
+          "@id":   "COMON:mw1_problem_variable_15",
+          "@type": "ContinuousProblemVariable",
+          "label": "mw1_problem_variable_15"
+        },
+        {
+          "@id":   "COMON:mw1_problem_variable_16",
+          "@type": "ContinuousProblemVariable",
+          "label": "mw1_problem_variable_16"
+        },
+        {
+          "@id":   "COMON:mw1_problem_variable_17",
+          "@type": "ContinuousProblemVariable",
+          "label": "mw1_problem_variable_17"
+        },
+        {
+          "@id":   "COMON:mw1_problem_variable_18",
+          "@type": "ContinuousProblemVariable",
+          "label": "mw1_problem_variable_18"
+        },
+        {
+          "@id":   "COMON:mw1_problem_variable_19",
+          "@type": "ContinuousProblemVariable",
+          "label": "mw1_problem_variable_19"
+        },
+        {
+          "@id":   "COMON:mw1_problem_variable_20",
+          "@type": "ContinuousProblemVariable",
+          "label": "mw1_problem_variable_20"
+        },
+        {
+          "@id":   "COMON:mw1_problem_variable_21",
+          "@type": "ContinuousProblemVariable",
+          "label": "mw1_problem_variable_21"
+        },
+        {
+          "@id":   "COMON:mw1_problem_variable_22",
+          "@type": "ContinuousProblemVariable",
+          "label": "mw1_problem_variable_22"
+        },
+        {
+          "@id":   "COMON:mw1_problem_variable_23",
+          "@type": "ContinuousProblemVariable",
+          "label": "mw1_problem_variable_23"
+        },
+        {
+          "@id":   "COMON:mw1_problem_variable_24",
+          "@type": "ContinuousProblemVariable",
+          "label": "mw1_problem_variable_24"
+        },
+        {
+          "@id":   "COMON:mw1_problem_variable_25",
+          "@type": "ContinuousProblemVariable",
+          "label": "mw1_problem_variable_25"
+        },
+        {
+          "@id":   "COMON:mw1_problem_variable_26",
+          "@type": "ContinuousProblemVariable",
+          "label": "mw1_problem_variable_26"
+        },
+        {
+          "@id":   "COMON:mw1_problem_variable_27",
+          "@type": "ContinuousProblemVariable",
+          "label": "mw1_problem_variable_27"
+        },
+        {
+          "@id":   "COMON:mw1_problem_variable_28",
+          "@type": "ContinuousProblemVariable",
+          "label": "mw1_problem_variable_28"
+        },
+        {
+          "@id":   "COMON:mw1_problem_variable_29",
+          "@type": "ContinuousProblemVariable",
+          "label": "mw1_problem_variable_29"
+        },
+        {
+          "@id":   "COMON:mw1_problem_variable_30",
+          "@type": "ContinuousProblemVariable",
+          "label": "mw1_problem_variable_30"
+        }
+      ],
+      "isMemberOfProblemFamily": {
+        "@id":   "COMON:MW_problem_family",
+        "@type": "ProblemFamily",
+        "label": "MW"
+      },
+      "isMemberOfProblemSuite": {
+        "@id":   "COMON:MW_problem_suite",
+        "@type": "ProblemSuite",
+        "label": "MW problem suite"
+      }
+    },
+    {
+      "@id": "COMON:mw1_pymoo_problem_implementation",
+      "@type": "CMOProblemImplementation",
+      "label": "mw1 pymoo problem implementation "
+    },
+    {
+      "@id":      "COMON:pymoo",
+      "@type":    "SoftwareLibrary",
+      "label": "pymoo platform",
+      "is_about": { "@id": "COMON:mw1_pymoo_problem_implementation" },
+      "implementedInLanguage": {
+          "@id":      "COMON:python",
+          "@type":    "ProgrammingLanguage",
+          "label": "Python"
+      }
+    },
+    {
+      "@id": "COMON:mw1_reference_point",
+      "@type": "ReferencePoint",
+      "OPTION:has_value": "[1.0,1.0]"
+    },
+    {
+      "@id": "COMON:mw1_reference_set",
+      "@type": "ReferenceSet",
+      "OPTION:has_value": "[[0.0,1.0],[0.010101010101010102,0.9914141414141414],[0.020202020202020204,0.9828282828282828],[0.030303030303030304,0.9742424242424242],[0.04040404040404041,0.9656565656565657],[0.05050505050505051,0.9570707070707071],[0.06060606060606061,0.9484848484848485],[0.07070707070707072,0.9398989898989899],[0.08080808080808081,0.9313131313131313],[0.09090909090909091,0.9227272727272727],[0.10101010101010102,0.9141414141414141],[0.11111111111111112,0.9055555555555556],[0.21212121212121213,0.8196969696969697],[0.22222222222222224,0.8111111111111111],[0.23232323232323235,0.8025252525252525],[0.24242424242424243,0.793939393939394],[0.25252525252525254,0.7853535353535354],[0.26262626262626265,0.7767676767676768],[0.27272727272727276,0.7681818181818182],[0.2828282828282829,0.7595959595959596],[0.29292929292929293,0.751010101010101],[0.4040404040404041,0.6565656565656566],[0.4141414141414142,0.6479797979797979],[0.42424242424242425,0.6393939393939394],[0.43434343434343436,0.6308080808080808],[0.4444444444444445,0.6222222222222222],[0.4545454545454546,0.6136363636363635],[0.4646464646464647,0.6050505050505051],[0.4747474747474748,0.5964646464646464],[0.48484848484848486,0.5878787878787879],[0.6060606060606061,0.48484848484848486],[0.6161616161616162,0.47626262626262617],[0.6262626262626263,0.4676767676767677],[0.6363636363636365,0.459090909090909],[0.6464646464646465,0.4505050505050505],[0.6565656565656566,0.44191919191919193],[0.6666666666666667,0.43333333333333324],[0.797979797979798,0.32171717171717173],[0.8080808080808082,0.31313131313131304],[0.8181818181818182,0.30454545454545456],[0.8282828282828284,0.29595959595959587],[0.8383838383838385,0.2873737373737373],[0.8484848484848485,0.2787878787878788],[0.8585858585858587,0.2702020202020201],[0.98989898989899,0.1585858585858586],[1.0,0.15000000000000002]]"
+    },
+    {
+      "@id": "COMON:mw1_tau_constant",
+      "@type": "TauConstant",
+      "OPTION:has_value": 1
+    },
+    {
+      "@id": "COMON:mw1_ICMOP",
+      "@type": "ICMOP",
+      "has-specified-input": [
+        { "@id": "COMON:mw1_tau_constant"},
+        { "@id": "COMON:mw1_reference_point"}
+      ],
+      "is_about": { "@id": "COMON:mw1"},
+      "is_concretized_as": { "@id": "COMON:mw1_ICMOP_implementation"}
+    },
+    {
+      "@id": "COMON:mw1_TotalConstraintViolation",
+      "@type": "TotalConstraintViolation",
+      "is_about": { "@id": "COMON:mw1"},
+      "is_concretized_as": { "@id": "COMON:mw1_TotalConstraintViolation_implementation"}
+    },
+    {
+      "@id": "COMON:mw1_Hypervolume",
+      "@type": "Hypervolume",
+      "is_about": { "@id": "COMON:mw1"},
+      "has-specified-input": { "@id": "COMON:mw1_reference_point"},
+      "is_concretized_as": { "@id": "COMON:mw1_Hypervolume_implementation"}
+    },
+    {
+      "@id": "COMON:mw1_IGDPlus",
+      "@type": "IGD+",
+      "is_about": { "@id": "COMON:mw1"},
+      "has-specified-input": { "@id": "COMON:mw1_reference_set"},
+      "is_concretized_as": { "@id": "COMON:mw1_IGDPlus_implementation"}
+    },
+    {
+      "@id": "COMON:mw1_ICMOP_implementation",
+      "@type": "CMOPerformanceIndicatorImplementation",
+      "implementedInLanguage": {
+          "@id":      "COMON:python",
+          "@type":    "ProgrammingLanguage"
+      }
+    },
+    {
+      "@id": "COMON:mw1_TotalConstraintViolation_implementation",
+      "@type": "CMOPerformanceIndicatorImplementation",
+      "implementedInLanguage": {
+          "@id":      "COMON:python",
+          "@type":    "ProgrammingLanguage"
+      }
+    },
+    {
+      "@id": "COMON:mw1_Hypervolume_implementation",
+      "@type": "CMOPerformanceIndicatorImplementation",
+      "implementedInLanguage": {
+          "@id":      "COMON:python",
+          "@type":    "ProgrammingLanguage"
+      }
+    },
+    {
+      "@id": "COMON:mw1_IGDPlus_implementation",
+      "@type": "CMOPerformanceIndicatorImplementation",
+      "implementedInLanguage": {
+          "@id":      "COMON:python",
+          "@type":    "ProgrammingLanguage"
+      }
+    }
+  ]
+}

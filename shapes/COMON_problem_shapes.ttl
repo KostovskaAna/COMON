@@ -1,0 +1,561 @@
+@prefix sh:     <http://www.w3.org/ns/shacl#> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc:     <http://purl.org/dc/elements/1.1/> .
+@prefix dcat:   <http://www.w3.org/ns/dcat#> .
+@prefix OBO:    <http://purl.obolibrary.org/obo/> .
+@prefix COMON:  <http://w3id.org/COMON/> .
+@prefix OPTION: <http://w3id.org/ontoopt/> .
+
+# ===========================================================
+# Shape: CMOProblem
+# ===========================================================
+
+COMON:CMOProblemShape
+    a sh:NodeShape ;
+    sh:targetClass COMON:COMON_000018 ;
+    rdfs:label "CMO Problem Shape" ;
+
+    # --- dc:identifier (Mandatory, exactly 1, xsd:string) ---
+    sh:property [
+        sh:path dc:identifier ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "A CMOProblem must have exactly one dc:identifier of type xsd:string." ;
+    ] ;
+
+    # --- rdfs:label (Optional, 0 or 1, xsd:string) ---
+    sh:property [
+        sh:path rdfs:label ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+        sh:message "A CMOProblem may have at most one rdfs:label of type xsd:string." ;
+    ] ;
+
+    # --- dcat:keyword (Optional, 0 or more, xsd:string) ---
+    sh:property [
+        sh:path dcat:keyword ;
+        sh:datatype xsd:string ;
+        sh:message "dcat:keyword values must be of type xsd:string." ;
+    ] ;
+
+    # --- OPTION:number_of_objectives (Mandatory, exactly 1, xsd:integer) ---
+    sh:property [
+        sh:path OPTION:number_of_objectives ;
+        sh:or (
+            [ sh:datatype xsd:integer ]
+            [ sh:datatype xsd:int ]
+        ) ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "A CMOProblem must have exactly one OPTION:number_of_objectives of type xsd:integer." ;
+    ] ;
+
+    # --- OPTION:number_of_constraints (Mandatory, exactly 1, xsd:integer) ---
+    sh:property [
+        sh:path OPTION:number_of_constraints ;
+        sh:or (
+            [ sh:datatype xsd:integer ]
+            [ sh:datatype xsd:int ]
+        ) ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "A CMOProblem must have exactly one OPTION:number_of_constraints of type xsd:integer." ;
+    ] ;
+
+    # --- OPTION:has_dimensionality (Mandatory, exactly 1, xsd:integer) ---
+    sh:property [
+        sh:path OPTION:has_dimensionality ;
+        sh:or (
+            [ sh:datatype xsd:integer ]
+            [ sh:datatype xsd:int ]
+        ) ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "A CMOProblem must have exactly one OPTION:has_dimensionality of type xsd:integer." ;
+    ] ;
+
+    # --- gradientAvailability (Mandatory, exactly 1, xsd:boolean) ---
+    sh:property [
+        sh:path COMON:COMON_000032 ;
+        sh:datatype xsd:boolean ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "A CMOProblem must have exactly one gradientAvailability of type xsd:boolean." ;
+    ] ;
+
+    # --- numberOfFidelityLevels (Mandatory, exactly 1, xsd:integer) ---
+    sh:property [
+        sh:path COMON:COMON_000033 ;
+        sh:or (
+            [ sh:datatype xsd:integer ]
+            [ sh:datatype xsd:int ]
+        ) ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "A CMOProblem must have exactly one numberOfFidelityLevels of type xsd:integer." ;
+    ] ;
+
+    # --- noise (Mandatory, exactly 1, xsd:boolean) ---
+    sh:property [
+        sh:path COMON:COMON_000034 ;
+        sh:datatype xsd:boolean ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "A CMOProblem must have exactly one noise of type xsd:boolean." ;
+    ] ;
+
+    # --- paretoFrontApproximation (Optional, 0 or 1, xsd:string) ---
+    sh:property [
+        sh:path COMON:COMON_000035 ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+        sh:message "paretoFrontApproximation must be of type xsd:string." ;
+    ] ;
+
+    # --- paretoSetApproximation (Optional, 0 or 1, xsd:string) ---
+    sh:property [
+        sh:path COMON:COMON_000036 ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+        sh:message "paretoSetApproximation must be of type xsd:string." ;
+    ] ;
+
+    # --- nadir (Optional, 0 or 1, xsd:string) ---
+    sh:property [
+        sh:path COMON:COMON_000037 ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+        sh:message "nadir must be of type xsd:string." ;
+    ] ;
+
+    # --- ideal (Optional, 0 or 1, xsd:string) ---
+    sh:property [
+        sh:path COMON:COMON_000038 ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+        sh:message "ideal must be of type xsd:string." ;
+    ] ;
+
+    # --- is_concretized_as (Mandatory, exactly 1, CMOProblemImplementation) ---
+    sh:property [
+        sh:path OBO:OBI_0000297 ;
+        sh:class COMON:COMON_000077 ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "A CMOProblem must have exactly one is_concretized_as linking to a CMOProblemImplementation." ;
+    ] ;
+
+    # --- isMemberOfProblemFamily (Mandatory, exactly 1, ProblemFamily) ---
+    sh:property [
+        sh:path COMON:COMON_000044 ;
+        sh:class COMON:COMON_000043 ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "A CMOProblem must belong to exactly one ProblemFamily." ;
+    ] ;
+
+    # --- isMemberOfProblemSuite (Mandatory, exactly 1, ProblemSuite) ---
+    sh:property [
+        sh:path COMON:COMON_000052 ;
+        sh:class COMON:COMON_000053 ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "A CMOProblem must belong to exactly one ProblemSuite." ;
+    ] ;
+
+    # --- hasPart: OptimizationObjective (Mandatory, at least 2) ---
+    sh:property [
+        sh:path OBO:BFO_0000051 ;
+        sh:qualifiedValueShape [ sh:class COMON:COMON_000026 ] ;
+        sh:qualifiedMinCount 2 ;
+        sh:message "A CMOProblem must have at least 2 OptimizationObjectives via hasPart." ;
+    ] ;
+
+    # --- hasPart: OptimizationConstraint (Mandatory, at least 1) ---
+    sh:property [
+        sh:path OBO:BFO_0000051 ;
+        sh:qualifiedValueShape [ sh:class COMON:COMON_000027 ] ;
+        sh:qualifiedMinCount 1 ;
+        sh:message "A CMOProblem must have at least 1 OptimizationConstraint via hasPart." ;
+    ] ;
+
+    # --- hasPart: ProblemVariable (Mandatory, at least 1) ---
+    sh:property [
+        sh:path OBO:BFO_0000051 ;
+        sh:qualifiedValueShape [
+            sh:or (
+                [ sh:class COMON:COMON_000040 ]   # ContinuousProblemVariable
+                [ sh:class COMON:COMON_000041 ]   # OrderedProblemVariable
+                [ sh:class COMON:COMON_000042 ]   # CategoricalProblemVariable
+            )
+        ] ;
+        sh:qualifiedMinCount 1 ;
+        sh:message "A CMOProblem must have at least 1 ProblemVariable (Continuous, Ordered, or Categorical) via hasPart." ;
+    ] .
+
+
+# ===========================================================
+# Shape: OptimizationObjective
+# ===========================================================
+
+COMON:OptimizationObjectiveShape
+    a sh:NodeShape ;
+    sh:targetClass COMON:COMON_000026 ;
+
+    sh:property [
+        sh:path rdfs:label ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+        sh:message "OptimizationObjective may have at most one rdfs:label." ;
+    ] ;
+
+    sh:property [
+        sh:path COMON:COMON_000028 ;   # normalization_min
+        sh:datatype xsd:double ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "OptimizationObjective must have exactly one normalization_min of type xsd:double." ;
+    ] ;
+
+    sh:property [
+        sh:path COMON:COMON_000029 ;   # normalization_max
+        sh:datatype xsd:double ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "OptimizationObjective must have exactly one normalization_max of type xsd:double." ;
+    ] ;
+
+    sh:property [
+        sh:path COMON:COMON_000030 ;   # weight
+        sh:datatype xsd:double ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "OptimizationObjective must have exactly one weight of type xsd:integer." ;
+    ] .
+
+
+
+
+# ===========================================================
+# Shape: OptimizationConstraint
+# ===========================================================
+
+COMON:OptimizationConstraintShape
+    a sh:NodeShape ;
+    sh:targetClass COMON:COMON_000027 ;
+
+    sh:property [
+        sh:path rdfs:label ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+        sh:message "OptimizationConstraint may have at most one rdfs:label." ;
+    ] ;
+
+    sh:property [
+        sh:path COMON:COMON_000029 ;   # normalization_max
+        sh:datatype xsd:double ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "OptimizationConstraint must have exactly one normalization_max of type xsd:double." ;
+    ] ;
+
+    sh:property [
+        sh:path COMON:COMON_000030 ;   # weight
+        sh:datatype xsd:double ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "OptimizationConstraint must have exactly one weight of type xsd:integer." ;
+    ] ;
+
+    sh:property [
+        sh:path COMON:COMON_000054 ;   # hasConstraintForm
+        sh:nodeKind sh:IRI ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "OptimizationConstraint must have exactly one hasConstraintForm (as an IRI)." ;
+    ] ;
+
+    sh:property [
+        sh:path COMON:COMON_000055 ;   # hasConstraintStrictness
+        sh:nodeKind sh:IRI ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "OptimizationConstraint must have exactly one hasConstraintStrictness (as an IRI)." ;
+    ] .
+
+
+# ===========================================================
+# Shape: CMOProblemImplementation
+# ===========================================================
+
+COMON:CMOProblemImplementationShape
+    a sh:NodeShape ;
+    sh:targetClass COMON:COMON_000077 ;
+
+    sh:property [
+        sh:path rdfs:label ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+        sh:message "CMOProblemImplementation may have at most one rdfs:label." ;
+    ] .
+
+
+# ===========================================================
+# Shape: ProblemFamily
+# ===========================================================
+
+COMON:ProblemFamilyShape
+    a sh:NodeShape ;
+    sh:targetClass COMON:COMON_000043 ;
+
+    sh:property [
+        sh:path rdfs:label ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "ProblemFamily must have exactly one rdfs:label." ;
+    ] .
+
+
+# ===========================================================
+# Shape: ProblemSuite
+# ===========================================================
+
+COMON:ProblemSuiteShape
+    a sh:NodeShape ;
+    sh:targetClass COMON:COMON_000053 ;
+
+    sh:property [
+        sh:path rdfs:label ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "ProblemSuite must have exactly one rdfs:label." ;
+    ] .
+
+
+# ===========================================================
+# Shape: ICMOP
+# ===========================================================
+
+COMON:ICMOPShape
+    a sh:NodeShape ;
+    sh:targetClass COMON:COMON_000019 ;
+
+    # --- is_about (Mandatory, exactly 1, CMOProblem) ---
+    sh:property [
+        sh:path OBO:IAO_0000136 ;
+        sh:class COMON:COMON_000018 ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "ICMOP must have exactly one is_about linking to a CMOProblem." ;
+    ] ;
+
+    # --- is_concretized_as (Mandatory, exactly 1, CMOPerformanceIndicatorImplementation) ---
+    sh:property [
+        sh:path OBO:OBI_0000297 ;
+        sh:class COMON:COMON_000008 ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "ICMOP must have exactly one is_concretized_as linking to a CMOPerformanceIndicatorImplementation." ;
+    ] ;
+
+    # --- has-specified-input: exactly 2 total (TauConstant + ReferencePoint) ---
+   sh:property [
+       sh:path OBO:OBI_0000293 ;
+       sh:minCount 2 ;
+       sh:maxCount 2 ;
+       sh:message "ICMOP must have exactly 2 has-specified-input values (one TauConstant and one ReferencePoint)." ;
+   ] ;
+
+   # --- has-specified-input: TauConstant (Mandatory, exactly 1) ---
+   sh:property [
+       sh:path OBO:OBI_0000293 ;
+       sh:qualifiedValueShape [ sh:class COMON:COMON_000076 ] ;
+       sh:qualifiedMinCount 1 ;
+       sh:qualifiedMaxCount 1 ;
+       sh:message "ICMOP must have exactly one TauConstant as has-specified-input." ;
+   ] ;
+
+   # --- has-specified-input: ReferencePoint (Mandatory, exactly 1) ---
+   sh:property [
+       sh:path OBO:OBI_0000293 ;
+       sh:qualifiedValueShape [ sh:class COMON:COMON_000075 ] ;
+       sh:qualifiedMinCount 1 ;
+       sh:qualifiedMaxCount 1 ;
+       sh:message "ICMOP must have exactly one ReferencePoint as has-specified-input." ;
+   ] .
+
+
+# ===========================================================
+# Shape: Hypervolume
+# ===========================================================
+
+COMON:HypervolumeShape
+    a sh:NodeShape ;
+    sh:targetClass COMON:COMON_000020 ;
+
+    # --- is_about (Mandatory, exactly 1, CMOProblem) ---
+    sh:property [
+        sh:path OBO:IAO_0000136 ;
+        sh:class COMON:COMON_000018 ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "Hypervolume must have exactly one is_about linking to a CMOProblem." ;
+    ] ;
+
+    # --- is_concretized_as (Mandatory, exactly 1, CMOPerformanceIndicatorImplementation) ---
+    sh:property [
+        sh:path OBO:OBI_0000297 ;
+        sh:class COMON:COMON_000008 ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "Hypervolume must have exactly one is_concretized_as linking to a CMOPerformanceIndicatorImplementation." ;
+    ] ;
+
+    # --- has-specified-input: ReferencePoint (Mandatory, exactly 1) ---
+    sh:property [
+        sh:path OBO:OBI_0000293 ;
+        sh:qualifiedValueShape [ sh:class COMON:COMON_000075 ] ;
+        sh:qualifiedMinCount 1 ;
+        sh:qualifiedMaxCount 1 ;
+        sh:message "Hypervolume must have exactly one ReferencePoint as has-specified-input." ;
+    ] .
+
+
+# ===========================================================
+# Shape: IGD+
+# ===========================================================
+
+COMON:IGDPlusShape
+    a sh:NodeShape ;
+    sh:targetClass COMON:COMON_000021 ;
+
+    # --- is_about (Mandatory, exactly 1, CMOProblem) ---
+    sh:property [
+        sh:path OBO:IAO_0000136 ;
+        sh:class COMON:COMON_000018 ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "IGD+ must have exactly one is_about linking to a CMOProblem." ;
+    ] ;
+
+    # --- is_concretized_as (Mandatory, exactly 1, CMOPerformanceIndicatorImplementation) ---
+    sh:property [
+        sh:path OBO:OBI_0000297 ;
+        sh:class COMON:COMON_000008 ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "IGD+ must have exactly one is_concretized_as linking to a CMOPerformanceIndicatorImplementation." ;
+    ] ;
+
+    # --- has-specified-input: ReferenceSet (Mandatory, exactly 1) ---
+    sh:property [
+        sh:path OBO:OBI_0000293 ;
+        sh:qualifiedValueShape [ sh:class COMON:COMON_000074 ] ;
+        sh:qualifiedMinCount 1 ;
+        sh:qualifiedMaxCount 1 ;
+        sh:message "IGD+ must have exactly one ReferenceSet as has-specified-input." ;
+    ] .
+
+
+# ===========================================================
+# Shape: TotalConstraintViolation
+# ===========================================================
+
+COMON:TotalConstraintViolationShape
+    a sh:NodeShape ;
+    sh:targetClass COMON:COMON_000023 ;
+
+    # --- is_about (Mandatory, exactly 1, CMOProblem) ---
+    sh:property [
+        sh:path OBO:IAO_0000136 ;
+        sh:class COMON:COMON_000018 ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "TotalConstraintViolation must have exactly one is_about linking to a CMOProblem." ;
+    ] ;
+
+    # --- is_concretized_as (Mandatory, exactly 1, CMOPerformanceIndicatorImplementation) ---
+    sh:property [
+        sh:path OBO:OBI_0000297 ;
+        sh:class COMON:COMON_000008 ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "TotalConstraintViolation must have exactly one is_concretized_as linking to a CMOPerformanceIndicatorImplementation." ;
+    ] .
+
+
+# ===========================================================
+# Shape: ReferencePoint
+# ===========================================================
+
+COMON:ReferencePointShape
+    a sh:NodeShape ;
+    sh:targetClass COMON:COMON_000075 ;
+
+    sh:property [
+        sh:path OPTION:has_value ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "ReferencePoint must have exactly one OPTION:has_value of type xsd:string." ;
+    ] .
+
+
+# ===========================================================
+# Shape: ReferenceSet
+# ===========================================================
+
+COMON:ReferenceSetShape
+    a sh:NodeShape ;
+    sh:targetClass COMON:COMON_000074 ;
+
+    sh:property [
+        sh:path OPTION:has_value ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "ReferenceSet must have exactly one OPTION:has_value of type xsd:string." ;
+    ] .
+
+
+# ===========================================================
+# Shape: TauConstant
+# ===========================================================
+
+COMON:TauConstantShape
+    a sh:NodeShape ;
+    sh:targetClass COMON:COMON_000076 ;
+
+    sh:property [
+        sh:path OPTION:has_value ;
+        sh:or (
+            [ sh:datatype xsd:double ]
+            [ sh:datatype xsd:integer ]
+            [ sh:datatype xsd:int ]
+        ) ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "TauConstant must have exactly one OPTION:has_value of a numeric type." ;
+    ] .
+
+
+# ===========================================================
+# Shape: CMOPerformanceIndicatorImplementation
+# ===========================================================
+
+COMON:CMOPerformanceIndicatorImplementationShape
+    a sh:NodeShape ;
+    sh:targetClass COMON:COMON_000008 ;
+
+    # --- implementedInLanguage (Optional, 0 or 1, ProgrammingLanguage) ---
+    sh:property [
+        sh:path COMON:COMON_000068 ;
+        sh:class OBO:IAO_0000025 ;
+        sh:maxCount 1 ;
+        sh:message "CMOPerformanceIndicatorImplementation may have at most one implementedInLanguage linking to a ProgrammingLanguage." ;
+    ] .

@@ -1,0 +1,221 @@
+{
+    "@context": {
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "OPTION": "http://w3id.org/ontoopt/",
+        "dc": "http://purl.org/dc/elements/1.1/",
+        "dcat": "http://www.w3.org/ns/dcat#",
+        "OBO": "http://purl.obolibrary.org/obo/",
+        "COMON": "http://w3id.org/COMON/",
+        "adms": "http://www.w3.org/ns/adms#",
+        "dcterms": "http://purl.org/dc/terms/",
+        "vcard": "http://www.w3.org/2006/vcard/ns#",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "label": {
+            "@id": "rdfs:label"
+        },
+        "CMO_experiment": "COMON:COMON_000002",
+        "CMO_experiment_implementation": "COMON:COMON_000015",
+        "CMO_experiment_execution": "COMON:COMON_000014",
+        "maxNumberOfSolutionEvaluations": {
+            "@id": "COMON:COMON_000069",
+            "@type": "xsd:integer"
+        },
+        "maxTimePerRun": {
+            "@id": "COMON:COMON_000070",
+            "@type": "xsd:duration"
+        },
+        "costModel": {
+            "@id": "COMON:COMON_000071",
+            "@type": "xsd:string"
+        },
+        "stoppingCriteria": {
+            "@id": "COMON:COMON_000072",
+            "@type": "xsd:string"
+        },
+        "algorithmParameterSettings": {
+            "@id": "COMON:COMON_000073",
+            "@type": "xsd:string"
+        },
+        "has-specified-output": "OBO:OBI_0000299",
+        "has-specified-input": "OBO:OBI_0000293",
+        "is_concretized_as": "OBO:OBI_0000297",
+        "realizes": "OBO:OBI_0000308",
+        "uses": "COMON:COMON_000078",
+        "hasLogLevel": "COMON:COMON_000081"
+    },
+    "@graph": [
+        {
+            "@id": "COMON:COMON_000069",
+            "@type": "owl:DatatypeProperty"
+        },
+        {
+            "@id": "COMON:COMON_000070",
+            "@type": "owl:DatatypeProperty"
+        },
+        {
+            "@id": "COMON:COMON_000071",
+            "@type": "owl:DatatypeProperty"
+        },
+        {
+            "@id": "COMON:COMON_000072",
+            "@type": "owl:DatatypeProperty"
+        },
+        {
+            "@id": "COMON:COMON_000073",
+            "@type": "owl:DatatypeProperty"
+        },
+        {
+            "@id": "COMON:COMON_000078",
+            "@type": "owl:ObjectProperty"
+        },
+        {
+            "@id": "COMON:COMON_000081",
+            "@type": "owl:ObjectProperty"
+        },
+        {
+            "@id": "OBO:OBI_0000299",
+            "@type": "owl:ObjectProperty"
+        },
+        {
+            "@id": "OBO:OBI_0000293",
+            "@type": "owl:ObjectProperty"
+        },
+        {
+            "@id": "OBO:OBI_0000297",
+            "@type": "owl:ObjectProperty"
+        },
+        {
+            "@id": "OBO:OBI_0000308",
+            "@type": "owl:ObjectProperty"
+        },
+        {
+            "@id": "dcterms:relation",
+            "@type": "owl:ObjectProperty"
+        },
+        {
+            "@id": "dcat:contactPoint",
+            "@type": "owl:ObjectProperty"
+        },
+        {
+            "@id": "dcterms:creator",
+            "@type": "owl:ObjectProperty"
+        },
+        {
+            "@id": "dcterms:references",
+            "@type": "owl:ObjectProperty"
+        },
+        {
+            "@id": "COMON:COMON_000081",
+            "@type": "owl:ObjectProperty"
+        },
+        {
+            "@id": "COMON:moeadd_mw1_final_platemo_experiment",
+            "@type": "CMO_experiment",
+            "label": "moeadd_mw1_final_platemo_experiment",
+            "maxNumberOfSolutionEvaluations": 300000,
+            "costModel": "uniform",
+            "stoppingCriteria": "max evaluations reached",
+            "algorithmParameterSettings": "platemo defaults",
+            "is_concretized_as": {
+                "@id": "COMON:moeadd_mw1_final_platemo_experiment_implementation"
+            },
+            "has-specified-input": [
+                {
+                    "@id": "COMON:moeadd_algorithm"
+                },
+                {
+                    "@id": "COMON:mw1"
+                },
+                {
+                    "@id": "COMON:mw1_ICMOP"
+                },
+                {
+                    "@id": "COMON:mw1_TotalConstraintViolation"
+                },
+                {
+                    "@id": "COMON:mw1_Hypervolume"
+                },
+                {
+                    "@id": "COMON:mw1_IGDPlus"
+                }
+            ]
+        },
+        {
+            "@id": "COMON:moeadd_mw1_final_platemo_experiment_implementation",
+            "@type": "CMO_experiment_implementation",
+            "label": "moeadd_mw1_final_platemo_experiment_implementation",
+            "uses": [
+                {
+                    "@id": "COMON:mw1_platemo_problem_implementation"
+                },
+                {
+                    "@id": "COMON:moeadd_platemo_algorithm_implementation"
+                },
+                {
+                    "@id": "COMON:mw1_ICMOP_implementation"
+                },
+                {
+                    "@id": "COMON:mw1_TotalConstraintViolation_implementation"
+                },
+                {
+                    "@id": "COMON:mw1_Hypervolume_implementation"
+                },
+                {
+                    "@id": "COMON:mw1_IGDPlus_implementation"
+                }
+            ],
+            "implementedInLanguage": {
+                "@id": "COMON:python",
+                "@type": "ProgrammingLanguage"
+            }
+        },
+        {
+            "@id": "COMON:moeadd_mw1_final_platemo_experiment_execution",
+            "@type": "CMO_experiment_execution",
+            "label": "moeadd_mw1_final_platemo_experiment_execution",
+            "hasLogLevel": {
+                "@id": "COMON:COMON_000082"
+            },
+            "realizes": {
+                "@id": "COMON:moeadd_mw1_final_platemo_experiment_implementation"
+            },
+            "has-specified-output": {
+                "@id": "COMON:moeadd_mw1_final_platemo_dataset",
+                "@type": "dcat:Dataset",
+                "label": "moeadd_mw1_final_platemo_dataset",
+                "dcat:version": "v1.0",
+                "dcat:keyword": [
+                    "multiobjective",
+                    "constrained"
+                ],
+                "adms:versionNotes": "",
+                "dcat:contactPoint": [
+                    {
+                        "@id": "COMON:individual_1",
+                        "@type": "vcard:Individual",
+                        "vcard:fn": "Jordan N. Cork"
+                    },
+                    {
+                        "@id": "COMON:organization_1",
+                        "@type": "vcard:Organization",
+                        "vcard:fn": "Jozef Stefan Institute"
+                    }
+                ],
+                "dcterms:creator": [
+                    {
+                        "@id": "COMON:person_1",
+                        "@type": "foaf:Person",
+                        "foaf:name": "Jordan N. Cork"
+                    },
+                    {
+                        "@id": "COMON:organization_1",
+                        "@type": "foaf:Organization",
+                        "foaf:name": "Jozef Stefan Institute"
+                    }
+                ]
+            }
+        }
+    ]
+}

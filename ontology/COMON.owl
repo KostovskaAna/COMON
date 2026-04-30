@@ -1,0 +1,1408 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/anakostovska/ontologies/2025/10/untitled-ontology-229#"
+     xml:base="http://www.semanticweb.org/anakostovska/ontologies/2025/10/untitled-ontology-229"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:adms="http://www.w3.org/ns/adms#"
+     xmlns:dcat="http://www.w3.org/ns/dcat#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:COMON="http://w3id.org/COMON/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/anakostovska/ontologies/2025/10/untitled-ontology-229">
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl"/>
+        <dc:creator xml:lang="en">Ana Kostovska</dc:creator>
+        <dc:creator xml:lang="en">Andrejaana Andova</dc:creator>
+        <dc:creator xml:lang="en">Bogdan Filipič</dc:creator>
+        <dc:creator xml:lang="en">Jordan Cork</dc:creator>
+        <dc:creator xml:lang="en">Panče Panov</dc:creator>
+        <dc:creator xml:lang="en">Sašo Džeroski</dc:creator>
+        <dc:creator xml:lang="en">Tea Tušar</dc:creator>
+        <dc:language xml:lang="en">English</dc:language>
+        <dc:title xml:lang="en">COMON - COnstrained Multi-objective optimization ONtology</dc:title>
+        <owl:versionInfo xml:lang="en">1.0.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/identifier -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/identifier"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000031 -->
+
+    <owl:AnnotationProperty rdf:about="http://w3id.org/COMON/COMON_000031">
+        <rdfs:label>algorithm_iteration_number</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/adms#versionNotes -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/adms#versionNotes"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#keyword -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#keyword">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#duration -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#duration"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000294 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000294">
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000297"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <rdfs:label xml:lang="en">is_concretization_of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000297 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000297">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <rdfs:label>is_concretized_as</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000300 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000300">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000308"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:label>is_realized_by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000308 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000308">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+        <rdfs:label>realizes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/creator">
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/references -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/references">
+        <rdfs:domain rdf:resource="https://www.w3.org/ns/dcat#Dataset"/>
+        <rdfs:range rdf:resource="http://purl.org/dc/terms/BibliographicResource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/relation -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/relation">
+        <rdfs:domain rdf:resource="https://www.w3.org/ns/dcat#Dataset"/>
+        <rdfs:range rdf:resource="https://www.w3.org/ns/dcat#Dataset"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000044 -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/COMON/COMON_000044">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002350"/>
+        <rdfs:label>isMemberOfProblemFamily</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000052 -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/COMON/COMON_000052">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002350"/>
+        <rdfs:label>isMemberOfProblemSuite</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000054 -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/COMON/COMON_000054">
+        <rdfs:label>hasConstraintForm</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000055 -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/COMON/COMON_000055">
+        <rdfs:label>hasConstraintStrictness</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000066 -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/COMON/COMON_000066">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002350"/>
+        <rdfs:label>isMemberOfAlgorithmFamily</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000067 -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/COMON/COMON_000067">
+        <rdfs:label>isRelatedToAlgorithm</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000068 -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/COMON/COMON_000068">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000593"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000025"/>
+        <rdfs:label>implementedInLanguage</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000078 -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/COMON/COMON_000078">
+        <rdfs:label>uses</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000081 -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/COMON/COMON_000081">
+        <rdfs:label>hasLogLevel</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#contactPoint -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/dcat#contactPoint">
+        <rdfs:domain rdf:resource="https://www.w3.org/ns/dcat#Dataset"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/vcard/ns#Individual"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/vcard/ns#Organization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000028 -->
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/COMON/COMON_000028">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:label>normalization_min</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000029 -->
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/COMON/COMON_000029">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:label>normalization_max</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000030 -->
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/COMON/COMON_000030">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:label>weight</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000032 -->
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/COMON/COMON_000032">
+        <rdfs:label>gradientAvailability</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000033 -->
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/COMON/COMON_000033">
+        <rdfs:label>numberOfFidelityLevels</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000034 -->
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/COMON/COMON_000034">
+        <rdfs:label>noise</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000035 -->
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/COMON/COMON_000035">
+        <rdfs:label>paretoFrontApproximation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000036 -->
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/COMON/COMON_000036">
+        <rdfs:label>paretoSetApproximation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000037 -->
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/COMON/COMON_000037">
+        <rdfs:label>nadir</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000038 -->
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/COMON/COMON_000038">
+        <rdfs:label>ideal</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000069 -->
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/COMON/COMON_000069">
+        <rdfs:domain rdf:resource="http://w3id.org/COMON/COMON_000014"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>maxNumberOfSolutionEvaluations</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000070 -->
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/COMON/COMON_000070">
+        <rdfs:domain rdf:resource="http://w3id.org/COMON/COMON_000014"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
+        <rdfs:label>maxTimePerRun</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000071 -->
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/COMON/COMON_000071">
+        <rdfs:domain rdf:resource="http://w3id.org/COMON/COMON_000014"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>costModel</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000072 -->
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/COMON/COMON_000072">
+        <rdfs:domain rdf:resource="http://w3id.org/COMON/COMON_000014"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>stoppingCriteria</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000073 -->
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/COMON/COMON_000073">
+        <rdfs:domain rdf:resource="http://w3id.org/COMON/COMON_000014"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>algorithmParameterSettings</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/ontoopt/has_dimensionality -->
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/ontoopt/has_dimensionality"/>
+    
+
+
+    <!-- http://w3id.org/ontoopt/has_value -->
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/ontoopt/has_value">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/ontoopt/number_of_constraints -->
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/ontoopt/number_of_constraints"/>
+    
+
+
+    <!-- http://w3id.org/ontoopt/number_of_objectives -->
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/ontoopt/number_of_objectives"/>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#fn -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2006/vcard/ns#fn"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#keyword -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/dcat#keyword"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#version -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/dcat#version">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obofoundry.org/obo/OBI_0000260 -->
+
+    <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000260">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+        <rdfs:label>plan</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000064 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000064">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000297"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontodm.com/OntoDM-core/OntoDM_112569"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/dc/terms/BibliographicResource -->
+
+    <owl:Class rdf:about="http://purl.org/dc/terms/BibliographicResource"/>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000001 -->
+
+    <owl:Class rdf:about="http://w3id.org/COMON/COMON_000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000297"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/COMON/COMON_000066"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000065"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/COMON/COMON_000067"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">CMO algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000002 -->
+
+    <owl:Class rdf:about="http://w3id.org/COMON/COMON_000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000297"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000015"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">CMO experiment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000003 -->
+
+    <owl:Class rdf:about="http://w3id.org/COMON/COMON_000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000297"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000008"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">CMO performance indicator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000004 -->
+
+    <owl:Class rdf:about="http://w3id.org/COMON/COMON_000004">
+        <rdfs:subClassOf rdf:resource="http://www.ontodm.com/OntoDM-core/OntoDM_112569"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000294"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000300"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>CMO algorithm implementation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000006 -->
+
+    <owl:Class rdf:about="http://w3id.org/COMON/COMON_000006">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/ontoopt/algorithm_execution"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000011"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000308"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>CMO algorithm execution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000007 -->
+
+    <owl:Class rdf:about="http://w3id.org/COMON/COMON_000007">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/swo/SWO_0000393"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000013"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000308"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000008"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>CMO performance indicator execution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000008 -->
+
+    <owl:Class rdf:about="http://w3id.org/COMON/COMON_000008">
+        <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0000260"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000294"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000300"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000007"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>CMO performance indicator implementation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000009 -->
+
+    <owl:Class rdf:about="http://w3id.org/COMON/COMON_000009">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000008"/>
+        <rdfs:label>Up-to-point CMO performance indicator implementation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000010 -->
+
+    <owl:Class rdf:about="http://w3id.org/COMON/COMON_000010">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000008"/>
+        <rdfs:label>Current-only CMO performance indicator implementation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000011 -->
+
+    <owl:Class rdf:about="http://w3id.org/COMON/COMON_000011">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/swo/SWO_0000393"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000012"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>CMO algorithm iteration execution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000012 -->
+
+    <owl:Class rdf:about="http://w3id.org/COMON/COMON_000012">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/swo/SWO_0000393"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000007"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>CMO solution evaluation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000013 -->
+
+    <owl:Class rdf:about="http://w3id.org/COMON/COMON_000013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/ontoopt/has_value"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">CMO perfomance indicator datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000014 -->
+
+    <owl:Class rdf:about="http://w3id.org/COMON/COMON_000014">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/swo/SWO_0000393"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000017"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3.org/ns/dcat#Dataset"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/COMON/COMON_000081"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000080"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>CMO experiment execution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000015 -->
+
+    <owl:Class rdf:about="http://w3id.org/COMON/COMON_000015">
+        <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0000260"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000294"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000300"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000014"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>CMO experiment implementation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000016 -->
+
+    <owl:Class rdf:about="http://w3id.org/COMON/COMON_000016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000026"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/COMON/COMON_000044"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000043"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Optimization problem</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000017 -->
+
+    <owl:Class rdf:about="http://w3id.org/COMON/COMON_000017">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000016"/>
+        <rdfs:label>Multi-objective optimization problem</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000018 -->
+
+    <owl:Class rdf:about="http://w3id.org/COMON/COMON_000018">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000017"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000027"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000058"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000077"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/COMON/COMON_000052"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000053"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>CMO problem</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000019 -->
+
+    <owl:Class rdf:about="http://w3id.org/COMON/COMON_000019">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000022"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000075"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>ICMOP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000020 -->
+
+    <owl:Class rdf:about="http://w3id.org/COMON/COMON_000020">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000024"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000075"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Hypervolume</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000021 -->
+
+    <owl:Class rdf:about="http://w3id.org/COMON/COMON_000021">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000024"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000074"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>IGD+</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000022 -->
+
+    <owl:Class rdf:about="http://w3id.org/COMON/COMON_000022">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000003"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000076"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Mixed CMO performance indicator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000023 -->
+
+    <owl:Class rdf:about="http://w3id.org/COMON/COMON_000023">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000025"/>
+        <rdfs:label>Total constraint violation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000024 -->
+
+    <owl:Class rdf:about="http://w3id.org/COMON/COMON_000024">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000003"/>
+        <rdfs:label>Objective-specific CMO performance indicator specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000025 -->
+
+    <owl:Class rdf:about="http://w3id.org/COMON/COMON_000025">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000003"/>
+        <rdfs:label>Constraint-specific CMO performance indicator specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000026 -->
+
+    <owl:Class rdf:about="http://w3id.org/COMON/COMON_000026">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/COMON/COMON_000028"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/COMON/COMON_000029"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/COMON/COMON_000030"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Optimization objective</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000027 -->
+
+    <owl:Class rdf:about="http://w3id.org/COMON/COMON_000027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/COMON/COMON_000054"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000046"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/COMON/COMON_000055"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000047"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/COMON/COMON_000028"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/COMON/COMON_000029"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/COMON/COMON_000030"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Optimization constraint</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000039 -->
+
+    <owl:Class rdf:about="http://w3id.org/COMON/COMON_000039">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:label>Problem variable</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000040 -->
+
+    <owl:Class rdf:about="http://w3id.org/COMON/COMON_000040">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000039"/>
+        <rdfs:label>Continuous problem variable</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000041 -->
+
+    <owl:Class rdf:about="http://w3id.org/COMON/COMON_000041">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000039"/>
+        <rdfs:label>Ordered problem variable</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000042 -->
+
+    <owl:Class rdf:about="http://w3id.org/COMON/COMON_000042">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000039"/>
+        <rdfs:label>Categorical problem variable</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000043 -->
+
+    <owl:Class rdf:about="http://w3id.org/COMON/COMON_000043">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:label>Problem family</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000046 -->
+
+    <owl:Class rdf:about="http://w3id.org/COMON/COMON_000046">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <rdfs:label>ConstraintForm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000047 -->
+
+    <owl:Class rdf:about="http://w3id.org/COMON/COMON_000047">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <rdfs:label>ConstraintStrictness</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000053 -->
+
+    <owl:Class rdf:about="http://w3id.org/COMON/COMON_000053">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:label>Problem suite</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000057 -->
+
+    <owl:Class rdf:about="http://w3id.org/COMON/COMON_000057">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000001"/>
+        <rdfs:label>Single-point CMO algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000058 -->
+
+    <owl:Class rdf:about="http://w3id.org/COMON/COMON_000058">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000057"/>
+        <rdfs:label>Single-point CMO algorithm that solves multiple CSOPs</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000059 -->
+
+    <owl:Class rdf:about="http://w3id.org/COMON/COMON_000059">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000057"/>
+        <rdfs:label>Single-point CMO algorithm that solves the original CMOP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000060 -->
+
+    <owl:Class rdf:about="http://w3id.org/COMON/COMON_000060">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000001"/>
+        <rdfs:label>Population-based CMO algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000061 -->
+
+    <owl:Class rdf:about="http://w3id.org/COMON/COMON_000061">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000060"/>
+        <rdfs:label>Population CMO algorithm that solves multiple CSOPs</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000062 -->
+
+    <owl:Class rdf:about="http://w3id.org/COMON/COMON_000062">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000060"/>
+        <rdfs:label>Population CMO algorithm that solves the original CMOP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000063 -->
+
+    <owl:Class rdf:about="http://w3id.org/COMON/COMON_000063">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000062"/>
+        <rdfs:label>Population algorithm that solves the original CMOP sequentially</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000064 -->
+
+    <owl:Class rdf:about="http://w3id.org/COMON/COMON_000064">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000062"/>
+        <rdfs:label>Population algorithms that solve the original CMOP in parallel (using subpopulations</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000065 -->
+
+    <owl:Class rdf:about="http://w3id.org/COMON/COMON_000065">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:label>Algorithm family</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000074 -->
+
+    <owl:Class rdf:about="http://w3id.org/COMON/COMON_000074">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/ontoopt/has_value"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Reference set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000075 -->
+
+    <owl:Class rdf:about="http://w3id.org/COMON/COMON_000075">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/ontoopt/has_value"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Reference point</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000076 -->
+
+    <owl:Class rdf:about="http://w3id.org/COMON/COMON_000076">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/ontoopt/has_value"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Tau constant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000077 -->
+
+    <owl:Class rdf:about="http://w3id.org/COMON/COMON_000077">
+        <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0000260"/>
+        <rdfs:label>CMO problem implementation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000080 -->
+
+    <owl:Class rdf:about="http://w3id.org/COMON/COMON_000080">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <rdfs:label>CMO expeiment log level</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/ontoopt/algorithm_execution -->
+
+    <owl:Class rdf:about="http://w3id.org/ontoopt/algorithm_execution">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/swo/SWO_0000393"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000308"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontodm.com/OntoDM-core/OntoDM_112569"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">algorithm execution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000393 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000393">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:label xml:lang="en">information processing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontodm.com/OntoDM-core/OntoDM_112569 -->
+
+    <owl:Class rdf:about="http://www.ontodm.com/OntoDM-core/OntoDM_112569">
+        <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0000260"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000294"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000300"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/ontoopt/algorithm_execution"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>algorithm implementation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#Individual -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/vcard/ns#Individual">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/vcard/ns#Kind"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#Kind -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/vcard/ns#Kind"/>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#Organization -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/vcard/ns#Organization">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/vcard/ns#Kind"/>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Organization -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3.org/ns/dcat#Dataset -->
+
+    <owl:Class rdf:about="https://www.w3.org/ns/dcat#Dataset"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000048 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/COMON/COMON_000048">
+        <rdf:type rdf:resource="http://w3id.org/COMON/COMON_000046"/>
+        <rdfs:label>equality</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000049 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/COMON/COMON_000049">
+        <rdf:type rdf:resource="http://w3id.org/COMON/COMON_000046"/>
+        <rdfs:label>inequality</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000050 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/COMON/COMON_000050">
+        <rdf:type rdf:resource="http://w3id.org/COMON/COMON_000047"/>
+        <rdfs:label>soft</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000051 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/COMON/COMON_000051">
+        <rdf:type rdf:resource="http://w3id.org/COMON/COMON_000047"/>
+        <rdfs:label>hard</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000082 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/COMON/COMON_000082">
+        <rdf:type rdf:resource="http://w3id.org/COMON/COMON_000080"/>
+        <rdfs:label>final</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000083 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/COMON/COMON_000083">
+        <rdf:type rdf:resource="http://w3id.org/COMON/COMON_000080"/>
+        <rdfs:label>generation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/COMON/COMON_000084 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/COMON/COMON_000084">
+        <rdf:type rdf:resource="http://w3id.org/COMON/COMON_000080"/>
+        <rdfs:label>evaluation</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

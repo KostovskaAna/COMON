@@ -1,0 +1,253 @@
+{
+  "@context": {
+    "owl":  "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd":  "http://www.w3.org/2001/XMLSchema#",
+    "OPTION": "http://w3id.org/ontoopt/",
+    "dc":   "http://purl.org/dc/elements/1.1/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "OBO":  "http://purl.obolibrary.org/obo/",
+    "COMON":"http://w3id.org/COMON/",
+
+
+    "identifier": { "@id": "dc:identifier" },
+    "label":      { "@id": "rdfs:label" },
+
+    "hasPart":                 "OBO:BFO_0000051",
+    "isMemberOfProblemFamily": "COMON:COMON_000044",
+    "isMemberOfProblemSuite":  "COMON:COMON_000052",
+    "hasConstraintForm":       "COMON:COMON_000054",
+    "hasConstraintStrictness": "COMON:COMON_000055",
+    "is_concretized_as":       "OBO:OBI_0000297",
+    "is_about": "OBO:IAO_0000136",
+    "implementedInLanguage": "COMON:COMON_000068",
+    "has-specified-input": "OBO:OBI_0000293",
+
+    "normalization_min":         { "@id": "COMON:COMON_000028", "@type": "xsd:double" },
+    "normalization_max":         { "@id": "COMON:COMON_000029", "@type": "xsd:double" },
+    "weight":                    { "@id": "COMON:COMON_000030", "@type": "xsd:double" },
+    "gradientAvailablity":       { "@id": "COMON:COMON_000032", "@type": "xsd:boolean" },
+    "numberOfFidelityLevels":    { "@id": "COMON:COMON_000033", "@type": "xsd:int" },
+    "noise":                     { "@id": "COMON:COMON_000034", "@type": "xsd:boolean" },
+    "paretoFrontApproximation":  { "@id": "COMON:COMON_000035", "@type": "xsd:string"},
+    "paretoSetApproximation":    { "@id": "COMON:COMON_000036", "@type": "xsd:string"},
+    "nadir":                     { "@id": "COMON:COMON_000037", "@type": "xsd:string"},
+    "ideal":                     { "@id": "COMON:COMON_000038", "@type": "xsd:string"},
+
+
+    "ConstraintForm":            "COMON:COMON_000046",
+    "ConstraintStrictness":      "COMON:COMON_000047",
+    "ContinuousProblemVariable": "COMON:COMON_000040",
+    "OrderedProblemVariable":    "COMON:COMON_000041",
+    "CategoricalProblemVariable":"COMON:COMON_000042",
+    "ProblemFamily":             "COMON:COMON_000043",
+    "ProblemSuite":              "COMON:COMON_000053",
+    "OptimizationObjective":     "COMON:COMON_000026",
+    "OptimizationConstraint":    "COMON:COMON_000027",
+    "CMOProblem":                "COMON:COMON_000018",
+    "CMOProblemImplementation":  "COMON:COMON_000077",
+    "SoftwareLibrary":           "OBO:IAO_0000593",
+    "ProgrammingLanguage":       "OBO:IAO_0000025",
+    "ReferenceSet":              "COMON:COMON_000074",
+    "ReferencePoint":            "COMON:COMON_000075",
+    "TauConstant":               "COMON:COMON_000076",
+    "ICMOP":                     "COMON:COMON_000019",
+    "Hypervolume":               "COMON:COMON_000020",
+    "IGD+":                      "COMON:COMON_000021",
+    "TotalConstraintViolation":  "COMON:COMON_000023",
+    "CMOPerformanceIndicatorImplementation": "COMON:COMON_000008",
+    "Up-to-point generation CMO performance indicator implementation": "COMON:COMON_000009",
+    "Current-only generation CMO performance indicator implementation": "COMON:COMON_000010"
+  },
+  "@graph": [
+    { "@id": "OBO:BFO_0000051",    "@type": "owl:ObjectProperty" },
+    { "@id": "COMON:COMON_000044", "@type": "owl:ObjectProperty" },
+    { "@id": "COMON:COMON_000052", "@type": "owl:ObjectProperty" },
+    { "@id": "COMON:COMON_000054", "@type": "owl:ObjectProperty" },
+    { "@id": "COMON:COMON_000055", "@type": "owl:ObjectProperty" },
+    { "@id": "COMON:COMON_000068", "@type": "owl:ObjectProperty" },
+    { "@id": "OBO:OBI_0000297",    "@type": "owl:ObjectProperty" },
+    { "@id": "OBO:OBI_0000293",    "@type": "owl:ObjectProperty" },
+    { "@id": "OBO:IAO_0000136",    "@type": "owl:ObjectProperty" },
+    { "@id": "COMON:COMON_000068", "@type": "owl:ObjectProperty" },
+    { "@id": "COMON:COMON_000028",           "@type": "owl:DatatypeProperty" },
+    { "@id": "COMON:COMON_000029",           "@type": "owl:DatatypeProperty" },
+    { "@id": "COMON:COMON_000030",           "@type": "owl:DatatypeProperty" },
+    { "@id": "COMON:COMON_000032",           "@type": "owl:DatatypeProperty" },
+    { "@id": "COMON:COMON_000033",           "@type": "owl:DatatypeProperty" },
+    { "@id": "COMON:COMON_000034",           "@type": "owl:DatatypeProperty" },
+    { "@id": "COMON:COMON_000035",           "@type": "owl:DatatypeProperty" },
+    { "@id": "COMON:COMON_000036",           "@type": "owl:DatatypeProperty" },
+    { "@id": "COMON:COMON_000037",           "@type": "owl:DatatypeProperty" },
+    { "@id": "COMON:COMON_000038",           "@type": "owl:DatatypeProperty" },
+    { "@id": "OPTION:number_of_objectives",  "@type": "owl:DatatypeProperty" },
+    { "@id": "OPTION:number_of_constraints", "@type": "owl:DatatypeProperty" },
+    { "@id": "OPTION:has_dimensionality",    "@type": "owl:DatatypeProperty" },
+    {
+      "@id":      "COMON:cobi1",
+      "@type":    "CMOProblem",
+      "identifier": "cobi1",
+      "label":    "cobi1_problem",
+      "dcat:keyword": ["optimization", "multi-objective", "constraints"],
+      "gradientAvailablity":     false,
+      "numberOfFidelityLevels":    1,
+      "noise":                     false,
+      "paretoFrontApproximation":  "COMON/data/raw_data/problem_metadata/cobi1.pf",
+      "nadir":                     "[17.612327481130862,-0.2631848782716837]",
+      "ideal":                     "[-7.700969314975628, -9.366759212506546]",
+      "OPTION:number_of_objectives": 2,
+      "OPTION:number_of_constraints": 2,
+      "OPTION:has_dimensionality": 2,
+      "is_concretized_as": { "@id": "COMON:cobi1_cobi_problem_implementation" },
+      "hasPart": [
+        {
+          "@id":   "COMON:cobi1_objective_1",
+          "@type": "OptimizationObjective",
+          "label": "cobi1_objective_1",
+          "normalization_min": -7.70096931,
+          "normalization_max": 17.61232748,
+          "weight": 1.0
+        },
+        {
+          "@id":   "COMON:cobi1_objective_2",
+          "@type": "OptimizationObjective",
+          "label": "cobi1_objective_2",
+          "normalization_min": -9.36675921,
+          "normalization_max": -0.26318488,
+          "weight": 1.0
+        },
+        {
+          "@id":   "COMON:cobi1_constraint_1",
+          "@type": "OptimizationConstraint",
+          "label": "cobi1_constraint_1",
+          "normalization_max": 9.671120103866802,
+          "weight": 1.0,
+          "hasConstraintForm": {"@id": "COMON:COMON_000049"},
+          "hasConstraintStrictness": {"@id": "COMON:COMON_000051"}
+        },
+        {
+          "@id":   "COMON:cobi1_constraint_2",
+          "@type": "OptimizationConstraint",
+          "label": "cobi1_constraint_2",
+          "normalization_max": 18.49410401398516,
+          "weight": 1.0,
+          "hasConstraintForm": {"@id": "COMON:COMON_000049"},
+          "hasConstraintStrictness": {"@id": "COMON:COMON_000051"}
+        },
+        {
+          "@id":   "COMON:cobi1_problem_variable_1",
+          "@type": "ContinuousProblemVariable",
+          "label": "cobi1_problem_variable_1"
+        },
+        {
+          "@id":   "COMON:cobi1_problem_variable_2",
+          "@type": "ContinuousProblemVariable",
+          "label": "cobi1_problem_variable_2"
+        }
+      ],
+      "isMemberOfProblemFamily": {
+        "@id":   "COMON:CoBi_problem_family",
+        "@type": "ProblemFamily",
+        "label": "CoBi"
+      },
+      "isMemberOfProblemSuite": {
+        "@id":   "COMON:cobi_problem_suite",
+        "@type": "ProblemSuite",
+        "label": "CoBi problem suite"
+      }
+    },
+    {
+      "@id": "COMON:cobi1_cobi_problem_implementation",
+      "@type": "CMOProblemImplementation",
+      "label": "Cobi1 CoBi problem implementation "
+    },
+    {
+      "@id":      "COMON:cobi",
+      "@type":    "SoftwareLibrary",
+      "label": "CoBi platform",
+      "is_about": { "@id": "COMON:cobi1_cobi_problem_implementation" },
+      "implementedInLanguage": {
+          "@id":      "COMON:python",
+          "@type":    "ProgrammingLanguage",
+          "label": "Python"
+      }
+    },
+    {
+      "@id": "COMON:cobi1_reference_point",
+      "@type": "ReferencePoint",
+      "OPTION:has_value": "[17.612327481130862,-0.2631848782716837]"
+    },
+    {
+      "@id": "COMON:cobi1_reference_set",
+      "@type": "ReferenceSet",
+      "OPTION:has_value": "[[-7.700969314975628,-0.2631848782716837],[-7.7009693149755964,-0.263184878271705],[-7.700969314975533,-0.26318487827176185],[-7.700969314975507,-0.2631848782717867],[-7.700969314975465,-0.26318487827182935],[-7.700969314975455,-0.2631848782718329],[-7.70096931497543,-0.2631848782718649],[-7.700969314975414,-0.2631848782718773],[-7.700969314975396,-0.26318487827188797],[-7.700969314975377,-0.2631848782718915],[-7.700969314975358,-0.26318487827191994],[-7.700969314975323,-0.26318487827193415],[-7.700969314975294,-0.2631848782719697],[-7.700969314975233,-0.26318487827200343],[-6.145061175305101,-7.995657440186302],[-6.145061175305099,-7.995657440186312],[-6.078519093130635,-8.078763129208259],[-3.545855131327457,-8.143842923344469],[-3.545855131327457,-8.143842923344472],[-2.8262510151268723,-8.566528652606829],[17.612327481130862,-9.366759212506546]]"
+    },
+    {
+      "@id": "COMON:cobi1_tau_constant",
+      "@type": "TauConstant",
+      "OPTION:has_value": 1
+    },
+    {
+      "@id": "COMON:cobi1_ICMOP",
+      "@type": "ICMOP",
+      "has-specified-input": [
+        { "@id": "COMON:cobi1_tau_constant"},
+        { "@id": "COMON:cobi1_reference_point"}
+      ],
+      "is_about": { "@id": "COMON:cobi1"},
+      "is_concretized_as": { "@id": "COMON:cobi1_ICMOP_implementation"}
+    },
+    {
+      "@id": "COMON:cobi1_TotalConstraintViolation",
+      "@type": "TotalConstraintViolation",
+      "is_about": { "@id": "COMON:cobi1"},
+      "is_concretized_as": { "@id": "COMON:cobi1_TotalConstraintViolation_implementation"}
+    },
+    {
+      "@id": "COMON:cobi1_Hypervolume",
+      "@type": "Hypervolume",
+      "is_about": { "@id": "COMON:cobi1"},
+      "has-specified-input": { "@id": "COMON:cobi1_reference_point"},
+      "is_concretized_as": { "@id": "COMON:cobi1_Hypervolume_implementation"}
+    },
+    {
+      "@id": "COMON:cobi1_IGDPlus",
+      "@type": "IGD+",
+      "is_about": { "@id": "COMON:cobi1"},
+      "has-specified-input": { "@id": "COMON:cobi1_reference_set"},
+      "is_concretized_as": { "@id": "COMON:cobi1_IGDPlus_implementation"}
+    },
+    {
+      "@id": "COMON:cobi1_ICMOP_implementation",
+      "@type": "CMOPerformanceIndicatorImplementation",
+      "implementedInLanguage": {
+          "@id":      "COMON:python",
+          "@type":    "ProgrammingLanguage"
+      }
+    },
+    {
+      "@id": "COMON:cobi1_TotalConstraintViolation_implementation",
+      "@type": "CMOPerformanceIndicatorImplementation",
+      "implementedInLanguage": {
+          "@id":      "COMON:python",
+          "@type":    "ProgrammingLanguage"
+      }
+    },
+    {
+      "@id": "COMON:cobi1_Hypervolume_implementation",
+      "@type": "CMOPerformanceIndicatorImplementation",
+      "implementedInLanguage": {
+          "@id":      "COMON:python",
+          "@type":    "ProgrammingLanguage"
+      }
+    },
+    {
+      "@id": "COMON:cobi1_IGDPlus_implementation",
+      "@type": "CMOPerformanceIndicatorImplementation",
+      "implementedInLanguage": {
+          "@id":      "COMON:python",
+          "@type":    "ProgrammingLanguage"
+      }
+    }
+  ]
+}
