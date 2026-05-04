@@ -148,7 +148,7 @@
             "label": "csop-rs_cobi1_eval_author_experiment_implementation",
             "uses": [
                 {
-                    "@id": "COMON:cobi1_author_problem_implementation"
+                    "@id": "COMON:cobi1_cobi_problem_implementation"
                 },
                 {
                     "@id": "COMON:csop-rs_author_algorithm_implementation"

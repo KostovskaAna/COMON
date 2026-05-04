@@ -148,7 +148,7 @@
             "label": "como-cma_cobi1_eval_cma_experiment_implementation",
             "uses": [
                 {
-                    "@id": "COMON:cobi1_cma_problem_implementation"
+                    "@id": "COMON:cobi1_cobi_problem_implementation"
                 },
                 {
                     "@id": "COMON:como-cma_cma_algorithm_implementation"

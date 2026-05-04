@@ -148,7 +148,7 @@
             "label": "ccmo_cobi1_gen_platemo_experiment_implementation",
             "uses": [
                 {
-                    "@id": "COMON:cobi1_platemo_problem_implementation"
+                    "@id": "COMON:cobi1_cobi_problem_implementation"
                 },
                 {
                     "@id": "COMON:ccmo_platemo_algorithm_implementation"

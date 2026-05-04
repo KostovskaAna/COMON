@@ -148,7 +148,7 @@
             "label": "spea2_cobi1_gen_jmetalpy_experiment_implementation",
             "uses": [
                 {
-                    "@id": "COMON:cobi1_jmetalpy_problem_implementation"
+                    "@id": "COMON:cobi1_cobi_problem_implementation"
                 },
                 {
                     "@id": "COMON:spea2_jmetalpy_algorithm_implementation"

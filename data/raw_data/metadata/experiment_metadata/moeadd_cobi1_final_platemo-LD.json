@@ -148,7 +148,7 @@
             "label": "moeadd_cobi1_final_platemo_experiment_implementation",
             "uses": [
                 {
-                    "@id": "COMON:cobi1_platemo_problem_implementation"
+                    "@id": "COMON:cobi1_cobi_problem_implementation"
                 },
                 {
                     "@id": "COMON:moeadd_platemo_algorithm_implementation"

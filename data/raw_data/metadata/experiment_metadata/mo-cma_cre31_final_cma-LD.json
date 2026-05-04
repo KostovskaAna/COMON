@@ -111,19 +111,19 @@
             "@type": "owl:ObjectProperty"
         },
         {
-            "@id": "COMON:cma-es_cre31_final_author_experiment",
+            "@id": "COMON:mo-cma_cre31_final_cma_experiment",
             "@type": "CMO_experiment",
-            "label": "cma-es_cre31_final_author_experiment",
+            "label": "mo-cma_cre31_final_cma_experiment",
             "maxNumberOfSolutionEvaluations": 70000,
             "costModel": "uniform",
             "stoppingCriteria": "max evaluations reached",
             "algorithmParameterSettings": "pop_size=10 num_weights=30",
             "is_concretized_as": {
-                "@id": "COMON:cma-es_cre31_final_author_experiment_implementation"
+                "@id": "COMON:mo-cma_cre31_final_cma_experiment_implementation"
             },
             "has-specified-input": [
                 {
-                    "@id": "COMON:cma-es_algorithm"
+                    "@id": "COMON:mo-cma_algorithm"
                 },
                 {
                     "@id": "COMON:cre31"
@@ -143,15 +143,15 @@
             ]
         },
         {
-            "@id": "COMON:cma-es_cre31_final_author_experiment_implementation",
+            "@id": "COMON:mo-cma_cre31_final_cma_experiment_implementation",
             "@type": "CMO_experiment_implementation",
-            "label": "cma-es_cre31_final_author_experiment_implementation",
+            "label": "mo-cma_cre31_final_cma_experiment_implementation",
             "uses": [
                 {
-                    "@id": "COMON:cre31_author_problem_implementation"
+                    "@id": "COMON:cre31_cre_problem_implementation"
                 },
                 {
-                    "@id": "COMON:cma-es_author_algorithm_implementation"
+                    "@id": "COMON:mo-cma_cma_algorithm_implementation"
                 },
                 {
                     "@id": "COMON:cre31_ICMOP_implementation"
@@ -172,19 +172,19 @@
             }
         },
         {
-            "@id": "COMON:cma-es_cre31_final_author_experiment_execution",
+            "@id": "COMON:mo-cma_cre31_final_cma_experiment_execution",
             "@type": "CMO_experiment_execution",
-            "label": "cma-es_cre31_final_author_experiment_execution",
+            "label": "mo-cma_cre31_final_cma_experiment_execution",
             "hasLogLevel": {
                 "@id": "COMON:COMON_000082"
             },
             "realizes": {
-                "@id": "COMON:cma-es_cre31_final_author_experiment_implementation"
+                "@id": "COMON:mo-cma_cre31_final_cma_experiment_implementation"
             },
             "has-specified-output": {
-                "@id": "COMON:cma-es_cre31_final_author_dataset",
+                "@id": "COMON:mo-cma_cre31_final_cma_dataset",
                 "@type": "dcat:Dataset",
-                "label": "cma-es_cre31_final_author_dataset",
+                "label": "mo-cma_cre31_final_cma_dataset",
                 "dcat:version": "v1.0",
                 "dcat:keyword": [
                     "multiobjective",

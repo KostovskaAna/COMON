@@ -148,7 +148,7 @@
             "label": "csop-rs_cre31_eval_author_experiment_implementation",
             "uses": [
                 {
-                    "@id": "COMON:cre31_author_problem_implementation"
+                    "@id": "COMON:cre31_cre_problem_implementation"
                 },
                 {
                     "@id": "COMON:csop-rs_author_algorithm_implementation"

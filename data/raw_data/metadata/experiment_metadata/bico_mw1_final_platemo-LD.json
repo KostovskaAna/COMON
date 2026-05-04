@@ -148,7 +148,7 @@
             "label": "bico_mw1_final_platemo_experiment_implementation",
             "uses": [
                 {
-                    "@id": "COMON:mw1_platemo_problem_implementation"
+                    "@id": "COMON:mw1_pymoo_problem_implementation"
                 },
                 {
                     "@id": "COMON:bico_platemo_algorithm_implementation"

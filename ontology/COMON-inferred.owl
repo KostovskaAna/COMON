@@ -1,0 +1,2105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:err="http://www.daml.org/2002/03/agents/agent-ont#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+>
+  <rdf:Description rdf:nodeID="Nd49b1ec83d954c0284632be299982b75">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+    <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000076"/>
+    <owl:sameAs rdf:nodeID="Nd49b1ec83d954c0284632be299982b75"/>
+    <rdfs:subClassOf rdf:nodeID="Nd49b1ec83d954c0284632be299982b75"/>
+    <owl:equivalentClass rdf:nodeID="Nd49b1ec83d954c0284632be299982b75"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000083">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/COMON/COMON_000080"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label>generation</rdfs:label>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000083"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7f386fcc611e4ba7bdb86c63724ab36d">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000027"/>
+    <owl:sameAs rdf:nodeID="N7f386fcc611e4ba7bdb86c63724ab36d"/>
+    <rdfs:subClassOf rdf:nodeID="N7f386fcc611e4ba7bdb86c63724ab36d"/>
+    <owl:equivalentClass rdf:nodeID="N7f386fcc611e4ba7bdb86c63724ab36d"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfc23d9e74a6446e78795199606463859">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/COMON/COMON_000066"/>
+    <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000065"/>
+    <owl:sameAs rdf:nodeID="Nfc23d9e74a6446e78795199606463859"/>
+    <rdfs:subClassOf rdf:nodeID="Nfc23d9e74a6446e78795199606463859"/>
+    <owl:equivalentClass rdf:nodeID="Nfc23d9e74a6446e78795199606463859"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc3216c27ef5c405ba2f67dd62c093f44">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000058"/>
+    <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000077"/>
+    <owl:sameAs rdf:nodeID="Nc3216c27ef5c405ba2f67dd62c093f44"/>
+    <rdfs:subClassOf rdf:nodeID="Nc3216c27ef5c405ba2f67dd62c093f44"/>
+    <owl:equivalentClass rdf:nodeID="Nc3216c27ef5c405ba2f67dd62c093f44"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/BibliographicResource">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/BibliographicResource"/>
+    <owl:sameAs rdf:resource="http://purl.org/dc/terms/BibliographicResource"/>
+    <owl:equivalentClass rdf:resource="http://purl.org/dc/terms/BibliographicResource"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfe19deefe58a4752b663081499e5cd6a">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+    <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000074"/>
+    <owl:sameAs rdf:nodeID="Nfe19deefe58a4752b663081499e5cd6a"/>
+    <rdfs:subClassOf rdf:nodeID="Nfe19deefe58a4752b663081499e5cd6a"/>
+    <owl:equivalentClass rdf:nodeID="Nfe19deefe58a4752b663081499e5cd6a"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000019">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000022"/>
+    <rdfs:subClassOf rdf:nodeID="N47886bae4f8b496299dd32d08d121f66"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000019"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:nodeID="Nd49b1ec83d954c0284632be299982b75"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000003"/>
+    <rdfs:subClassOf rdf:nodeID="N3f11e3610eb9419896d75388dd4d0f90"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+    <rdfs:subClassOf rdf:nodeID="N599e312364214564b25a0bfab59a0ec5"/>
+    <rdfs:label>ICMOP</rdfs:label>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000019"/>
+    <owl:equivalentClass rdf:resource="http://w3id.org/COMON/COMON_000019"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#long">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N599e312364214564b25a0bfab59a0ec5">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+    <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000075"/>
+    <owl:sameAs rdf:nodeID="N599e312364214564b25a0bfab59a0ec5"/>
+    <rdfs:subClassOf rdf:nodeID="N47886bae4f8b496299dd32d08d121f66"/>
+    <rdfs:subClassOf rdf:nodeID="N599e312364214564b25a0bfab59a0ec5"/>
+    <owl:equivalentClass rdf:nodeID="N47886bae4f8b496299dd32d08d121f66"/>
+    <owl:equivalentClass rdf:nodeID="N599e312364214564b25a0bfab59a0ec5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N182d490c1e654c31a95a192703e19cdf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/COMON/COMON_000030"/>
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    <owl:sameAs rdf:nodeID="N182d490c1e654c31a95a192703e19cdf"/>
+    <rdfs:subClassOf rdf:nodeID="N182d490c1e654c31a95a192703e19cdf"/>
+    <rdfs:subClassOf rdf:nodeID="N693a3d3ff29243d9ba5e4719e038b94a"/>
+    <owl:equivalentClass rdf:nodeID="N182d490c1e654c31a95a192703e19cdf"/>
+    <owl:equivalentClass rdf:nodeID="N693a3d3ff29243d9ba5e4719e038b94a"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000055">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>hasConstraintStrictness</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/COMON/COMON_000055"/>
+    <owl:equivalentProperty rdf:resource="http://w3id.org/COMON/COMON_000055"/>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000055"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2d122455e9ec4f8482df1eb54f7bb0ed">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/ontoopt/has_value"/>
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <owl:sameAs rdf:nodeID="N2d122455e9ec4f8482df1eb54f7bb0ed"/>
+    <rdfs:subClassOf rdf:nodeID="N2d122455e9ec4f8482df1eb54f7bb0ed"/>
+    <rdfs:subClassOf rdf:nodeID="N839f9ed7eaec4c02a8495c54344ff143"/>
+    <rdfs:subClassOf rdf:nodeID="N6409c61548244e43b0c30c7cfe8b86cb"/>
+    <owl:equivalentClass rdf:nodeID="N2d122455e9ec4f8482df1eb54f7bb0ed"/>
+    <owl:equivalentClass rdf:nodeID="N839f9ed7eaec4c02a8495c54344ff143"/>
+    <owl:equivalentClass rdf:nodeID="N6409c61548244e43b0c30c7cfe8b86cb"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2006/vcard/ns#Organization">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/vcard/ns#Kind"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/vcard/ns#Organization"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2006/vcard/ns#Organization"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2006/vcard/ns#Organization"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfaa9baf6fd33412fa64a814bf6860cbd">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000308"/>
+    <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000008"/>
+    <owl:sameAs rdf:nodeID="Nfaa9baf6fd33412fa64a814bf6860cbd"/>
+    <rdfs:subClassOf rdf:nodeID="Nfaa9baf6fd33412fa64a814bf6860cbd"/>
+    <owl:equivalentClass rdf:nodeID="Nfaa9baf6fd33412fa64a814bf6860cbd"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000073">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/COMON/COMON_000014"/>
+    <rdfs:domain rdf:nodeID="N80d63f5c8ffc43da93e81e3091cb9f7e"/>
+    <rdfs:domain rdf:nodeID="N004cd4e50c824be1bca09f80daa4901c"/>
+    <rdfs:domain rdf:resource="http://www.ebi.ac.uk/efo/swo/SWO_0000393"/>
+    <rdfs:domain rdf:nodeID="N18ae7470a47243139e7d8efeb0a6b960"/>
+    <rdfs:domain rdf:nodeID="N71fd74f57c9448a1be528d08b1e15e00"/>
+    <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>algorithmParameterSettings</rdfs:label>
+    <owl:equivalentProperty rdf:resource="http://w3id.org/COMON/COMON_000073"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/COMON/COMON_000073"/>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000073"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#duration">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N74536f0cfa0a4e7cad61b5e035585901">
+    <rdf:first rdf:nodeID="Nd69e9b1734534ecd8b0a6ef6d2c1b287"/>
+    <rdf:rest rdf:nodeID="N2dc91b4a9dbc476499a685510f3b5282"/>
+    <owl:sameAs rdf:nodeID="N74536f0cfa0a4e7cad61b5e035585901"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#short">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000025">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000003"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:nodeID="N3f11e3610eb9419896d75388dd4d0f90"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000025"/>
+    <rdfs:label>Constraint-specific CMO performance indicator specification</rdfs:label>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000025"/>
+    <owl:equivalentClass rdf:resource="http://w3id.org/COMON/COMON_000025"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000043">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000043"/>
+    <rdfs:label>Problem family</rdfs:label>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000043"/>
+    <owl:equivalentClass rdf:resource="http://w3id.org/COMON/COMON_000043"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000064">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000062"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000060"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000064"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+    <rdfs:subClassOf rdf:nodeID="N300a82a614a84cbcbdd1750d80601777"/>
+    <rdfs:subClassOf rdf:nodeID="Nfc23d9e74a6446e78795199606463859"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000001"/>
+    <rdfs:subClassOf rdf:nodeID="N2a5acd92da7c476cacd96e820cfa5694"/>
+    <rdfs:subClassOf rdf:nodeID="N5319a6132f904a79ac4be38bfff899cd"/>
+    <rdfs:label>Population algorithms that solve the original CMOP in parallel (using subpopulations</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://w3id.org/COMON/COMON_000064"/>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000064"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000039">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000039"/>
+    <rdfs:label>Problem variable</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://w3id.org/COMON/COMON_000039"/>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000039"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#string">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Nothing">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000003"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000012"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/vcard/ns#Kind"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000025"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000041"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000011"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000002"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000008"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000080"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000046"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/vcard/ns#Individual"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000015"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000053"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000059"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000020"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000010"/>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000042"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000062"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/ontoopt/algorithm_execution"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000061"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000063"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000065"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000021"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000007"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0000260"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000009"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000019"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000013"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000058"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000077"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000016"/>
+    <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/swo/SWO_0000393"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000039"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000040"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000074"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000024"/>
+    <rdfs:subClassOf rdf:resource="https://www.w3.org/ns/dcat#Dataset"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/vcard/ns#Organization"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000076"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000057"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000027"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000060"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000001"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000064"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000004"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000022"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000023"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000026"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000014"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000018"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000075"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000017"/>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000006"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    <rdfs:subClassOf rdf:resource="http://www.ontodm.com/OntoDM-core/OntoDM_112569"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000043"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/BibliographicResource"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000047"/>
+    <rdfs:subClassOf rdf:nodeID="N358185bc18bd45ac8fe65a9d099d3c1a"/>
+    <rdfs:subClassOf rdf:nodeID="N0a1d4d4cde9e49e680e6b9c0db6bfeb4"/>
+    <rdfs:subClassOf rdf:nodeID="Nf0bee61f1220425a88170d1526e05116"/>
+    <rdfs:subClassOf rdf:nodeID="N693a3d3ff29243d9ba5e4719e038b94a"/>
+    <rdfs:subClassOf rdf:nodeID="N18ae7470a47243139e7d8efeb0a6b960"/>
+    <rdfs:subClassOf rdf:nodeID="N18477482bfde4e218dbd50e162683342"/>
+    <rdfs:subClassOf rdf:nodeID="N3ed2c761af434200be7c052e2e0c0673"/>
+    <rdfs:subClassOf rdf:nodeID="N7f386fcc611e4ba7bdb86c63724ab36d"/>
+    <rdfs:subClassOf rdf:nodeID="N2d122455e9ec4f8482df1eb54f7bb0ed"/>
+    <rdfs:subClassOf rdf:nodeID="N647d9b2a032f47be9278900bc0f4b088"/>
+    <rdfs:subClassOf rdf:nodeID="Nd49b1ec83d954c0284632be299982b75"/>
+    <rdfs:subClassOf rdf:nodeID="Nd5fcaddea5be4bbb9e539f0fad8585de"/>
+    <rdfs:subClassOf rdf:nodeID="Nde6420b552754ed4a180ec3904d4f1ec"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    <rdfs:subClassOf rdf:nodeID="N5319a6132f904a79ac4be38bfff899cd"/>
+    <rdfs:subClassOf rdf:nodeID="N8b6b27c9e7ef449490d80301f5373d62"/>
+    <rdfs:subClassOf rdf:nodeID="N7c073017b4074fa290cde4769ed9a931"/>
+    <rdfs:subClassOf rdf:nodeID="N0291440e861f42eea420dfb69aecd29a"/>
+    <rdfs:subClassOf rdf:nodeID="N83e9a11a104f440b8c47f8e0de2cb00f"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+    <rdfs:subClassOf rdf:nodeID="N47886bae4f8b496299dd32d08d121f66"/>
+    <rdfs:subClassOf rdf:nodeID="N6f765106b1c848e9962c555cf87ca615"/>
+    <rdfs:subClassOf rdf:nodeID="Na3c98f17384241569367571437870d33"/>
+    <rdfs:subClassOf rdf:nodeID="Nbe39f5fb950a4716bdac0ef21654bf8a"/>
+    <rdfs:subClassOf rdf:nodeID="Na5f72cbfb897452a97e24a607a72b7f7"/>
+    <rdfs:subClassOf rdf:nodeID="Nf110d3bf381743eeba07ec36d8371171"/>
+    <rdfs:subClassOf rdf:nodeID="N2a5acd92da7c476cacd96e820cfa5694"/>
+    <rdfs:subClassOf rdf:nodeID="Ne5ad5584345647b393ffb992ddb75998"/>
+    <rdfs:subClassOf rdf:nodeID="N40148f33e56346e4ab2330fd3cbc05ad"/>
+    <rdfs:subClassOf rdf:nodeID="N34cd522efe62480ebc15758b28e98ab4"/>
+    <rdfs:subClassOf rdf:nodeID="Nb46492d22bde4925b1962a6ea9d9094a"/>
+    <rdfs:subClassOf rdf:nodeID="N599e312364214564b25a0bfab59a0ec5"/>
+    <rdfs:subClassOf rdf:nodeID="N80d63f5c8ffc43da93e81e3091cb9f7e"/>
+    <rdfs:subClassOf rdf:nodeID="N004cd4e50c824be1bca09f80daa4901c"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+    <rdfs:subClassOf rdf:nodeID="N300a82a614a84cbcbdd1750d80601777"/>
+    <rdfs:subClassOf rdf:nodeID="N3f11e3610eb9419896d75388dd4d0f90"/>
+    <rdfs:subClassOf rdf:nodeID="Nfaa9baf6fd33412fa64a814bf6860cbd"/>
+    <rdfs:subClassOf rdf:nodeID="Nc42ec0e068a64fc8ba83d7c8ce3f7f33"/>
+    <rdfs:subClassOf rdf:nodeID="N406f5323165a42bc8bd4358ca356f500"/>
+    <rdfs:subClassOf rdf:nodeID="Nfe19deefe58a4752b663081499e5cd6a"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    <rdfs:subClassOf rdf:nodeID="N182d490c1e654c31a95a192703e19cdf"/>
+    <rdfs:subClassOf rdf:nodeID="Nfc23d9e74a6446e78795199606463859"/>
+    <rdfs:subClassOf rdf:nodeID="N71fd74f57c9448a1be528d08b1e15e00"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+    <rdfs:subClassOf rdf:nodeID="N6409c61548244e43b0c30c7cfe8b86cb"/>
+    <rdfs:subClassOf rdf:nodeID="Nc3216c27ef5c405ba2f67dd62c093f44"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+    <rdfs:subClassOf rdf:nodeID="N839f9ed7eaec4c02a8495c54344ff143"/>
+    <rdfs:subClassOf rdf:nodeID="N32496f3cb4244e17a76fc846a9e886f2"/>
+    <rdfs:subClassOf rdf:nodeID="N785b79dc2c234213b2fd05dcd9053ed1"/>
+    <rdfs:subClassOf rdf:nodeID="Nd74a9e0d8e6245f882a36218483d3e45"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000077">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0000260"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000077"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label>CMO problem implementation</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://w3id.org/COMON/COMON_000077"/>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000077"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#nonPositiveInteger">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#nonPositiveInteger"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000027">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    <rdfs:subClassOf rdf:nodeID="N40148f33e56346e4ab2330fd3cbc05ad"/>
+    <rdfs:subClassOf rdf:nodeID="N785b79dc2c234213b2fd05dcd9053ed1"/>
+    <rdfs:subClassOf rdf:nodeID="Nc42ec0e068a64fc8ba83d7c8ce3f7f33"/>
+    <rdfs:subClassOf rdf:nodeID="Nd74a9e0d8e6245f882a36218483d3e45"/>
+    <rdfs:subClassOf rdf:nodeID="N182d490c1e654c31a95a192703e19cdf"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000027"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:nodeID="N693a3d3ff29243d9ba5e4719e038b94a"/>
+    <rdfs:label>Optimization constraint</rdfs:label>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000027"/>
+    <owl:equivalentClass rdf:resource="http://w3id.org/COMON/COMON_000027"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000063">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000062"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000063"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000060"/>
+    <rdfs:subClassOf rdf:nodeID="N2a5acd92da7c476cacd96e820cfa5694"/>
+    <rdfs:subClassOf rdf:nodeID="N300a82a614a84cbcbdd1750d80601777"/>
+    <rdfs:subClassOf rdf:nodeID="Nfc23d9e74a6446e78795199606463859"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000001"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+    <rdfs:subClassOf rdf:nodeID="N5319a6132f904a79ac4be38bfff899cd"/>
+    <rdfs:label>Population algorithm that solves the original CMOP sequentially</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://w3id.org/COMON/COMON_000063"/>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000063"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000060">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000001"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000060"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:nodeID="N2a5acd92da7c476cacd96e820cfa5694"/>
+    <rdfs:subClassOf rdf:nodeID="N300a82a614a84cbcbdd1750d80601777"/>
+    <rdfs:subClassOf rdf:nodeID="Nfc23d9e74a6446e78795199606463859"/>
+    <rdfs:subClassOf rdf:nodeID="N5319a6132f904a79ac4be38bfff899cd"/>
+    <rdfs:label>Population-based CMO algorithm</rdfs:label>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000060"/>
+    <owl:equivalentClass rdf:resource="http://w3id.org/COMON/COMON_000060"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0291440e861f42eea420dfb69aecd29a">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000003"/>
+    <owl:sameAs rdf:nodeID="N0291440e861f42eea420dfb69aecd29a"/>
+    <rdfs:subClassOf rdf:nodeID="N0291440e861f42eea420dfb69aecd29a"/>
+    <owl:equivalentClass rdf:nodeID="N0291440e861f42eea420dfb69aecd29a"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000299">
+    <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obofoundry.org/obo/OBI_0000260">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0000260"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label>plan</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://purl.obofoundry.org/obo/OBI_0000260"/>
+    <owl:sameAs rdf:resource="http://purl.obofoundry.org/obo/OBI_0000260"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000046">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000046"/>
+    <rdfs:label>ConstraintForm</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://w3id.org/COMON/COMON_000046"/>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000046"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000034">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>noise</rdfs:label>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000034"/>
+    <owl:equivalentProperty rdf:resource="http://w3id.org/COMON/COMON_000034"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/COMON/COMON_000034"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000021">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000024"/>
+    <rdfs:subClassOf rdf:nodeID="Nfe19deefe58a4752b663081499e5cd6a"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000003"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000021"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+    <rdfs:subClassOf rdf:nodeID="N3f11e3610eb9419896d75388dd4d0f90"/>
+    <rdfs:label>IGD+</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://w3id.org/COMON/COMON_000021"/>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000021"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N83e9a11a104f440b8c47f8e0de2cb00f">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/ontoopt/has_value"/>
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    <owl:sameAs rdf:nodeID="N83e9a11a104f440b8c47f8e0de2cb00f"/>
+    <rdfs:subClassOf rdf:nodeID="N83e9a11a104f440b8c47f8e0de2cb00f"/>
+    <owl:equivalentClass rdf:nodeID="N83e9a11a104f440b8c47f8e0de2cb00f"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:equivalentClass rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    <owl:sameAs rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000002">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+    <rdfs:subClassOf rdf:nodeID="N0291440e861f42eea420dfb69aecd29a"/>
+    <rdfs:subClassOf rdf:nodeID="N8b6b27c9e7ef449490d80301f5373d62"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000002"/>
+    <rdfs:label xml:lang="en">CMO experiment</rdfs:label>
+    <rdfs:seeAlso xml:lang="en">https://w3id.org/moody#Experiment</rdfs:seeAlso>
+    <owl:equivalentClass rdf:resource="http://w3id.org/COMON/COMON_000002"/>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000002"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000300">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000300"/>
+    <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000308"/>
+    <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+    <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    <rdfs:label>is_realized_by</rdfs:label>
+    <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/OBI_0000300"/>
+    <owl:equivalentProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000300"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N91cdd813dc704ccea2ec9c8e9a6e5a32">
+    <rdf:first rdf:nodeID="N676a9015967546aa81920a6c63a54504"/>
+    <rdf:rest rdf:nodeID="Nad0b1425b14f4ad0840f4eb876662d72"/>
+    <owl:sameAs rdf:nodeID="N91cdd813dc704ccea2ec9c8e9a6e5a32"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/anakostovska/ontologies/2025/10/untitled-ontology-229">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl"/>
+    <dc:creator xml:lang="en">Ana Kostovska</dc:creator>
+    <dc:creator xml:lang="en">Andrejaana Andova</dc:creator>
+    <dc:creator xml:lang="en">Bogdan Filipič</dc:creator>
+    <dc:creator xml:lang="en">Jordan Cork</dc:creator>
+    <dc:creator xml:lang="en">Panče Panov</dc:creator>
+    <dc:creator xml:lang="en">Sašo Džeroski</dc:creator>
+    <dc:creator xml:lang="en">Tea Tušar</dc:creator>
+    <dc:language xml:lang="en">English</dc:language>
+    <dc:title xml:lang="en">COMON - COnstrained Multi-objective optimization ONtology</dc:title>
+    <owl:versionInfo xml:lang="en">1.0.0</owl:versionInfo>
+    <owl:sameAs rdf:resource="http://www.semanticweb.org/anakostovska/ontologies/2025/10/untitled-ontology-229"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000061">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000060"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000061"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000001"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:nodeID="N2a5acd92da7c476cacd96e820cfa5694"/>
+    <rdfs:subClassOf rdf:nodeID="N5319a6132f904a79ac4be38bfff899cd"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+    <rdfs:subClassOf rdf:nodeID="N300a82a614a84cbcbdd1750d80601777"/>
+    <rdfs:subClassOf rdf:nodeID="Nfc23d9e74a6446e78795199606463859"/>
+    <rdfs:label>Population CMO algorithm that solves multiple CSOPs</rdfs:label>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000061"/>
+    <owl:equivalentClass rdf:resource="http://w3id.org/COMON/COMON_000061"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000017">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000016"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000017"/>
+    <rdfs:subClassOf rdf:nodeID="N358185bc18bd45ac8fe65a9d099d3c1a"/>
+    <rdfs:subClassOf rdf:nodeID="Na5f72cbfb897452a97e24a607a72b7f7"/>
+    <rdfs:label>Multi-objective optimization problem</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://w3id.org/COMON/COMON_000017"/>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000017"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na5f72cbfb897452a97e24a607a72b7f7">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000026"/>
+    <owl:sameAs rdf:nodeID="Na5f72cbfb897452a97e24a607a72b7f7"/>
+    <rdfs:subClassOf rdf:nodeID="Na5f72cbfb897452a97e24a607a72b7f7"/>
+    <owl:equivalentClass rdf:nodeID="Na5f72cbfb897452a97e24a607a72b7f7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf110d3bf381743eeba07ec36d8371171">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000308"/>
+    <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000004"/>
+    <owl:sameAs rdf:nodeID="Nf110d3bf381743eeba07ec36d8371171"/>
+    <rdfs:subClassOf rdf:nodeID="N6f765106b1c848e9962c555cf87ca615"/>
+    <rdfs:subClassOf rdf:nodeID="Nf110d3bf381743eeba07ec36d8371171"/>
+    <owl:equivalentClass rdf:nodeID="Nf110d3bf381743eeba07ec36d8371171"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd5fcaddea5be4bbb9e539f0fad8585de">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000300"/>
+    <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000006"/>
+    <owl:sameAs rdf:nodeID="Nd5fcaddea5be4bbb9e539f0fad8585de"/>
+    <rdfs:subClassOf rdf:nodeID="Nde6420b552754ed4a180ec3904d4f1ec"/>
+    <rdfs:subClassOf rdf:nodeID="Nd5fcaddea5be4bbb9e539f0fad8585de"/>
+    <owl:equivalentClass rdf:nodeID="Nd5fcaddea5be4bbb9e539f0fad8585de"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000049">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/COMON/COMON_000046"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label>inequality</rdfs:label>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000049"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000072">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/COMON/COMON_000014"/>
+    <rdfs:domain rdf:resource="http://www.ebi.ac.uk/efo/swo/SWO_0000393"/>
+    <rdfs:domain rdf:nodeID="N18ae7470a47243139e7d8efeb0a6b960"/>
+    <rdfs:domain rdf:nodeID="N71fd74f57c9448a1be528d08b1e15e00"/>
+    <rdfs:domain rdf:nodeID="N004cd4e50c824be1bca09f80daa4901c"/>
+    <rdfs:domain rdf:nodeID="N80d63f5c8ffc43da93e81e3091cb9f7e"/>
+    <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>stoppingCriteria</rdfs:label>
+    <owl:equivalentProperty rdf:resource="http://w3id.org/COMON/COMON_000072"/>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000072"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/COMON/COMON_000072"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000015">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0000260"/>
+    <rdfs:subClassOf rdf:nodeID="N7c073017b4074fa290cde4769ed9a931"/>
+    <rdfs:subClassOf rdf:nodeID="N0a1d4d4cde9e49e680e6b9c0db6bfeb4"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000015"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+    <rdfs:label>CMO experiment implementation</rdfs:label>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000015"/>
+    <owl:equivalentClass rdf:resource="http://w3id.org/COMON/COMON_000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc1b69d015499462c935587ed86cca330">
+    <rdf:first rdf:nodeID="Ncee227b9adea4f188964c468af19d0e1"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <owl:sameAs rdf:nodeID="Nc1b69d015499462c935587ed86cca330"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000058">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000057"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000001"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000058"/>
+    <rdfs:subClassOf rdf:nodeID="N2a5acd92da7c476cacd96e820cfa5694"/>
+    <rdfs:subClassOf rdf:nodeID="N5319a6132f904a79ac4be38bfff899cd"/>
+    <rdfs:subClassOf rdf:nodeID="N300a82a614a84cbcbdd1750d80601777"/>
+    <rdfs:subClassOf rdf:nodeID="Nfc23d9e74a6446e78795199606463859"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+    <rdfs:label>Single-point CMO algorithm that solves multiple CSOPs</rdfs:label>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000058"/>
+    <owl:equivalentClass rdf:resource="http://w3id.org/COMON/COMON_000058"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000080">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000080"/>
+    <rdfs:label>CMO expeiment log level</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://w3id.org/COMON/COMON_000080"/>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000080"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/references">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://www.w3.org/ns/dcat#Dataset"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:range rdf:resource="http://purl.org/dc/terms/BibliographicResource"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://purl.org/dc/terms/references"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/references"/>
+    <owl:equivalentProperty rdf:resource="http://purl.org/dc/terms/references"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000024">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000003"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000024"/>
+    <rdfs:subClassOf rdf:nodeID="N3f11e3610eb9419896d75388dd4d0f90"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+    <rdfs:label>Objective-specific CMO performance indicator specification</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://w3id.org/COMON/COMON_000024"/>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000024"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7c073017b4074fa290cde4769ed9a931">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000294"/>
+    <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000002"/>
+    <owl:sameAs rdf:nodeID="N7c073017b4074fa290cde4769ed9a931"/>
+    <rdfs:subClassOf rdf:nodeID="N7c073017b4074fa290cde4769ed9a931"/>
+    <owl:equivalentClass rdf:nodeID="N7c073017b4074fa290cde4769ed9a931"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/adms#versionNotes">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/ns/adms#versionNotes"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000070">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/COMON/COMON_000014"/>
+    <rdfs:domain rdf:nodeID="N18ae7470a47243139e7d8efeb0a6b960"/>
+    <rdfs:domain rdf:nodeID="N80d63f5c8ffc43da93e81e3091cb9f7e"/>
+    <rdfs:domain rdf:nodeID="N71fd74f57c9448a1be528d08b1e15e00"/>
+    <rdfs:domain rdf:nodeID="N004cd4e50c824be1bca09f80daa4901c"/>
+    <rdfs:domain rdf:resource="http://www.ebi.ac.uk/efo/swo/SWO_0000393"/>
+    <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
+    <rdfs:label>maxTimePerRun</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/COMON/COMON_000070"/>
+    <owl:equivalentProperty rdf:resource="http://w3id.org/COMON/COMON_000070"/>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000070"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6f765106b1c848e9962c555cf87ca615">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000308"/>
+    <owl:someValuesFrom rdf:resource="http://www.ontodm.com/OntoDM-core/OntoDM_112569"/>
+    <owl:sameAs rdf:nodeID="N6f765106b1c848e9962c555cf87ca615"/>
+    <rdfs:subClassOf rdf:nodeID="N6f765106b1c848e9962c555cf87ca615"/>
+    <owl:equivalentClass rdf:nodeID="N6f765106b1c848e9962c555cf87ca615"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000048">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/COMON/COMON_000046"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label>equality</rdfs:label>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000048"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/creator">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:equivalentProperty rdf:resource="http://purl.org/dc/terms/creator"/>
+    <owl:sameAs rdf:resource="http://purl.org/dc/terms/creator"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/creator"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000023">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000025"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000003"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000023"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+    <rdfs:subClassOf rdf:nodeID="N3f11e3610eb9419896d75388dd4d0f90"/>
+    <rdfs:label>Total constraint violation</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://w3id.org/COMON/COMON_000023"/>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000023"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000003">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+    <rdfs:subClassOf rdf:nodeID="N3f11e3610eb9419896d75388dd4d0f90"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000003"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label xml:lang="en">CMO performance indicator</rdfs:label>
+    <rdfs:seeAlso xml:lang="en">https://w3id.org/moody#QualityIndicator</rdfs:seeAlso>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000003"/>
+    <owl:equivalentClass rdf:resource="http://w3id.org/COMON/COMON_000003"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#byte">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#byte"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000004">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.ontodm.com/OntoDM-core/OntoDM_112569"/>
+    <rdfs:subClassOf rdf:nodeID="N18477482bfde4e218dbd50e162683342"/>
+    <rdfs:subClassOf rdf:nodeID="Nd5fcaddea5be4bbb9e539f0fad8585de"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0000260"/>
+    <rdfs:subClassOf rdf:nodeID="Ne5ad5584345647b393ffb992ddb75998"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000004"/>
+    <rdfs:subClassOf rdf:nodeID="Nde6420b552754ed4a180ec3904d4f1ec"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+    <rdfs:label>CMO algorithm implementation</rdfs:label>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000004"/>
+    <owl:equivalentClass rdf:resource="http://w3id.org/COMON/COMON_000004"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc42ec0e068a64fc8ba83d7c8ce3f7f33">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/COMON/COMON_000028"/>
+    <owl:someValuesFrom rdf:nodeID="N65855da78c3a436a8a510b5b978ba9c4"/>
+    <owl:sameAs rdf:nodeID="Nc42ec0e068a64fc8ba83d7c8ce3f7f33"/>
+    <rdfs:subClassOf rdf:nodeID="Nc42ec0e068a64fc8ba83d7c8ce3f7f33"/>
+    <owl:equivalentClass rdf:nodeID="Nc42ec0e068a64fc8ba83d7c8ce3f7f33"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000001">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+    <rdfs:subClassOf rdf:nodeID="N2a5acd92da7c476cacd96e820cfa5694"/>
+    <rdfs:subClassOf rdf:nodeID="Nfc23d9e74a6446e78795199606463859"/>
+    <rdfs:subClassOf rdf:nodeID="N300a82a614a84cbcbdd1750d80601777"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:nodeID="N5319a6132f904a79ac4be38bfff899cd"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000001"/>
+    <rdfs:label xml:lang="en">CMO algorithm</rdfs:label>
+    <rdfs:seeAlso xml:lang="en">https://w3id.org/BIGOWLAlgorithms/Algorithm</rdfs:seeAlso>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000001"/>
+    <owl:equivalentClass rdf:resource="http://w3id.org/COMON/COMON_000001"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/relation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://www.w3.org/ns/dcat#Dataset"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:range rdf:resource="https://www.w3.org/ns/dcat#Dataset"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+    <owl:equivalentProperty rdf:resource="http://purl.org/dc/terms/relation"/>
+    <owl:sameAs rdf:resource="http://purl.org/dc/terms/relation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000014">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/swo/SWO_0000393"/>
+    <rdfs:subClassOf rdf:nodeID="N18ae7470a47243139e7d8efeb0a6b960"/>
+    <rdfs:subClassOf rdf:nodeID="N80d63f5c8ffc43da93e81e3091cb9f7e"/>
+    <rdfs:subClassOf rdf:nodeID="N004cd4e50c824be1bca09f80daa4901c"/>
+    <rdfs:subClassOf rdf:nodeID="N71fd74f57c9448a1be528d08b1e15e00"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000014"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+    <rdfs:label>CMO experiment execution</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://w3id.org/COMON/COMON_000014"/>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000014"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000028">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    <rdfs:label>normalization_min</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/COMON/COMON_000028"/>
+    <owl:equivalentProperty rdf:resource="http://w3id.org/COMON/COMON_000028"/>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000028"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000069">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/COMON/COMON_000014"/>
+    <rdfs:domain rdf:resource="http://www.ebi.ac.uk/efo/swo/SWO_0000393"/>
+    <rdfs:domain rdf:nodeID="N18ae7470a47243139e7d8efeb0a6b960"/>
+    <rdfs:domain rdf:nodeID="N71fd74f57c9448a1be528d08b1e15e00"/>
+    <rdfs:domain rdf:nodeID="N80d63f5c8ffc43da93e81e3091cb9f7e"/>
+    <rdfs:domain rdf:nodeID="N004cd4e50c824be1bca09f80daa4901c"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:label>maxNumberOfSolutionEvaluations</rdfs:label>
+    <owl:equivalentProperty rdf:resource="http://w3id.org/COMON/COMON_000069"/>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000069"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/COMON/COMON_000069"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000044">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002350"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/COMON/COMON_000044"/>
+    <rdfs:label>isMemberOfProblemFamily</rdfs:label>
+    <owl:equivalentProperty rdf:resource="http://w3id.org/COMON/COMON_000044"/>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000044"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#negativeInteger">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#negativeInteger"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000297">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+    <rdfs:label>is_concretized_as</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000297"/>
+    <owl:equivalentProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000297"/>
+    <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/OBI_0000297"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000035">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>paretoFrontApproximation</rdfs:label>
+    <owl:equivalentProperty rdf:resource="http://w3id.org/COMON/COMON_000035"/>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000035"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/COMON/COMON_000035"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3f11e3610eb9419896d75388dd4d0f90">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000297"/>
+    <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000008"/>
+    <owl:sameAs rdf:nodeID="N3f11e3610eb9419896d75388dd4d0f90"/>
+    <rdfs:subClassOf rdf:nodeID="N3f11e3610eb9419896d75388dd4d0f90"/>
+    <owl:equivalentClass rdf:nodeID="N3f11e3610eb9419896d75388dd4d0f90"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#someValuesFrom">
+    <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#someValuesFrom"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ontoopt/algorithm_execution">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/swo/SWO_0000393"/>
+    <rdfs:subClassOf rdf:nodeID="N6f765106b1c848e9962c555cf87ca615"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/ontoopt/algorithm_execution"/>
+    <rdfs:label xml:lang="en">algorithm execution</rdfs:label>
+    <owl:sameAs rdf:resource="http://w3id.org/ontoopt/algorithm_execution"/>
+    <owl:equivalentClass rdf:resource="http://w3id.org/ontoopt/algorithm_execution"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000010">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000008"/>
+    <rdfs:subClassOf rdf:nodeID="N647d9b2a032f47be9278900bc0f4b088"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:nodeID="N406f5323165a42bc8bd4358ca356f500"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000010"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0000260"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+    <rdfs:label>Current-only CMO performance indicator implementation</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://w3id.org/COMON/COMON_000010"/>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000010"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000031">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:label>algorithm_iteration_number</rdfs:label>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000031"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd63fa066c9f6469ca67d2f3c7c36ea4d">
+    <rdf:first rdf:nodeID="N51b3b9497ee44839b8430a6d86c06aaa"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <owl:sameAs rdf:nodeID="Nd63fa066c9f6469ca67d2f3c7c36ea4d"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000076">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    <rdfs:subClassOf rdf:nodeID="N6409c61548244e43b0c30c7cfe8b86cb"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000076"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:nodeID="N2d122455e9ec4f8482df1eb54f7bb0ed"/>
+    <rdfs:subClassOf rdf:nodeID="N839f9ed7eaec4c02a8495c54344ff143"/>
+    <rdfs:label>Tau constant</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://w3id.org/COMON/COMON_000076"/>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000076"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2dc91b4a9dbc476499a685510f3b5282">
+    <rdf:first rdf:nodeID="Nd235bb261cf64a218f4f28e0c8cc5e51"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <owl:sameAs rdf:nodeID="N2dc91b4a9dbc476499a685510f3b5282"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N65855da78c3a436a8a510b5b978ba9c4">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    <owl:withRestrictions rdf:nodeID="Nb35426c9dd9440c8b28db8fbafbafa01"/>
+    <owl:sameAs rdf:nodeID="N65855da78c3a436a8a510b5b978ba9c4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N32496f3cb4244e17a76fc846a9e886f2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000007"/>
+    <owl:sameAs rdf:nodeID="N32496f3cb4244e17a76fc846a9e886f2"/>
+    <rdfs:subClassOf rdf:nodeID="N32496f3cb4244e17a76fc846a9e886f2"/>
+    <owl:equivalentClass rdf:nodeID="N32496f3cb4244e17a76fc846a9e886f2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000041">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000039"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000041"/>
+    <rdfs:label>Ordered problem variable</rdfs:label>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000041"/>
+    <owl:equivalentClass rdf:resource="http://w3id.org/COMON/COMON_000041"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000011">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/swo/SWO_0000393"/>
+    <rdfs:subClassOf rdf:nodeID="N34cd522efe62480ebc15758b28e98ab4"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000011"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+    <rdfs:label>CMO algorithm iteration execution</rdfs:label>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000011"/>
+    <owl:equivalentClass rdf:resource="http://w3id.org/COMON/COMON_000011"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000294">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000297"/>
+    <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+    <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+    <rdfs:label xml:lang="en">is_concretization_of</rdfs:label>
+    <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/OBI_0000294"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000294"/>
+    <owl:equivalentProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000294"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000053">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000053"/>
+    <rdfs:label>Problem suite</rdfs:label>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000053"/>
+    <owl:equivalentClass rdf:resource="http://w3id.org/COMON/COMON_000053"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000047">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000047"/>
+    <rdfs:label>ConstraintStrictness</rdfs:label>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000047"/>
+    <owl:equivalentClass rdf:resource="http://w3id.org/COMON/COMON_000047"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <owl:equivalentClass rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000052">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002350"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/COMON/COMON_000052"/>
+    <rdfs:label>isMemberOfProblemSuite</rdfs:label>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000052"/>
+    <owl:equivalentProperty rdf:resource="http://w3id.org/COMON/COMON_000052"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne5ad5584345647b393ffb992ddb75998">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000294"/>
+    <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+    <owl:sameAs rdf:nodeID="Ne5ad5584345647b393ffb992ddb75998"/>
+    <rdfs:subClassOf rdf:nodeID="Ne5ad5584345647b393ffb992ddb75998"/>
+    <owl:equivalentClass rdf:nodeID="Ne5ad5584345647b393ffb992ddb75998"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000062">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000060"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000062"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000001"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:nodeID="N300a82a614a84cbcbdd1750d80601777"/>
+    <rdfs:subClassOf rdf:nodeID="Nfc23d9e74a6446e78795199606463859"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+    <rdfs:subClassOf rdf:nodeID="N5319a6132f904a79ac4be38bfff899cd"/>
+    <rdfs:subClassOf rdf:nodeID="N2a5acd92da7c476cacd96e820cfa5694"/>
+    <rdfs:label>Population CMO algorithm that solves the original CMOP</rdfs:label>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000062"/>
+    <owl:equivalentClass rdf:resource="http://w3id.org/COMON/COMON_000062"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000057">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000001"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:nodeID="N2a5acd92da7c476cacd96e820cfa5694"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000057"/>
+    <rdfs:subClassOf rdf:nodeID="N300a82a614a84cbcbdd1750d80601777"/>
+    <rdfs:subClassOf rdf:nodeID="Nfc23d9e74a6446e78795199606463859"/>
+    <rdfs:subClassOf rdf:nodeID="N5319a6132f904a79ac4be38bfff899cd"/>
+    <rdfs:label>Single-point CMO algorithm</rdfs:label>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000057"/>
+    <owl:equivalentClass rdf:resource="http://w3id.org/COMON/COMON_000057"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000030">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    <rdfs:label>weight</rdfs:label>
+    <owl:equivalentProperty rdf:resource="http://w3id.org/COMON/COMON_000030"/>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000030"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/COMON/COMON_000030"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002350">
+    <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/RO_0002350"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N47886bae4f8b496299dd32d08d121f66">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+    <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000075"/>
+    <owl:sameAs rdf:nodeID="N47886bae4f8b496299dd32d08d121f66"/>
+    <rdfs:subClassOf rdf:nodeID="N47886bae4f8b496299dd32d08d121f66"/>
+    <rdfs:subClassOf rdf:nodeID="N599e312364214564b25a0bfab59a0ec5"/>
+    <owl:equivalentClass rdf:nodeID="N47886bae4f8b496299dd32d08d121f66"/>
+    <owl:equivalentClass rdf:nodeID="N599e312364214564b25a0bfab59a0ec5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbe39f5fb950a4716bdac0ef21654bf8a">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/COMON/COMON_000028"/>
+    <owl:someValuesFrom rdf:nodeID="Nb41d925ed5e1431c89daeadee9c96af2"/>
+    <owl:sameAs rdf:nodeID="Nbe39f5fb950a4716bdac0ef21654bf8a"/>
+    <rdfs:subClassOf rdf:nodeID="Nbe39f5fb950a4716bdac0ef21654bf8a"/>
+    <owl:equivalentClass rdf:nodeID="Nbe39f5fb950a4716bdac0ef21654bf8a"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N406f5323165a42bc8bd4358ca356f500">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000300"/>
+    <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000007"/>
+    <owl:sameAs rdf:nodeID="N406f5323165a42bc8bd4358ca356f500"/>
+    <rdfs:subClassOf rdf:nodeID="N406f5323165a42bc8bd4358ca356f500"/>
+    <owl:equivalentClass rdf:nodeID="N406f5323165a42bc8bd4358ca356f500"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000067">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>isRelatedToAlgorithm</rdfs:label>
+    <owl:equivalentProperty rdf:resource="http://w3id.org/COMON/COMON_000067"/>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000067"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/COMON/COMON_000067"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/name">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/name"/>
+    <owl:equivalentProperty rdf:resource="http://xmlns.com/foaf/0.1/name"/>
+    <owl:sameAs rdf:resource="http://xmlns.com/foaf/0.1/name"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N693a3d3ff29243d9ba5e4719e038b94a">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/COMON/COMON_000030"/>
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    <owl:sameAs rdf:nodeID="N693a3d3ff29243d9ba5e4719e038b94a"/>
+    <rdfs:subClassOf rdf:nodeID="N182d490c1e654c31a95a192703e19cdf"/>
+    <rdfs:subClassOf rdf:nodeID="N693a3d3ff29243d9ba5e4719e038b94a"/>
+    <owl:equivalentClass rdf:nodeID="N693a3d3ff29243d9ba5e4719e038b94a"/>
+    <owl:equivalentClass rdf:nodeID="N182d490c1e654c31a95a192703e19cdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTimeStamp">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000074">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    <rdfs:subClassOf rdf:nodeID="N2d122455e9ec4f8482df1eb54f7bb0ed"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000074"/>
+    <rdfs:subClassOf rdf:nodeID="N839f9ed7eaec4c02a8495c54344ff143"/>
+    <rdfs:subClassOf rdf:nodeID="N6409c61548244e43b0c30c7cfe8b86cb"/>
+    <rdfs:label>Reference set</rdfs:label>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000074"/>
+    <owl:equivalentClass rdf:resource="http://w3id.org/COMON/COMON_000074"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000042">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000039"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000042"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label>Categorical problem variable</rdfs:label>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000042"/>
+    <owl:equivalentClass rdf:resource="http://w3id.org/COMON/COMON_000042"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N785b79dc2c234213b2fd05dcd9053ed1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/COMON/COMON_000055"/>
+    <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000047"/>
+    <owl:sameAs rdf:nodeID="N785b79dc2c234213b2fd05dcd9053ed1"/>
+    <rdfs:subClassOf rdf:nodeID="N785b79dc2c234213b2fd05dcd9053ed1"/>
+    <owl:equivalentClass rdf:nodeID="N785b79dc2c234213b2fd05dcd9053ed1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontodm.com/OntoDM-core/OntoDM_112569">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0000260"/>
+    <rdfs:subClassOf rdf:nodeID="Ne5ad5584345647b393ffb992ddb75998"/>
+    <rdfs:subClassOf rdf:nodeID="Nde6420b552754ed4a180ec3904d4f1ec"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+    <rdfs:subClassOf rdf:resource="http://www.ontodm.com/OntoDM-core/OntoDM_112569"/>
+    <rdfs:label>algorithm implementation</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://www.ontodm.com/OntoDM-core/OntoDM_112569"/>
+    <owl:sameAs rdf:resource="http://www.ontodm.com/OntoDM-core/OntoDM_112569"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N004cd4e50c824be1bca09f80daa4901c">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+    <owl:someValuesFrom rdf:resource="https://www.w3.org/ns/dcat#Dataset"/>
+    <owl:sameAs rdf:nodeID="N004cd4e50c824be1bca09f80daa4901c"/>
+    <rdfs:subClassOf rdf:nodeID="N004cd4e50c824be1bca09f80daa4901c"/>
+    <owl:equivalentClass rdf:nodeID="N004cd4e50c824be1bca09f80daa4901c"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000011">
+    <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000007">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/swo/SWO_0000393"/>
+    <rdfs:subClassOf rdf:nodeID="Na3c98f17384241569367571437870d33"/>
+    <rdfs:subClassOf rdf:nodeID="Nfaa9baf6fd33412fa64a814bf6860cbd"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000007"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label>CMO performance indicator execution</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://w3id.org/COMON/COMON_000007"/>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000007"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000008">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0000260"/>
+    <rdfs:subClassOf rdf:nodeID="N647d9b2a032f47be9278900bc0f4b088"/>
+    <rdfs:subClassOf rdf:nodeID="N406f5323165a42bc8bd4358ca356f500"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000008"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+    <rdfs:label>CMO performance indicator implementation</rdfs:label>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000008"/>
+    <owl:equivalentClass rdf:resource="http://w3id.org/COMON/COMON_000008"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#incompatibleWith">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#incompatibleWith"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2a5acd92da7c476cacd96e820cfa5694">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000297"/>
+    <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000004"/>
+    <rdfs:subClassOf rdf:nodeID="N5319a6132f904a79ac4be38bfff899cd"/>
+    <rdfs:subClassOf rdf:nodeID="N2a5acd92da7c476cacd96e820cfa5694"/>
+    <owl:sameAs rdf:nodeID="N2a5acd92da7c476cacd96e820cfa5694"/>
+    <owl:equivalentClass rdf:nodeID="N2a5acd92da7c476cacd96e820cfa5694"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000036">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>paretoSetApproximation</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/COMON/COMON_000036"/>
+    <owl:equivalentProperty rdf:resource="http://w3id.org/COMON/COMON_000036"/>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000036"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N34cd522efe62480ebc15758b28e98ab4">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000012"/>
+    <owl:sameAs rdf:nodeID="N34cd522efe62480ebc15758b28e98ab4"/>
+    <rdfs:subClassOf rdf:nodeID="N34cd522efe62480ebc15758b28e98ab4"/>
+    <owl:equivalentClass rdf:nodeID="N34cd522efe62480ebc15758b28e98ab4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000009">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000008"/>
+    <rdfs:subClassOf rdf:nodeID="N647d9b2a032f47be9278900bc0f4b088"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:nodeID="N406f5323165a42bc8bd4358ca356f500"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0000260"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000009"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+    <rdfs:label>Up-to-point CMO performance indicator implementation</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://w3id.org/COMON/COMON_000009"/>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000009"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb46492d22bde4925b1962a6ea9d9094a">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/COMON/COMON_000029"/>
+    <owl:someValuesFrom rdf:nodeID="Nc078196a6d42482099e896406ebe4ccf"/>
+    <owl:sameAs rdf:nodeID="Nb46492d22bde4925b1962a6ea9d9094a"/>
+    <rdfs:subClassOf rdf:nodeID="Nb46492d22bde4925b1962a6ea9d9094a"/>
+    <owl:equivalentClass rdf:nodeID="Nb46492d22bde4925b1962a6ea9d9094a"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd74a9e0d8e6245f882a36218483d3e45">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/COMON/COMON_000029"/>
+    <owl:someValuesFrom rdf:nodeID="N1c34c8df106847a5871130c65bda8566"/>
+    <owl:sameAs rdf:nodeID="Nd74a9e0d8e6245f882a36218483d3e45"/>
+    <rdfs:subClassOf rdf:nodeID="Nd74a9e0d8e6245f882a36218483d3e45"/>
+    <owl:equivalentClass rdf:nodeID="Nd74a9e0d8e6245f882a36218483d3e45"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000018">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000017"/>
+    <rdfs:subClassOf rdf:nodeID="N7f386fcc611e4ba7bdb86c63724ab36d"/>
+    <rdfs:subClassOf rdf:nodeID="Nc3216c27ef5c405ba2f67dd62c093f44"/>
+    <rdfs:subClassOf rdf:nodeID="Nf0bee61f1220425a88170d1526e05116"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000018"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000016"/>
+    <rdfs:subClassOf rdf:nodeID="N358185bc18bd45ac8fe65a9d099d3c1a"/>
+    <rdfs:subClassOf rdf:nodeID="Na5f72cbfb897452a97e24a607a72b7f7"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    <rdfs:label>CMO problem</rdfs:label>
+    <rdfs:seeAlso xml:lang="en">https://w3id.org/BIGOWLProblems/Problem</rdfs:seeAlso>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000018"/>
+    <owl:equivalentClass rdf:resource="http://w3id.org/COMON/COMON_000018"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000040">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000039"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000040"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    <rdfs:label>Continuous problem variable</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://w3id.org/COMON/COMON_000040"/>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000040"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000082">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/COMON/COMON_000080"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label>final</rdfs:label>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000082"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#sameAs">
+    <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#sameAs"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6409c61548244e43b0c30c7cfe8b86cb">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/ontoopt/has_value"/>
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <owl:sameAs rdf:nodeID="N6409c61548244e43b0c30c7cfe8b86cb"/>
+    <rdfs:subClassOf rdf:nodeID="N6409c61548244e43b0c30c7cfe8b86cb"/>
+    <rdfs:subClassOf rdf:nodeID="N2d122455e9ec4f8482df1eb54f7bb0ed"/>
+    <rdfs:subClassOf rdf:nodeID="N839f9ed7eaec4c02a8495c54344ff143"/>
+    <owl:equivalentClass rdf:nodeID="N2d122455e9ec4f8482df1eb54f7bb0ed"/>
+    <owl:equivalentClass rdf:nodeID="N839f9ed7eaec4c02a8495c54344ff143"/>
+    <owl:equivalentClass rdf:nodeID="N6409c61548244e43b0c30c7cfe8b86cb"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ontoopt/has_dimensionality">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/ontoopt/has_dimensionality"/>
+    <owl:equivalentProperty rdf:resource="http://w3id.org/ontoopt/has_dimensionality"/>
+    <owl:sameAs rdf:resource="http://w3id.org/ontoopt/has_dimensionality"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1c34c8df106847a5871130c65bda8566">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    <owl:withRestrictions rdf:nodeID="Nae0c216b57e941d3912fbb7606627cf3"/>
+    <owl:sameAs rdf:nodeID="N1c34c8df106847a5871130c65bda8566"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2006/vcard/ns#Individual">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/vcard/ns#Kind"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/vcard/ns#Individual"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2006/vcard/ns#Individual"/>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2006/vcard/ns#Individual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N18477482bfde4e218dbd50e162683342">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000294"/>
+    <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000001"/>
+    <owl:sameAs rdf:nodeID="N18477482bfde4e218dbd50e162683342"/>
+    <rdfs:subClassOf rdf:nodeID="Ne5ad5584345647b393ffb992ddb75998"/>
+    <rdfs:subClassOf rdf:nodeID="N18477482bfde4e218dbd50e162683342"/>
+    <owl:equivalentClass rdf:nodeID="N18477482bfde4e218dbd50e162683342"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000026">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    <rdfs:subClassOf rdf:nodeID="Nbe39f5fb950a4716bdac0ef21654bf8a"/>
+    <rdfs:subClassOf rdf:nodeID="Nb46492d22bde4925b1962a6ea9d9094a"/>
+    <rdfs:subClassOf rdf:nodeID="N693a3d3ff29243d9ba5e4719e038b94a"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000026"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:nodeID="N182d490c1e654c31a95a192703e19cdf"/>
+    <rdfs:label>Optimization objective</rdfs:label>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000026"/>
+    <owl:equivalentClass rdf:resource="http://w3id.org/COMON/COMON_000026"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000109">
+    <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000393">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+    <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/swo/SWO_0000393"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label xml:lang="en">information processing</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://www.ebi.ac.uk/efo/swo/SWO_0000393"/>
+    <owl:sameAs rdf:resource="http://www.ebi.ac.uk/efo/swo/SWO_0000393"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000071">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/COMON/COMON_000014"/>
+    <rdfs:domain rdf:resource="http://www.ebi.ac.uk/efo/swo/SWO_0000393"/>
+    <rdfs:domain rdf:nodeID="N18ae7470a47243139e7d8efeb0a6b960"/>
+    <rdfs:domain rdf:nodeID="N71fd74f57c9448a1be528d08b1e15e00"/>
+    <rdfs:domain rdf:nodeID="N80d63f5c8ffc43da93e81e3091cb9f7e"/>
+    <rdfs:domain rdf:nodeID="N004cd4e50c824be1bca09f80daa4901c"/>
+    <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>costModel</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/COMON/COMON_000071"/>
+    <owl:equivalentProperty rdf:resource="http://w3id.org/COMON/COMON_000071"/>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000071"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000029">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/COMON/COMON_000029"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    <rdfs:label>normalization_max</rdfs:label>
+    <owl:equivalentProperty rdf:resource="http://w3id.org/COMON/COMON_000029"/>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000029"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb35426c9dd9440c8b28db8fbafbafa01">
+    <rdf:first rdf:nodeID="N207f8788ba064834a4fd40f688cfd41b"/>
+    <rdf:rest rdf:nodeID="Nc1b69d015499462c935587ed86cca330"/>
+    <owl:sameAs rdf:nodeID="Nb35426c9dd9440c8b28db8fbafbafa01"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8b6b27c9e7ef449490d80301f5373d62">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000297"/>
+    <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000015"/>
+    <owl:sameAs rdf:nodeID="N8b6b27c9e7ef449490d80301f5373d62"/>
+    <rdfs:subClassOf rdf:nodeID="N8b6b27c9e7ef449490d80301f5373d62"/>
+    <owl:equivalentClass rdf:nodeID="N8b6b27c9e7ef449490d80301f5373d62"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#deprecated">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#deprecated"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000293">
+    <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/identifier">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <owl:sameAs rdf:resource="http://purl.org/dc/terms/identifier"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000020">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000024"/>
+    <rdfs:subClassOf rdf:nodeID="N599e312364214564b25a0bfab59a0ec5"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000020"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000003"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+    <rdfs:subClassOf rdf:nodeID="N3f11e3610eb9419896d75388dd4d0f90"/>
+    <rdfs:subClassOf rdf:nodeID="N47886bae4f8b496299dd32d08d121f66"/>
+    <rdfs:label>Hypervolume</rdfs:label>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000020"/>
+    <owl:equivalentClass rdf:resource="http://w3id.org/COMON/COMON_000020"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N300a82a614a84cbcbdd1750d80601777">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/COMON/COMON_000067"/>
+    <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000001"/>
+    <owl:sameAs rdf:nodeID="N300a82a614a84cbcbdd1750d80601777"/>
+    <rdfs:subClassOf rdf:nodeID="N300a82a614a84cbcbdd1750d80601777"/>
+    <owl:equivalentClass rdf:nodeID="N300a82a614a84cbcbdd1750d80601777"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000037">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>nadir</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/COMON/COMON_000037"/>
+    <owl:equivalentProperty rdf:resource="http://w3id.org/COMON/COMON_000037"/>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000037"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#unsignedLong">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedLong"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N71fd74f57c9448a1be528d08b1e15e00">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/COMON/COMON_000081"/>
+    <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000080"/>
+    <owl:sameAs rdf:nodeID="N71fd74f57c9448a1be528d08b1e15e00"/>
+    <rdfs:subClassOf rdf:nodeID="N71fd74f57c9448a1be528d08b1e15e00"/>
+    <owl:equivalentClass rdf:nodeID="N71fd74f57c9448a1be528d08b1e15e00"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000059">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000057"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000001"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000059"/>
+    <rdfs:subClassOf rdf:nodeID="N5319a6132f904a79ac4be38bfff899cd"/>
+    <rdfs:subClassOf rdf:nodeID="N2a5acd92da7c476cacd96e820cfa5694"/>
+    <rdfs:subClassOf rdf:nodeID="N300a82a614a84cbcbdd1750d80601777"/>
+    <rdfs:subClassOf rdf:nodeID="Nfc23d9e74a6446e78795199606463859"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+    <rdfs:label>Single-point CMO algorithm that solves the original CMOP</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://w3id.org/COMON/COMON_000059"/>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000059"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000022">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000003"/>
+    <rdfs:subClassOf rdf:nodeID="Nd49b1ec83d954c0284632be299982b75"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000022"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:nodeID="N3f11e3610eb9419896d75388dd4d0f90"/>
+    <rdfs:label>Mixed CMO performance indicator</rdfs:label>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000022"/>
+    <owl:equivalentClass rdf:resource="http://w3id.org/COMON/COMON_000022"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb41d925ed5e1431c89daeadee9c96af2">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    <owl:withRestrictions rdf:nodeID="N74536f0cfa0a4e7cad61b5e035585901"/>
+    <owl:sameAs rdf:nodeID="Nb41d925ed5e1431c89daeadee9c96af2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#minInclusive">
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#minInclusive"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000006">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/ontoopt/algorithm_execution"/>
+    <rdfs:subClassOf rdf:nodeID="N3ed2c761af434200be7c052e2e0c0673"/>
+    <rdfs:subClassOf rdf:nodeID="Nf110d3bf381743eeba07ec36d8371171"/>
+    <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/swo/SWO_0000393"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000006"/>
+    <rdfs:subClassOf rdf:nodeID="N6f765106b1c848e9962c555cf87ca615"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+    <rdfs:label>CMO algorithm execution</rdfs:label>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000006"/>
+    <owl:equivalentClass rdf:resource="http://w3id.org/COMON/COMON_000006"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/dcat#keyword">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/ns/dcat#keyword"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/dcat#keyword"/>
+    <owl:equivalentProperty rdf:resource="http://www.w3.org/ns/dcat#keyword"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3fdbd3fb3b644e92b0dfd4448d1f7d18">
+    <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</xsd:maxInclusive>
+    <owl:sameAs rdf:nodeID="N3fdbd3fb3b644e92b0dfd4448d1f7d18"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#language">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#language"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000016">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    <rdfs:subClassOf rdf:nodeID="Na5f72cbfb897452a97e24a607a72b7f7"/>
+    <rdfs:subClassOf rdf:nodeID="N358185bc18bd45ac8fe65a9d099d3c1a"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000016"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label>Optimization problem</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://w3id.org/COMON/COMON_000016"/>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000016"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N839f9ed7eaec4c02a8495c54344ff143">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/ontoopt/has_value"/>
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <owl:sameAs rdf:nodeID="N839f9ed7eaec4c02a8495c54344ff143"/>
+    <rdfs:subClassOf rdf:nodeID="N6409c61548244e43b0c30c7cfe8b86cb"/>
+    <rdfs:subClassOf rdf:nodeID="N839f9ed7eaec4c02a8495c54344ff143"/>
+    <rdfs:subClassOf rdf:nodeID="N2d122455e9ec4f8482df1eb54f7bb0ed"/>
+    <owl:equivalentClass rdf:nodeID="N6409c61548244e43b0c30c7cfe8b86cb"/>
+    <owl:equivalentClass rdf:nodeID="N839f9ed7eaec4c02a8495c54344ff143"/>
+    <owl:equivalentClass rdf:nodeID="N2d122455e9ec4f8482df1eb54f7bb0ed"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000013">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+    <rdfs:subClassOf rdf:nodeID="N83e9a11a104f440b8c47f8e0de2cb00f"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000013"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label xml:lang="en">CMO perfomance indicator datum</rdfs:label>
+    <rdfs:seeAlso xml:lang="en">https://w3id.org/moody#QualityIndicatorValue</rdfs:seeAlso>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000013"/>
+    <owl:equivalentClass rdf:resource="http://w3id.org/COMON/COMON_000013"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000068">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000593"/>
+    <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000025"/>
+    <rdfs:label>implementedInLanguage</rdfs:label>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000068"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/COMON/COMON_000068"/>
+    <owl:equivalentProperty rdf:resource="http://w3id.org/COMON/COMON_000068"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/dcat#contactPoint">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://www.w3.org/ns/dcat#Dataset"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2006/vcard/ns#Individual"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2006/vcard/ns#Organization"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2006/vcard/ns#Kind"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/ns/dcat#contactPoint"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/dcat#contactPoint"/>
+    <owl:equivalentProperty rdf:resource="http://www.w3.org/ns/dcat#contactPoint"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N80d63f5c8ffc43da93e81e3091cb9f7e">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+    <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000017"/>
+    <owl:sameAs rdf:nodeID="N80d63f5c8ffc43da93e81e3091cb9f7e"/>
+    <rdfs:subClassOf rdf:nodeID="N80d63f5c8ffc43da93e81e3091cb9f7e"/>
+    <owl:equivalentClass rdf:nodeID="N80d63f5c8ffc43da93e81e3091cb9f7e"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000084">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/COMON/COMON_000080"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label>evaluation</rdfs:label>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000084"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Agent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    <owl:equivalentClass rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000012">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/swo/SWO_0000393"/>
+    <rdfs:subClassOf rdf:nodeID="N32496f3cb4244e17a76fc846a9e886f2"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000012"/>
+    <rdfs:label>CMO solution evaluation</rdfs:label>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000012"/>
+    <owl:equivalentClass rdf:resource="http://w3id.org/COMON/COMON_000012"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5319a6132f904a79ac4be38bfff899cd">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000297"/>
+    <owl:someValuesFrom rdf:resource="http://www.ontodm.com/OntoDM-core/OntoDM_112569"/>
+    <owl:sameAs rdf:nodeID="N5319a6132f904a79ac4be38bfff899cd"/>
+    <rdfs:subClassOf rdf:nodeID="N5319a6132f904a79ac4be38bfff899cd"/>
+    <owl:equivalentClass rdf:nodeID="N5319a6132f904a79ac4be38bfff899cd"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nad0b1425b14f4ad0840f4eb876662d72">
+    <rdf:first rdf:nodeID="N3fdbd3fb3b644e92b0dfd4448d1f7d18"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <owl:sameAs rdf:nodeID="Nad0b1425b14f4ad0840f4eb876662d72"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#hexBinary">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#hexBinary"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ontoopt/number_of_objectives">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/ontoopt/number_of_objectives"/>
+    <owl:equivalentProperty rdf:resource="http://w3id.org/ontoopt/number_of_objectives"/>
+    <owl:sameAs rdf:resource="http://w3id.org/ontoopt/number_of_objectives"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#integer">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf0bee61f1220425a88170d1526e05116">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/COMON/COMON_000052"/>
+    <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000053"/>
+    <owl:sameAs rdf:nodeID="Nf0bee61f1220425a88170d1526e05116"/>
+    <rdfs:subClassOf rdf:nodeID="Nf0bee61f1220425a88170d1526e05116"/>
+    <owl:equivalentClass rdf:nodeID="Nf0bee61f1220425a88170d1526e05116"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000033">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>numberOfFidelityLevels</rdfs:label>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000033"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/COMON/COMON_000033"/>
+    <owl:equivalentProperty rdf:resource="http://w3id.org/COMON/COMON_000033"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000032">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>gradientAvailability</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/COMON/COMON_000032"/>
+    <owl:equivalentProperty rdf:resource="http://w3id.org/COMON/COMON_000032"/>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000032"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#unsignedInt">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na3c98f17384241569367571437870d33">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+    <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000013"/>
+    <owl:sameAs rdf:nodeID="Na3c98f17384241569367571437870d33"/>
+    <rdfs:subClassOf rdf:nodeID="Na3c98f17384241569367571437870d33"/>
+    <owl:equivalentClass rdf:nodeID="Na3c98f17384241569367571437870d33"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N18ae7470a47243139e7d8efeb0a6b960">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000006"/>
+    <owl:sameAs rdf:nodeID="N18ae7470a47243139e7d8efeb0a6b960"/>
+    <rdfs:subClassOf rdf:nodeID="N18ae7470a47243139e7d8efeb0a6b960"/>
+    <owl:equivalentClass rdf:nodeID="N18ae7470a47243139e7d8efeb0a6b960"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0a1d4d4cde9e49e680e6b9c0db6bfeb4">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000300"/>
+    <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000014"/>
+    <owl:sameAs rdf:nodeID="N0a1d4d4cde9e49e680e6b9c0db6bfeb4"/>
+    <rdfs:subClassOf rdf:nodeID="N0a1d4d4cde9e49e680e6b9c0db6bfeb4"/>
+    <owl:equivalentClass rdf:nodeID="N0a1d4d4cde9e49e680e6b9c0db6bfeb4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000038">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>ideal</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/COMON/COMON_000038"/>
+    <owl:equivalentProperty rdf:resource="http://w3id.org/COMON/COMON_000038"/>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000038"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#unsignedByte">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedByte"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000030">
+    <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N358185bc18bd45ac8fe65a9d099d3c1a">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/COMON/COMON_000044"/>
+    <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000043"/>
+    <owl:sameAs rdf:nodeID="N358185bc18bd45ac8fe65a9d099d3c1a"/>
+    <rdfs:subClassOf rdf:nodeID="N358185bc18bd45ac8fe65a9d099d3c1a"/>
+    <owl:equivalentClass rdf:nodeID="N358185bc18bd45ac8fe65a9d099d3c1a"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#token">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#token"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N40148f33e56346e4ab2330fd3cbc05ad">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/COMON/COMON_000054"/>
+    <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000046"/>
+    <owl:sameAs rdf:nodeID="N40148f33e56346e4ab2330fd3cbc05ad"/>
+    <rdfs:subClassOf rdf:nodeID="N40148f33e56346e4ab2330fd3cbc05ad"/>
+    <owl:equivalentClass rdf:nodeID="N40148f33e56346e4ab2330fd3cbc05ad"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000051">
+    <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2006/vcard/ns#fn">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2006/vcard/ns#fn"/>
+    <owl:equivalentProperty rdf:resource="http://www.w3.org/2006/vcard/ns#fn"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2006/vcard/ns#fn"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000066">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002350"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/COMON/COMON_000066"/>
+    <rdfs:label>isMemberOfAlgorithmFamily</rdfs:label>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000066"/>
+    <owl:equivalentProperty rdf:resource="http://w3id.org/COMON/COMON_000066"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/title">
+    <owl:sameAs rdf:resource="http://purl.org/dc/elements/1.1/title"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000065">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000065"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label>Algorithm family</rdfs:label>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000065"/>
+    <owl:equivalentClass rdf:resource="http://w3id.org/COMON/COMON_000065"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000033">
+    <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000051">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/COMON/COMON_000047"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label>hard</rdfs:label>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000051"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000308">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+    <rdfs:label>realizes</rdfs:label>
+    <owl:equivalentProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000308"/>
+    <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/OBI_0000308"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000308"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000050">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/COMON/COMON_000047"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label>soft</rdfs:label>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000050"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3ed2c761af434200be7c052e2e0c0673">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000011"/>
+    <owl:sameAs rdf:nodeID="N3ed2c761af434200be7c052e2e0c0673"/>
+    <rdfs:subClassOf rdf:nodeID="N3ed2c761af434200be7c052e2e0c0673"/>
+    <owl:equivalentClass rdf:nodeID="N3ed2c761af434200be7c052e2e0c0673"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000075">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    <rdfs:subClassOf rdf:nodeID="N839f9ed7eaec4c02a8495c54344ff143"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000075"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:nodeID="N6409c61548244e43b0c30c7cfe8b86cb"/>
+    <rdfs:subClassOf rdf:nodeID="N2d122455e9ec4f8482df1eb54f7bb0ed"/>
+    <rdfs:label>Reference point</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://w3id.org/COMON/COMON_000075"/>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000075"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#range">
+    <owl:sameAs rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.w3.org/ns/dcat#Dataset">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:resource="https://www.w3.org/ns/dcat#Dataset"/>
+    <owl:equivalentClass rdf:resource="https://www.w3.org/ns/dcat#Dataset"/>
+    <owl:sameAs rdf:resource="https://www.w3.org/ns/dcat#Dataset"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd69e9b1734534ecd8b0a6ef6d2c1b287">
+    <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</xsd:minInclusive>
+    <owl:sameAs rdf:nodeID="Nd69e9b1734534ecd8b0a6ef6d2c1b287"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ontoopt/number_of_constraints">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/ontoopt/number_of_constraints"/>
+    <owl:equivalentProperty rdf:resource="http://w3id.org/ontoopt/number_of_constraints"/>
+    <owl:sameAs rdf:resource="http://w3id.org/ontoopt/number_of_constraints"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc078196a6d42482099e896406ebe4ccf">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    <owl:withRestrictions rdf:nodeID="N91cdd813dc704ccea2ec9c8e9a6e5a32"/>
+    <owl:sameAs rdf:nodeID="Nc078196a6d42482099e896406ebe4ccf"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#base64Binary">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#base64Binary"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#NamedIndividual">
+    <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/ontoopt/has_value">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <owl:sameAs rdf:resource="http://w3id.org/ontoopt/has_value"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/ontoopt/has_value"/>
+    <owl:equivalentProperty rdf:resource="http://w3id.org/ontoopt/has_value"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000064">
+    <rdfs:subClassOf rdf:nodeID="N5319a6132f904a79ac4be38bfff899cd"/>
+    <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#NCName">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#NCName"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000027">
+    <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2dc3b7aa05594912ab4c261ff537d95c">
+    <rdf:type rdf:resource="http://www.daml.org/2002/03/agents/agent-ont#ErrorMessage"/>
+    <err:error>Lexical value of the literal '0.0' does not match its datatype (http://www.w3.org/2001/XMLSchema#double)</err:error>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf">
+    <owl:sameAs rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#positiveInteger">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#versionInfo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#versionInfo"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N647d9b2a032f47be9278900bc0f4b088">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000294"/>
+    <owl:someValuesFrom rdf:resource="http://w3id.org/COMON/COMON_000003"/>
+    <owl:sameAs rdf:nodeID="N647d9b2a032f47be9278900bc0f4b088"/>
+    <rdfs:subClassOf rdf:nodeID="N647d9b2a032f47be9278900bc0f4b088"/>
+    <owl:equivalentClass rdf:nodeID="N647d9b2a032f47be9278900bc0f4b088"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#NMTOKEN">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#NMTOKEN"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2006/vcard/ns#Kind">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/vcard/ns#Kind"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2006/vcard/ns#Kind"/>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2006/vcard/ns#Kind"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#normalizedString">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#normalizedString"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#maxInclusive">
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#maxInclusive"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Datatype">
+    <owl:sameAs rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nae0c216b57e941d3912fbb7606627cf3">
+    <rdf:first rdf:nodeID="Nfdc9c56f8d324cc9a95e2673b9038c49"/>
+    <rdf:rest rdf:nodeID="Nd63fa066c9f6469ca67d2f3c7c36ea4d"/>
+    <owl:sameAs rdf:nodeID="Nae0c216b57e941d3912fbb7606627cf3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">
+    <owl:sameAs rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+    <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil">
+    <owl:sameAs rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nde6420b552754ed4a180ec3904d4f1ec">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000300"/>
+    <owl:someValuesFrom rdf:resource="http://w3id.org/ontoopt/algorithm_execution"/>
+    <owl:sameAs rdf:nodeID="Nde6420b552754ed4a180ec3904d4f1ec"/>
+    <rdfs:subClassOf rdf:nodeID="Nde6420b552754ed4a180ec3904d4f1ec"/>
+    <owl:equivalentClass rdf:nodeID="Nde6420b552754ed4a180ec3904d4f1ec"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Literal">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/dcat#version">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/dcat#version"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <owl:equivalentProperty rdf:resource="http://www.w3.org/ns/dcat#version"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/ns/dcat#version"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#Name">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#Name"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#double">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#float">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topDataProperty">
+    <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000078">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>uses</rdfs:label>
+    <owl:equivalentProperty rdf:resource="http://w3id.org/COMON/COMON_000078"/>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000078"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/COMON/COMON_000078"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000081">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>hasLogLevel</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/COMON/COMON_000081"/>
+    <owl:equivalentProperty rdf:resource="http://w3id.org/COMON/COMON_000081"/>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000081"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncee227b9adea4f188964c468af19d0e1">
+    <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</xsd:maxInclusive>
+    <owl:sameAs rdf:nodeID="Ncee227b9adea4f188964c468af19d0e1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/creator">
+    <owl:sameAs rdf:resource="http://purl.org/dc/elements/1.1/creator"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#first">
+    <owl:sameAs rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#first"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#rest">
+    <owl:sameAs rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#rest"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#time">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#boolean">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#AnnotationProperty">
+    <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl">
+    <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#equivalentClass">
+    <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#DatatypeProperty">
+    <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0000058">
+    <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/RO_0000058"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#anyURI">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/COMON/COMON_000054">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>hasConstraintForm</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/COMON/COMON_000054"/>
+    <owl:equivalentProperty rdf:resource="http://w3id.org/COMON/COMON_000054"/>
+    <owl:sameAs rdf:resource="http://w3id.org/COMON/COMON_000054"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfdc9c56f8d324cc9a95e2673b9038c49">
+    <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</xsd:minInclusive>
+    <owl:sameAs rdf:nodeID="Nfdc9c56f8d324cc9a95e2673b9038c49"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#unsignedShort">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedShort"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#withRestrictions">
+    <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#withRestrictions"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd235bb261cf64a218f4f28e0c8cc5e51">
+    <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</xsd:maxInclusive>
+    <owl:sameAs rdf:nodeID="Nd235bb261cf64a218f4f28e0c8cc5e51"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/title">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <owl:sameAs rdf:resource="http://purl.org/dc/terms/title"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000025">
+    <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/IAO_0000025"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#decimal">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Ontology">
+    <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Class">
+    <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#priorVersion">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#priorVersion"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N51b3b9497ee44839b8430a6d86c06aaa">
+    <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</xsd:maxInclusive>
+    <owl:sameAs rdf:nodeID="N51b3b9497ee44839b8430a6d86c06aaa"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#backwardCompatibleWith">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#backwardCompatibleWith"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000020">
+    <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#ObjectProperty">
+    <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#int">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/language">
+    <owl:sameAs rdf:resource="http://purl.org/dc/elements/1.1/language"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000593">
+    <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/IAO_0000593"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#subPropertyOf">
+    <owl:sameAs rdf:resource="http://www.w3.org/2000/01/rdf-schema#subPropertyOf"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#inverseOf">
+    <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#inverseOf"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#onProperty">
+    <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#onProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N676a9015967546aa81920a6c63a54504">
+    <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</xsd:minInclusive>
+    <owl:sameAs rdf:nodeID="N676a9015967546aa81920a6c63a54504"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000104">
+    <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#imports">
+    <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#imports"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Restriction">
+    <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#domain">
+    <owl:sameAs rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N207f8788ba064834a4fd40f688cfd41b">
+    <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</xsd:minInclusive>
+    <owl:sameAs rdf:nodeID="N207f8788ba064834a4fd40f688cfd41b"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015">
+    <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#onDatatype">
+    <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#onDatatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000017">
+    <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#equivalentProperty">
+    <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
+  </rdf:Description>
+</rdf:RDF>

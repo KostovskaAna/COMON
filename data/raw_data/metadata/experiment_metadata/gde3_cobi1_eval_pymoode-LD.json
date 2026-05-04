@@ -148,7 +148,7 @@
             "label": "gde3_cobi1_eval_pymoode_experiment_implementation",
             "uses": [
                 {
-                    "@id": "COMON:cobi1_pymoode_problem_implementation"
+                    "@id": "COMON:cobi1_cobi_problem_implementation"
                 },
                 {
                     "@id": "COMON:gde3_pymoode_algorithm_implementation"

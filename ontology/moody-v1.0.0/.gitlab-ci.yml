@@ -1,0 +1,21 @@
+image: python:latest
+
+before_script:
+  - python --version
+  - pip install virtualenv
+  - virtualenv .venv
+  - source .venv/bin/activate
+
+pages:
+  stage: deploy
+  script:
+    - echo "Generating documentation"
+    - python -m pip install "pylode>=3.0"
+    - mkdir -p public
+    - cp moody.owl public/
+    - python -m pylode moody.owl -o public/index.html
+  artifacts:
+    paths:
+    - public
+  only:
+  - master

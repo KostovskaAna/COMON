@@ -148,7 +148,7 @@
             "label": "nsga-ii_cre31_gen_jmetal_experiment_implementation",
             "uses": [
                 {
-                    "@id": "COMON:cre31_jmetal_problem_implementation"
+                    "@id": "COMON:cre31_cre_problem_implementation"
                 },
                 {
                     "@id": "COMON:nsga-ii_jmetal_algorithm_implementation"

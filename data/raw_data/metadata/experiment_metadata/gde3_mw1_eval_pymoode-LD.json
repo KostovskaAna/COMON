@@ -148,7 +148,7 @@
             "label": "gde3_mw1_eval_pymoode_experiment_implementation",
             "uses": [
                 {
-                    "@id": "COMON:mw1_pymoode_problem_implementation"
+                    "@id": "COMON:mw1_pymoo_problem_implementation"
                 },
                 {
                     "@id": "COMON:gde3_pymoode_algorithm_implementation"

@@ -148,7 +148,7 @@
             "label": "sms-emoa_cobi1_final_pymoo_experiment_implementation",
             "uses": [
                 {
-                    "@id": "COMON:cobi1_pymoo_problem_implementation"
+                    "@id": "COMON:cobi1_cobi_problem_implementation"
                 },
                 {
                     "@id": "COMON:sms-emoa_pymoo_algorithm_implementation"

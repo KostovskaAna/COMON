@@ -148,7 +148,7 @@
             "label": "dmulti-mads_cre31_eval_bigeon21_experiment_implementation",
             "uses": [
                 {
-                    "@id": "COMON:cre31_bigeon21_problem_implementation"
+                    "@id": "COMON:cre31_cre_problem_implementation"
                 },
                 {
                     "@id": "COMON:dmulti-mads_bigeon21_algorithm_implementation"

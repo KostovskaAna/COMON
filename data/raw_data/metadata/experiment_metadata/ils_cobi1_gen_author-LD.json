@@ -148,7 +148,7 @@
             "label": "ils_cobi1_gen_author_experiment_implementation",
             "uses": [
                 {
-                    "@id": "COMON:cobi1_author_problem_implementation"
+                    "@id": "COMON:cobi1_cre_problem_implementation"
                 },
                 {
                     "@id": "COMON:ils_author_algorithm_implementation"

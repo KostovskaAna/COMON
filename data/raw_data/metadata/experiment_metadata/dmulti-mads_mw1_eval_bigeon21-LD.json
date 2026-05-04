@@ -148,7 +148,7 @@
             "label": "dmulti-mads_mw1_eval_bigeon21_experiment_implementation",
             "uses": [
                 {
-                    "@id": "COMON:mw1_bigeon21_problem_implementation"
+                    "@id": "COMON:mw1_pymoo_problem_implementation"
                 },
                 {
                     "@id": "COMON:dmulti-mads_bigeon21_algorithm_implementation"

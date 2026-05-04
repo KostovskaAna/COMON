@@ -519,6 +519,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">CMO algorithm</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">https://w3id.org/BIGOWLAlgorithms/Algorithm</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -540,6 +541,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">CMO experiment</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">https://w3id.org/moody#Experiment</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -555,6 +557,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">CMO performance indicator</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">https://w3id.org/moody#QualityIndicator</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -702,6 +705,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">CMO perfomance indicator datum</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">https://w3id.org/moody#QualityIndicatorValue</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -813,6 +817,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>CMO problem</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">https://w3id.org/BIGOWLProblems/Problem</rdfs:seeAlso>
     </owl:Class>
     
 

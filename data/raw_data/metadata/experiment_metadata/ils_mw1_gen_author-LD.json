@@ -148,7 +148,7 @@
             "label": "ils_mw1_gen_author_experiment_implementation",
             "uses": [
                 {
-                    "@id": "COMON:mw1_author_problem_implementation"
+                    "@id": "COMON:mw1_pymoo_problem_implementation"
                 },
                 {
                     "@id": "COMON:ils_author_algorithm_implementation"

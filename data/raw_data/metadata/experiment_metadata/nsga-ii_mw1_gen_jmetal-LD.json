@@ -148,7 +148,7 @@
             "label": "nsga-ii_mw1_gen_jmetal_experiment_implementation",
             "uses": [
                 {
-                    "@id": "COMON:mw1_jmetal_problem_implementation"
+                    "@id": "COMON:mw1_pymoo_problem_implementation"
                 },
                 {
                     "@id": "COMON:nsga-ii_jmetal_algorithm_implementation"

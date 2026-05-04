@@ -148,7 +148,7 @@
             "label": "como-cma_mw1_eval_cma_experiment_implementation",
             "uses": [
                 {
-                    "@id": "COMON:mw1_cma_problem_implementation"
+                    "@id": "COMON:mw1_pymoo_problem_implementation"
                 },
                 {
                     "@id": "COMON:como-cma_cma_algorithm_implementation"

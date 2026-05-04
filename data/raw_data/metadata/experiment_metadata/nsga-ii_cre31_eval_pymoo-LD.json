@@ -148,7 +148,7 @@
             "label": "nsga-ii_cre31_eval_pymoo_experiment_implementation",
             "uses": [
                 {
-                    "@id": "COMON:cre31_pymoo_problem_implementation"
+                    "@id": "COMON:cre31_cre_problem_implementation"
                 },
                 {
                     "@id": "COMON:nsga-ii_pymoo_algorithm_implementation"

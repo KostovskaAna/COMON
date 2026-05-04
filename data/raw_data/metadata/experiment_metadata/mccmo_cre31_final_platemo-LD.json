@@ -148,7 +148,7 @@
             "label": "mccmo_cre31_final_platemo_experiment_implementation",
             "uses": [
                 {
-                    "@id": "COMON:cre31_platemo_problem_implementation"
+                    "@id": "COMON:cre31_cre_problem_implementation"
                 },
                 {
                     "@id": "COMON:mccmo_platemo_algorithm_implementation"

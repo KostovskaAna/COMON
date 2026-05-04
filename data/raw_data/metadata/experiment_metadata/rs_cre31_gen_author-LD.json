@@ -148,7 +148,7 @@
             "label": "rs_cre31_gen_author_experiment_implementation",
             "uses": [
                 {
-                    "@id": "COMON:cre31_author_problem_implementation"
+                    "@id": "COMON:cre31_cre_problem_implementation"
                 },
                 {
                     "@id": "COMON:rs_author_algorithm_implementation"

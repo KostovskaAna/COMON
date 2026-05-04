@@ -148,7 +148,7 @@
             "label": "gde3_cre31_eval_pymoode_experiment_implementation",
             "uses": [
                 {
-                    "@id": "COMON:cre31_pymoode_problem_implementation"
+                    "@id": "COMON:cre31_cre_problem_implementation"
                 },
                 {
                     "@id": "COMON:gde3_pymoode_algorithm_implementation"
