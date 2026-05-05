@@ -43,7 +43,7 @@ ORDER BY ?label
 
 ### List all CMO algorithms
 
-Returns each algorithm instance along with its specific algorithm subclass.
+Returns each algorithm instance along with its specific algorithm class.
 
 ```sparql
 PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
@@ -53,16 +53,12 @@ PREFIX COMON: <http://w3id.org/COMON/>
 
 SELECT ?algorithm ?label ?algorithm_class
 WHERE {
-  # Walk down the full subclass hierarchy of CMO algorithm
   ?subClass rdfs:subClassOf* COMON:COMON_000001 .
 
   ?algorithm rdf:type ?subClass ;
              rdfs:label ?label .
 
-  # Exclude blank nodes and owl:Class itself
   FILTER(isIRI(?algorithm))
-
-  # Optionally show which specific subclass the instance belongs to
   OPTIONAL { ?subClass rdfs:label ?algorithm_class . }
 }
 ORDER BY ?label
@@ -145,7 +141,7 @@ GROUP BY ?identifier ?numObjectives ?numConstraints ?dimensionality
 
 ### Get objective details for a specific problem
 
-Returns label, normalization bounds, and weight for each objective of the problem.
+Returns label, normalization bounds, and weight for each objective of the problem. Replace `"cobi1_problem"` with the label of the problem you want to query (e.g. `"cre31_problem"`, `"mw1_problem"`).
 
 ```sparql
 PREFIX rdfs:   <http://www.w3.org/2000/01/rdf-schema#>
@@ -164,9 +160,9 @@ WHERE {
   ?objective rdf:type COMON:COMON_000026 .
   ?objective rdfs:label ?objectiveLabel .
 
-  OPTIONAL { ?objective COMON:COMON_000028 ?normalization_min    . }  # normalization_min
-  OPTIONAL { ?objective COMON:COMON_000029 ?normalization_max    . }  # normalization_max
-  OPTIONAL { ?objective COMON:COMON_000030 ?weight . }  # weight
+  OPTIONAL { ?objective COMON:COMON_000028 ?normalization_min    . }  
+  OPTIONAL { ?objective COMON:COMON_000029 ?normalization_max    . }  
+  OPTIONAL { ?objective COMON:COMON_000030 ?weight . } 
 }
 ORDER BY ?objectiveLabel
 ```
@@ -175,7 +171,7 @@ ORDER BY ?objectiveLabel
 
 ### Get constraint details for a specific problem
 
-Returns label, normalization bounds, weight, form (equality/inequality), and strictness (hard/soft) for each constraint.
+Returns label, normalization bounds, weight, form (equality/inequality), and strictness (hard/soft) for each constraint. Replace `"cobi1_problem"` with the label of the problem you want to query (e.g. `"cre31_problem"`, `"mw1_problem"`).
 
 ```sparql
 PREFIX rdfs:   <http://www.w3.org/2000/01/rdf-schema#>
@@ -194,8 +190,8 @@ WHERE {
   ?constraint rdf:type COMON:COMON_000027 .
   ?constraint rdfs:label ?constraintLabel .
 
-  OPTIONAL { ?constraint COMON:COMON_000029 ?normalization_max    . }  # normalization_max
-  OPTIONAL { ?constraint COMON:COMON_000030 ?weight . }  # weight
+  OPTIONAL { ?constraint COMON:COMON_000029 ?normalization_max    . }  
+  OPTIONAL { ?constraint COMON:COMON_000030 ?weight . }  
 
   OPTIONAL {
     ?constraint COMON:COMON_000054 ?formInd .
@@ -213,7 +209,7 @@ ORDER BY ?constraintLabel
 
 ### List all performance indicators for a specific problem
 
-Groups indicator inputs and their values by indicator type (e.g. HV, IGD+).
+Groups indicator inputs and their values by indicator type. Replace `"cobi1_problem"` with the label of the problem you want to query (e.g. `"cre31_problem"`, `"mw1_problem"`).
 
 ```sparql
 PREFIX rdfs:   <http://www.w3.org/2000/01/rdf-schema#>
@@ -412,7 +408,7 @@ WHERE {
   # ── Datum value ───────────────────────────────────────────────────────────
   ?piExecution OBO:OBI_0000299  ?datum .
   ?datum       OPTION:has_value ?indicatorValue .
-#  FILTER(?indicatorValue >= 0.01)                                # ← filter by value
+  FILTER(?indicatorValue >= 0.01)                                # ← filter by value
 
 }
 ORDER BY ?experimentExecution ?runId ?iterationId ?evalId
