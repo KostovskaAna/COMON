@@ -1162,7 +1162,7 @@
 
     <owl:Class rdf:about="http://w3id.org/COMON/COMON_000064">
         <rdfs:subClassOf rdf:resource="http://w3id.org/COMON/COMON_000062"/>
-        <rdfs:label>Population algorithms that solve the original CMOP in parallel (using subpopulations</rdfs:label>
+        <rdfs:label>Population algorithm that solves the original CMOP in parallel (using subpopulations)</rdfs:label>
     </owl:Class>
     
 
