@@ -1,6 +1,6 @@
-# Querying the COMON Knowledge Graph
+# Querying the COMON Knowledge Base
 
-The COMON KG consists of **3 separate datasets**, each hosted on its own SPARQL endpoint. Because all three are built on the same COMON ontology vocabulary, they are fully interoperable — the same query runs against any of them and results can be seamlessly integrated.
+The COMON KB consists of **3 separate datasets**, each hosted on its own SPARQL endpoint. Because all three are built on the same COMON ontology vocabulary, they are fully interoperable — the same query runs against any of them and results can be seamlessly integrated.
 
 | Dataset | SPARQL Endpoint | Contents |
 |---------|----------------|----------|
