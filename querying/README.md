@@ -382,13 +382,13 @@ WHERE {
   ?experimentExecution OBO:BFO_0000051     ?algorithmExecution .
   ?algorithmExecution  rdf:type            COMON:COMON_000006 .
   ?algorithmExecution  dc:identifier       ?runId .
-  FILTER(?runId = 1)                                            # ← filter by run
+  FILTER(?runId = 1)                                            #  filter by run
 
   # ── Iteration ─────────────────────────────────────────────────────────────
   ?algorithmExecution  OBO:BFO_0000051     ?iterationExecution .
   ?iterationExecution  rdf:type            COMON:COMON_000011 .
   ?iterationExecution  COMON:COMON_000031  ?iterationId .
-  FILTER(?iterationId = 1)                                    # ← filter by iteration
+  FILTER(?iterationId = 1)                                    #  filter by iteration
 
   # ── Solution evaluation ───────────────────────────────────────────────────
   ?iterationExecution  OBO:BFO_0000051     ?solutionEvaluation .
@@ -398,17 +398,17 @@ WHERE {
   ?solutionEvaluation  OBO:BFO_0000051     ?piExecution .
   ?piExecution         rdf:type            COMON:COMON_000007 .
   ?piExecution         rdfs:label          ?piExecutionLabel .
-  FILTER(CONTAINS(?piExecutionLabel, "HV"))                  # ← filter by indicator type: "IGDPlus", "HV", "CV", "ICMOP"
+  FILTER(CONTAINS(?piExecutionLabel, "HV"))                  #  filter by indicator type: "IGDPlus", "HV", "CV", "ICMOP"
 
   BIND(xsd:integer(REPLACE(?piExecutionLabel, "^.*_eval-([0-9]+)\\.0_.*$", "$1")) AS ?evalId)
-  FILTER(?evalId = 1)                                       # ← filter by eval
+  FILTER(?evalId = 1)                                       #  filter by eval
 
   BIND(REPLACE(?piExecutionLabel, "^.*_eval-[0-9]+\\.0_(.+)-performance-indicator-execution$", "$1") AS ?indicator)
 
   # ── Datum value ───────────────────────────────────────────────────────────
   ?piExecution OBO:OBI_0000299  ?datum .
   ?datum       OPTION:has_value ?indicatorValue .
-  FILTER(?indicatorValue >= 0.01)                                # ← filter by value
+  FILTER(?indicatorValue >= 0.01)                                #  filter by value
 
 }
 ORDER BY ?experimentExecution ?runId ?iterationId ?evalId
@@ -419,6 +419,6 @@ LIMIT 100
 
 ## REST API
 
-For users who prefer not to write SPARQL, the COMON KB is also accessible through a REST API that exposes the same data via simple HTTP GET requests — no SPARQL or RDF knowledge required.
+The COMON KB is also accessible through a REST API via simple HTTP GET requests. While the SPARQL queries above offer full flexibility to express any custom query over the datasets, the REST API provides a set of predefined, structured endpoints designed for users who are not proficient in SPARQL — no knowledge of RDF or query languages is required.
 
 Full API documentation: [https://kostovskaana.github.io/COMON/querying/index.html](https://kostovskaana.github.io/COMON/querying/index.html)
