@@ -414,3 +414,11 @@ WHERE {
 ORDER BY ?experimentExecution ?runId ?iterationId ?evalId
 LIMIT 100
 ```
+
+---
+
+## REST API
+
+For users who prefer not to write SPARQL, the COMON KB is also accessible through a REST API that exposes the same data via simple HTTP GET requests — no SPARQL or RDF knowledge required.
+
+Full API documentation: [https://kostovskaana.github.io/COMON/querying/index.html](https://kostovskaana.github.io/COMON/querying/index.html)
