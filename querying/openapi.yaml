@@ -9,8 +9,8 @@ info:
   version: "1.0"
 
 servers:
-  - url: http://localhost:8080
-    description: Local development server
+  - url: http://semanticannotations.ijs.si:8080
+    description: semanticannotations.ijs.si server
 
 tags:
   - name: Problems
