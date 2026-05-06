@@ -1,16 +1,62 @@
 openapi: 3.0.3
 info:
   title: COMON REST API
-  description: >
-    REST API for querying the COMON (Constrained Multi-Objective Optimization ONtology)
-    Knowledge Base. All metadata endpoints query the main **COMON** dataset.
-    The `/comon_experiment_data` endpoint queries all three datasets
-    (COMON, COMON_gde3, COMON_dmulti-mads) in parallel and merges the results.
+  description: |
+    ## What is this?
+
+    This is the REST API for the **COMON Knowledge Base** — a structured, machine-readable
+    collection of data about constrained multi-objective optimization (CMO). The data is stored as RDF graphs and this API lets
+    you query it using simple HTTP GET requests without any knowledge of SPARQL or RDF.
+
+    ## How to use this API
+
+    All endpoints use **HTTP GET** requests. You can call them directly from:
+    - A **web browser** — just paste the URL into the address bar
+    - A **terminal** using `curl`, e.g.:
+      ```
+      curl "http://semanticannotations.ijs.si:8080/comon_problems"
+      ```
+    - Any **programming language** that can make HTTP requests (Python `requests`, JavaScript `fetch`, etc.), e.g.:
+      ```python
+      import requests
+      response = requests.get("http://semanticannotations.ijs.si:8080/comon_problems")
+      print(response.json())
+      ```
+
+    All responses are returned as **JSON** in the format:
+    ```json
+    { "results": [ { "field1": "value1", "field2": "value2" }, ... ] }
+    ```
+
+    ## What data is available?
+
+    The COMON KB covers **3 benchmark problems** (COBI1, CRE31, MW1) and **16 algorithm
+    implementations** across platforms including PlatEMO, pymoo, jMetal, jMetalPy, CMA,
+    pyMOODE, and custom author implementations. For each experiment you can retrieve
+    problem structure, algorithm metadata, and per-run performance indicator values
+    (HV, IGD+, CV, ICMOP).
+
+    ## Dataset structure
+
+    The data is split across three datasets hosted on separate SPARQL endpoints.
+    All metadata (problems, algorithms, experiments) as well as experiment data from 14 algorithms lives in the main **COMON** dataset.
+    Experiment data for GDE3 and DMulti-MADS is stored in separate datasets, **COMON-GDE3** and **COMON-DMulti-MADS**, respectively.
+    The `/comon_experiment_data` endpoint queries all three datasets automatically and merges the results.
+
+    ## Where to start
+
+    A good starting point is to call the listing endpoints first to discover what is available:
+    - [`/comon_problems`](#tag/Problems/operation/get_/comon_problems) — see all available problems
+    - [`/comon_algorithms`](#tag/Algorithms/operation/get_/comon_algorithms) — see all available algorithms
+    - [`/comon_experiments`](#tag/Experiments/operation/get_/comon_experiments) — see all available experiments
+
+    Then use the labels returned (e.g. `cobi1_problem`, `Bico algorithm`) as input parameters
+    for the other endpoints.
   version: "1.0"
 
 servers:
   - url: http://semanticannotations.ijs.si:8080
-    description: semanticannotations.ijs.si server
+    description: Production server
 
 tags:
   - name: Problems
@@ -26,22 +72,31 @@ paths:
     get:
       tags: [Problems]
       summary: List all CMO problems
-      description: Returns all constrained multi-objective optimization problems in the COMON KB.
+      description: |
+        Returns all constrained multi-objective optimization problems in the COMON KB.
+
+        **Example request:**
+        ```
+        GET http://semanticannotations.ijs.si:8080/comon_problems
+        ```
       responses:
         "200":
           description: List of problems
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ProblemsResponse"
-              example:
-                results:
-                  - problem: "http://w3id.org/COMON/cobi1_problem"
-                    label: "cobi1_problem"
-                  - problem: "http://w3id.org/COMON/cre31_problem"
-                    label: "cre31_problem"
-                  - problem: "http://w3id.org/COMON/mw1_problem"
-                    label: "mw1_problem"
+                type: object
+                properties:
+                  results:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        problem:
+                          type: string
+                          description: IRI of the problem
+                        label:
+                          type: string
         "500":
           $ref: "#/components/responses/InternalError"
 
@@ -49,10 +104,15 @@ paths:
     get:
       tags: [Problems]
       summary: Get details for a specific problem
-      description: >
+      description: |
         Returns full metadata for a single problem: dimensionality, number of objectives
         and constraints, gradient availability, fidelity levels, noise, Pareto front,
         nadir, ideal point, keywords, variables, family, and benchmark suite.
+
+        **Example request:**
+        ```
+        GET http://semanticannotations.ijs.si:8080/comon_problem_details?problem=mw1_problem
+        ```
       parameters:
         - $ref: "#/components/parameters/problemParam"
       responses:
@@ -69,9 +129,6 @@ paths:
                       $ref: "#/components/schemas/ProblemDetails"
         "400":
           description: Missing `problem` parameter
-          content:
-            text/plain:
-              example: "Missing problem parameter."
         "404":
           $ref: "#/components/responses/NotFoundWithValidValues"
         "500":
@@ -81,9 +138,13 @@ paths:
     get:
       tags: [Problems]
       summary: Get objectives for a specific problem
-      description: >
-        Returns each objective of the problem with its label, normalization bounds,
-        and weight.
+      description: |
+        Returns each objective of the problem with its label, normalization bounds, and weight.
+
+        **Example request:**
+        ```
+        GET http://semanticannotations.ijs.si:8080/comon_problem_objectives?problem=mw1_problem
+        ```
       parameters:
         - $ref: "#/components/parameters/problemParam"
       responses:
@@ -100,9 +161,6 @@ paths:
                       $ref: "#/components/schemas/Objective"
         "400":
           description: Missing `problem` parameter
-          content:
-            text/plain:
-              example: "Missing problem parameter."
         "404":
           $ref: "#/components/responses/NotFoundWithValidValues"
         "500":
@@ -112,9 +170,14 @@ paths:
     get:
       tags: [Problems]
       summary: Get constraints for a specific problem
-      description: >
+      description: |
         Returns each constraint of the problem with its label, normalization bounds,
         weight, form (equality / inequality), and strictness (hard / soft).
+
+        **Example request:**
+        ```
+        GET http://semanticannotations.ijs.si:8080/comon_problem_constraints?problem=cre31_problem
+        ```
       parameters:
         - $ref: "#/components/parameters/problemParam"
       responses:
@@ -131,9 +194,6 @@ paths:
                       $ref: "#/components/schemas/Constraint"
         "400":
           description: Missing `problem` parameter
-          content:
-            text/plain:
-              example: "Missing problem parameter."
         "404":
           $ref: "#/components/responses/NotFoundWithValidValues"
         "500":
@@ -143,9 +203,14 @@ paths:
     get:
       tags: [Problems]
       summary: List performance indicators for a specific problem
-      description: >
+      description: |
         Returns all performance indicators defined for the problem (e.g. HV, IGD+),
         grouped with their input descriptions.
+
+        **Example request:**
+        ```
+        GET http://semanticannotations.ijs.si:8080/comon_problem_indicators?problem=cre31_problem
+        ```
       parameters:
         - $ref: "#/components/parameters/problemParam"
       responses:
@@ -162,9 +227,6 @@ paths:
                       $ref: "#/components/schemas/PerformanceIndicator"
         "400":
           description: Missing `problem` parameter
-          content:
-            text/plain:
-              example: "Missing problem parameter."
         "404":
           $ref: "#/components/responses/NotFoundWithValidValues"
         "500":
@@ -174,9 +236,14 @@ paths:
     get:
       tags: [Algorithms]
       summary: List all CMO algorithms
-      description: >
+      description: |
         Returns all algorithm instances in the COMON KB, including their IRI,
         label, and algorithm subclass.
+
+        **Example request:**
+        ```
+        GET http://semanticannotations.ijs.si:8080/comon_algorithms
+        ```
       responses:
         "200":
           description: List of algorithms
@@ -196,14 +263,19 @@ paths:
     get:
       tags: [Algorithms]
       summary: Get details for a specific algorithm
-      description: >
+      description: |
         Returns algorithm type, implementation platform, programming language,
         algorithm family, and related algorithms for the given algorithm label.
+
+        **Example request:**
+        ```
+        GET http://semanticannotations.ijs.si:8080/comon_algorithm_details?algorithm=Bico algorithm
+        ```
       parameters:
         - name: algorithm
           in: query
           required: true
-          description: Label of the algorithm (e.g. `"Bico algorithm"`)
+          description: Label of the algorithm
           schema:
             type: string
           example: "Bico algorithm"
@@ -221,9 +293,6 @@ paths:
                       $ref: "#/components/schemas/AlgorithmDetails"
         "400":
           description: Missing `algorithm` parameter
-          content:
-            text/plain:
-              example: "Missing algorithm parameter."
         "404":
           $ref: "#/components/responses/NotFoundWithValidValues"
         "500":
@@ -233,7 +302,13 @@ paths:
     get:
       tags: [Experiments]
       summary: List all CMO experiments
-      description: Returns all experiment instances in the COMON KB with their labels.
+      description: |
+        Returns all experiment instances in the COMON KB with their labels.
+
+        **Example request:**
+        ```
+        GET http://semanticannotations.ijs.si:8080/comon_experiments
+        ```
       responses:
         "200":
           description: List of experiments
@@ -253,14 +328,19 @@ paths:
     get:
       tags: [Experiments]
       summary: Get provenance information for a specific experiment
-      description: >
+      description: |
         Returns dataset version, keywords, creators, contact persons, and version
         notes for the dataset produced by the given experiment.
+
+        **Example request:**
+        ```
+        GET http://semanticannotations.ijs.si:8080/comon_experiment_provenance?experiment=bico_cobi1_final_platemo_experiment
+        ```
       parameters:
         - name: experiment
           in: query
           required: true
-          description: Label of the experiment (e.g. `"bico_cobi1_final_platemo_experiment"`)
+          description: Label of the experiment
           schema:
             type: string
           example: "bico_cobi1_final_platemo_experiment"
@@ -278,9 +358,6 @@ paths:
                       $ref: "#/components/schemas/Provenance"
         "400":
           description: Missing `experiment` parameter
-          content:
-            text/plain:
-              example: "Missing experiment parameter."
         "404":
           $ref: "#/components/responses/NotFoundWithValidValues"
         "500":
@@ -290,29 +367,37 @@ paths:
     get:
       tags: [Experiments]
       summary: Query experiment execution data
-      description: >
+      description: |
         Returns per-run, per-iteration, per-evaluation performance indicator values.
         All parameters are optional filters. Results are automatically merged from
         all three COMON datasets (COMON, COMON_gde3, COMON_dmulti-mads).
+
+        The `indicatorValue` filter uses a comparison operator followed by a number.
+        Supported operators: `>=`, `<=`, `>`, `<`, `=`.
+
+        **Example request:**
+        ```
+        GET http://semanticannotations.ijs.si:8080/comon_experiment_data?runID=1&iterationId=1&evalId=1&indicatorType=HV&indicatorValue=>0
+        ```
       parameters:
         - name: runId
           in: query
           required: false
-          description: Filter by run identifier (integer)
+          description: Filter by run identifier (also accepted as `runID`)
           schema:
             type: integer
           example: 1
         - name: iterationId
           in: query
           required: false
-          description: Filter by iteration identifier (integer)
+          description: Filter by iteration identifier
           schema:
             type: integer
           example: 1
         - name: evalId
           in: query
           required: false
-          description: Filter by evaluation identifier (integer)
+          description: Filter by evaluation identifier
           schema:
             type: integer
           example: 1
@@ -329,14 +414,13 @@ paths:
           required: false
           description: >
             Filter by indicator value using a comparison operator followed by a number.
-            Supported operators: `>=`, `<=`, `>`, `<`, `=`.
+            E.g. `>0`, `>=0.5`, `<=1`, `=0.8`.
           schema:
             type: string
-            pattern: "^(>=|<=|>|<|=)-?\\d+(\\.\\d+)?$"
-          example: ">=0.5"
+          example: ">0"
       responses:
         "200":
-          description: Experiment execution data merged from all three datasets
+          description: Experiment execution data merged from all three datasets, COMON, COMON-GDE3, and COMON-DMulti-MADS, filtered by the provided parameters
           content:
             application/json:
               schema:
@@ -352,8 +436,6 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/ValidationError"
-            text/plain:
-              example: "Invalid indicatorValue format. Use an operator followed by a number, e.g. >=0.01"
         "500":
           $ref: "#/components/responses/InternalError"
 
@@ -364,113 +446,104 @@ components:
       name: problem
       in: query
       required: true
-      description: Label of the problem (e.g. `"cobi1_problem"`, `"cre31_problem"`, `"mw1_problem"`)
+      description: Label of the problem
       schema:
         type: string
         enum: [cobi1_problem, cre31_problem, mw1_problem]
-      example: cobi1_problem
+      example: mw1_problem
 
   schemas:
 
-    ProblemsResponse:
-      type: object
-      properties:
-        results:
-          type: array
-          items:
-            type: object
-            properties:
-              problem:
-                type: string
-                description: IRI of the problem
-              label:
-                type: string
-                description: Human-readable label
-
     ProblemDetails:
       type: object
+      description: >
+        All values are returned as strings because the data originates from RDF literals.
+        Numeric fields (e.g. numObjectives) will contain numeric strings such as "2".
       properties:
-        identifier:           { type: string }
-        numObjectives:        { type: string }
-        numConstraints:       { type: string }
-        dimensionality:       { type: string }
-        gradientAvailability: { type: string }
-        numFidelityLevels:    { type: string }
-        noise:                { type: string }
-        paretoFront:          { type: string }
-        nadir:                { type: string }
-        ideal:                { type: string }
-        keywords:             { type: string, description: "Semicolon-separated list" }
-        variables:            { type: string, description: "Semicolon-separated list of variable label (type) pairs" }
-        familyLabel:          { type: string }
-        suiteLabel:           { type: string }
+        identifier:           { type: string, description: "Unique identifier of the problem, e.g. COBI1" }
+        numObjectives:        { type: string, description: "Number of objective functions, e.g. \"2\"" }
+        numConstraints:       { type: string, description: "Number of constraints, e.g. \"2\"" }
+        dimensionality:       { type: string, description: "Number of decision variables, e.g. \"30\"" }
+        gradientAvailability: { type: string, description: "Whether gradient information is available" }
+        numFidelityLevels:    { type: string, description: "Number of fidelity levels (for multi-fidelity problems)" }
+        noise:                { type: string, description: "Whether the problem is noisy" }
+        paretoFront:          { type: string, description: "Reference to the Pareto front" }
+        nadir:                { type: string, description: "Nadir point of the problem" }
+        ideal:                { type: string, description: "Ideal point of the problem" }
+        keywords:             { type: string, description: "Semicolon-separated list of keywords" }
+        variables:            { type: string, description: "Semicolon-separated list of decision variable labels with their types, e.g. \"x1 (real variable); x2 (real variable)\"" }
+        familyLabel:          { type: string, description: "Problem family name, e.g. CRE" }
+        suiteLabel:           { type: string, description: "Benchmark suite the problem belongs to" }
 
     Objective:
       type: object
       properties:
-        objectiveLabel:    { type: string }
-        normalization_min: { type: string }
-        normalization_max: { type: string }
-        weight:            { type: string }
+        objectiveLabel:    { type: string, description: "Label of the objective, e.g. f1" }
+        normalization_min: { type: string, description: "Minimum value used for normalization (numeric string)" }
+        normalization_max: { type: string, description: "Maximum value used for normalization (numeric string)" }
+        weight:            { type: string, description: "Weight of the objective in aggregation (numeric string)" }
 
     Constraint:
       type: object
       properties:
-        constraintLabel:   { type: string }
-        normalization_max: { type: string }
-        weight:            { type: string }
+        constraintLabel:   { type: string, description: "Label of the constraint, e.g. g1" }
+        normalization_max: { type: string, description: "Maximum value used for normalization (numeric string)" }
+        weight:            { type: string, description: "Weight of the constraint (numeric string)" }
         form:              { type: string, description: "equality or inequality" }
         strictness:        { type: string, description: "hard or soft" }
 
     PerformanceIndicator:
       type: object
       properties:
-        indicator:     { type: string, description: "IRI of the indicator" }
-        indicatorType: { type: string, description: "e.g. HV, IGDPlus" }
-        description:   { type: string, description: "Pipe-separated input type: value pairs" }
+        indicator:     { type: string, description: "Full IRI of the indicator individual" }
+        indicatorType: { type: string, description: "Type of indicator, e.g. Hypervolume indicator, IGD+ indicator" }
+        description:   { type: string, description: "Pipe-separated pairs of input type and value, e.g. reference point: 1.1 | reference set: ..." }
 
     Algorithm:
       type: object
       properties:
-        algorithm:       { type: string, description: "IRI of the algorithm" }
-        label:           { type: string }
-        algorithm_class: { type: string, description: "Specific subclass of CMO algorithm" }
+        algorithm:       { type: string, description: "Full IRI of the algorithm individual" }
+        label:           { type: string, description: "Human-readable label, e.g. Bico algorithm" }
+        algorithm_class: { type: string, description: "Specific subclass of CMO algorithm, e.g. decomposition-based algorithm" }
 
     AlgorithmDetails:
       type: object
       properties:
-        algorithmLabel:           { type: string }
-        algorithmType:            { type: string }
-        platformLabel:            { type: string }
-        programmingLanguageLabel: { type: string }
-        familyLabel:              { type: string }
-        relatedAlgorithmLabel:    { type: string }
+        algorithmLabel:           { type: string, description: "Human-readable label of the algorithm" }
+        algorithmType:            { type: string, description: "Algorithm subclass, e.g. decomposition-based algorithm" }
+        platformLabel:            { type: string, description: "Software platform used, e.g. PlatEMO, pymoo" }
+        programmingLanguageLabel: { type: string, description: "Programming language of the platform, e.g. Python, MATLAB" }
+        familyLabel:              { type: string, description: "Algorithm family, e.g. MOEA/D family" }
+        relatedAlgorithmLabel:    { type: string, description: "Label of a related algorithm" }
 
     Experiment:
       type: object
       properties:
-        experiment: { type: string, description: "IRI of the experiment" }
-        label:      { type: string }
+        experiment: { type: string, description: "Full IRI of the experiment individual" }
+        label:      { type: string, description: "Human-readable label, e.g. bico_cobi1_final_platemo_experiment" }
 
     Provenance:
       type: object
       properties:
-        dataset:      { type: string, description: "IRI of the dataset" }
-        version:      { type: string }
-        keywords:     { type: string, description: "Semicolon-separated list" }
-        creators:     { type: string, description: "Semicolon-separated list" }
-        contacts:     { type: string, description: "Semicolon-separated list" }
-        versionNotes: { type: string }
+        dataset:      { type: string, description: "Full IRI of the output dataset" }
+        version:      { type: string, description: "Version string of the dataset" }
+        keywords:     { type: string, description: "Semicolon-separated list of dataset keywords" }
+        creators:     { type: string, description: "Semicolon-separated list of creator names" }
+        contacts:     { type: string, description: "Semicolon-separated list of contact person names" }
+        versionNotes: { type: string, description: "Free-text notes about this version" }
 
     ExecutionDataRow:
       type: object
+      description: >
+        All values are returned as strings. Numeric fields (runId, iterationId, evalId,
+        indicatorValue) contain numeric strings.
       properties:
-        experimentExecution: { type: string }
-        runId:               { type: string }
-        iterationId:         { type: string }
-        evalId:              { type: string }
-        indicator:           { type: string, description: "Indicator type, e.g. HV" }
-        indicatorValue:      { type: string }
+        experimentExecution: { type: string, description: "IRI of the experiment execution" }
+        runId:               { type: string, description: "Run index, e.g. \"1\"" }
+        iterationId:         { type: string, description: "Iteration index within the run, e.g. \"1\"" }
+        evalId:              { type: string, description: "Evaluation index within the iteration, e.g. \"1\"" }
+        indicator:           { type: string, description: "Indicator type label, e.g. HV, IGDPlus" }
+        indicatorValue:      { type: string, description: "Numeric value of the performance indicator, e.g. \"0.734\"" }
 
     ValidationError:
       type: object
@@ -487,7 +560,6 @@ components:
       properties:
         error:
           type: string
-          example: 'No results found for problem "unknown_problem".'
         validValues:
           type: array
           description: Valid values accepted for this parameter
@@ -497,9 +569,6 @@ components:
   responses:
     InternalError:
       description: Internal server error or no results from the SPARQL endpoint
-      content:
-        text/plain:
-          example: "No results."
 
     NotFoundWithValidValues:
       description: No results found; response includes the list of valid values
