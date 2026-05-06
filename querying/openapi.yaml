@@ -1,0 +1,509 @@
+openapi: 3.0.3
+info:
+  title: COMON REST API
+  description: >
+    REST API for querying the COMON (Constrained Multi-Objective Optimization ONtology)
+    Knowledge Base. All metadata endpoints query the main **COMON** dataset.
+    The `/comon_experiment_data` endpoint queries all three datasets
+    (COMON, COMON_gde3, COMON_dmulti-mads) in parallel and merges the results.
+  version: "1.0"
+
+servers:
+  - url: http://localhost:8080
+    description: Local development server
+
+tags:
+  - name: Problems
+    description: Endpoints for querying CMO optimization problems
+  - name: Algorithms
+    description: Endpoints for querying CMO algorithms
+  - name: Experiments
+    description: Endpoints for querying CMO experiments and their data
+
+paths:
+
+  /comon_problems:
+    get:
+      tags: [Problems]
+      summary: List all CMO problems
+      description: Returns all constrained multi-objective optimization problems in the COMON KB.
+      responses:
+        "200":
+          description: List of problems
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ProblemsResponse"
+              example:
+                results:
+                  - problem: "http://w3id.org/COMON/cobi1_problem"
+                    label: "cobi1_problem"
+                  - problem: "http://w3id.org/COMON/cre31_problem"
+                    label: "cre31_problem"
+                  - problem: "http://w3id.org/COMON/mw1_problem"
+                    label: "mw1_problem"
+        "500":
+          $ref: "#/components/responses/InternalError"
+
+  /comon_problem_details:
+    get:
+      tags: [Problems]
+      summary: Get details for a specific problem
+      description: >
+        Returns full metadata for a single problem: dimensionality, number of objectives
+        and constraints, gradient availability, fidelity levels, noise, Pareto front,
+        nadir, ideal point, keywords, variables, family, and benchmark suite.
+      parameters:
+        - $ref: "#/components/parameters/problemParam"
+      responses:
+        "200":
+          description: Problem details
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  results:
+                    type: array
+                    items:
+                      $ref: "#/components/schemas/ProblemDetails"
+        "400":
+          description: Missing `problem` parameter
+          content:
+            text/plain:
+              example: "Missing problem parameter."
+        "404":
+          $ref: "#/components/responses/NotFoundWithValidValues"
+        "500":
+          $ref: "#/components/responses/InternalError"
+
+  /comon_problem_objectives:
+    get:
+      tags: [Problems]
+      summary: Get objectives for a specific problem
+      description: >
+        Returns each objective of the problem with its label, normalization bounds,
+        and weight.
+      parameters:
+        - $ref: "#/components/parameters/problemParam"
+      responses:
+        "200":
+          description: List of objectives
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  results:
+                    type: array
+                    items:
+                      $ref: "#/components/schemas/Objective"
+        "400":
+          description: Missing `problem` parameter
+          content:
+            text/plain:
+              example: "Missing problem parameter."
+        "404":
+          $ref: "#/components/responses/NotFoundWithValidValues"
+        "500":
+          $ref: "#/components/responses/InternalError"
+
+  /comon_problem_constraints:
+    get:
+      tags: [Problems]
+      summary: Get constraints for a specific problem
+      description: >
+        Returns each constraint of the problem with its label, normalization bounds,
+        weight, form (equality / inequality), and strictness (hard / soft).
+      parameters:
+        - $ref: "#/components/parameters/problemParam"
+      responses:
+        "200":
+          description: List of constraints
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  results:
+                    type: array
+                    items:
+                      $ref: "#/components/schemas/Constraint"
+        "400":
+          description: Missing `problem` parameter
+          content:
+            text/plain:
+              example: "Missing problem parameter."
+        "404":
+          $ref: "#/components/responses/NotFoundWithValidValues"
+        "500":
+          $ref: "#/components/responses/InternalError"
+
+  /comon_problem_indicators:
+    get:
+      tags: [Problems]
+      summary: List performance indicators for a specific problem
+      description: >
+        Returns all performance indicators defined for the problem (e.g. HV, IGD+),
+        grouped with their input descriptions.
+      parameters:
+        - $ref: "#/components/parameters/problemParam"
+      responses:
+        "200":
+          description: List of performance indicators
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  results:
+                    type: array
+                    items:
+                      $ref: "#/components/schemas/PerformanceIndicator"
+        "400":
+          description: Missing `problem` parameter
+          content:
+            text/plain:
+              example: "Missing problem parameter."
+        "404":
+          $ref: "#/components/responses/NotFoundWithValidValues"
+        "500":
+          $ref: "#/components/responses/InternalError"
+
+  /comon_algorithms:
+    get:
+      tags: [Algorithms]
+      summary: List all CMO algorithms
+      description: >
+        Returns all algorithm instances in the COMON KB, including their IRI,
+        label, and algorithm subclass.
+      responses:
+        "200":
+          description: List of algorithms
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  results:
+                    type: array
+                    items:
+                      $ref: "#/components/schemas/Algorithm"
+        "500":
+          $ref: "#/components/responses/InternalError"
+
+  /comon_algorithm_details:
+    get:
+      tags: [Algorithms]
+      summary: Get details for a specific algorithm
+      description: >
+        Returns algorithm type, implementation platform, programming language,
+        algorithm family, and related algorithms for the given algorithm label.
+      parameters:
+        - name: algorithm
+          in: query
+          required: true
+          description: Label of the algorithm (e.g. `"Bico algorithm"`)
+          schema:
+            type: string
+          example: "Bico algorithm"
+      responses:
+        "200":
+          description: Algorithm details
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  results:
+                    type: array
+                    items:
+                      $ref: "#/components/schemas/AlgorithmDetails"
+        "400":
+          description: Missing `algorithm` parameter
+          content:
+            text/plain:
+              example: "Missing algorithm parameter."
+        "404":
+          $ref: "#/components/responses/NotFoundWithValidValues"
+        "500":
+          $ref: "#/components/responses/InternalError"
+
+  /comon_experiments:
+    get:
+      tags: [Experiments]
+      summary: List all CMO experiments
+      description: Returns all experiment instances in the COMON KB with their labels.
+      responses:
+        "200":
+          description: List of experiments
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  results:
+                    type: array
+                    items:
+                      $ref: "#/components/schemas/Experiment"
+        "500":
+          $ref: "#/components/responses/InternalError"
+
+  /comon_experiment_provenance:
+    get:
+      tags: [Experiments]
+      summary: Get provenance information for a specific experiment
+      description: >
+        Returns dataset version, keywords, creators, contact persons, and version
+        notes for the dataset produced by the given experiment.
+      parameters:
+        - name: experiment
+          in: query
+          required: true
+          description: Label of the experiment (e.g. `"bico_cobi1_final_platemo_experiment"`)
+          schema:
+            type: string
+          example: "bico_cobi1_final_platemo_experiment"
+      responses:
+        "200":
+          description: Provenance information
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  results:
+                    type: array
+                    items:
+                      $ref: "#/components/schemas/Provenance"
+        "400":
+          description: Missing `experiment` parameter
+          content:
+            text/plain:
+              example: "Missing experiment parameter."
+        "404":
+          $ref: "#/components/responses/NotFoundWithValidValues"
+        "500":
+          $ref: "#/components/responses/InternalError"
+
+  /comon_experiment_data:
+    get:
+      tags: [Experiments]
+      summary: Query experiment execution data
+      description: >
+        Returns per-run, per-iteration, per-evaluation performance indicator values.
+        All parameters are optional filters. Results are automatically merged from
+        all three COMON datasets (COMON, COMON_gde3, COMON_dmulti-mads).
+      parameters:
+        - name: runId
+          in: query
+          required: false
+          description: Filter by run identifier (integer)
+          schema:
+            type: integer
+          example: 1
+        - name: iterationId
+          in: query
+          required: false
+          description: Filter by iteration identifier (integer)
+          schema:
+            type: integer
+          example: 1
+        - name: evalId
+          in: query
+          required: false
+          description: Filter by evaluation identifier (integer)
+          schema:
+            type: integer
+          example: 1
+        - name: indicatorType
+          in: query
+          required: false
+          description: Filter by performance indicator type
+          schema:
+            type: string
+            enum: [HV, IGDPlus, CV, ICMOP]
+          example: HV
+        - name: indicatorValue
+          in: query
+          required: false
+          description: >
+            Filter by indicator value using a comparison operator followed by a number.
+            Supported operators: `>=`, `<=`, `>`, `<`, `=`.
+          schema:
+            type: string
+            pattern: "^(>=|<=|>|<|=)-?\\d+(\\.\\d+)?$"
+          example: ">=0.5"
+      responses:
+        "200":
+          description: Experiment execution data merged from all three datasets
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  results:
+                    type: array
+                    items:
+                      $ref: "#/components/schemas/ExecutionDataRow"
+        "400":
+          description: Invalid `indicatorType` or `indicatorValue` format
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ValidationError"
+            text/plain:
+              example: "Invalid indicatorValue format. Use an operator followed by a number, e.g. >=0.01"
+        "500":
+          $ref: "#/components/responses/InternalError"
+
+components:
+
+  parameters:
+    problemParam:
+      name: problem
+      in: query
+      required: true
+      description: Label of the problem (e.g. `"cobi1_problem"`, `"cre31_problem"`, `"mw1_problem"`)
+      schema:
+        type: string
+        enum: [cobi1_problem, cre31_problem, mw1_problem]
+      example: cobi1_problem
+
+  schemas:
+
+    ProblemsResponse:
+      type: object
+      properties:
+        results:
+          type: array
+          items:
+            type: object
+            properties:
+              problem:
+                type: string
+                description: IRI of the problem
+              label:
+                type: string
+                description: Human-readable label
+
+    ProblemDetails:
+      type: object
+      properties:
+        identifier:           { type: string }
+        numObjectives:        { type: string }
+        numConstraints:       { type: string }
+        dimensionality:       { type: string }
+        gradientAvailability: { type: string }
+        numFidelityLevels:    { type: string }
+        noise:                { type: string }
+        paretoFront:          { type: string }
+        nadir:                { type: string }
+        ideal:                { type: string }
+        keywords:             { type: string, description: "Semicolon-separated list" }
+        variables:            { type: string, description: "Semicolon-separated list of variable label (type) pairs" }
+        familyLabel:          { type: string }
+        suiteLabel:           { type: string }
+
+    Objective:
+      type: object
+      properties:
+        objectiveLabel:    { type: string }
+        normalization_min: { type: string }
+        normalization_max: { type: string }
+        weight:            { type: string }
+
+    Constraint:
+      type: object
+      properties:
+        constraintLabel:   { type: string }
+        normalization_max: { type: string }
+        weight:            { type: string }
+        form:              { type: string, description: "equality or inequality" }
+        strictness:        { type: string, description: "hard or soft" }
+
+    PerformanceIndicator:
+      type: object
+      properties:
+        indicator:     { type: string, description: "IRI of the indicator" }
+        indicatorType: { type: string, description: "e.g. HV, IGDPlus" }
+        description:   { type: string, description: "Pipe-separated input type: value pairs" }
+
+    Algorithm:
+      type: object
+      properties:
+        algorithm:       { type: string, description: "IRI of the algorithm" }
+        label:           { type: string }
+        algorithm_class: { type: string, description: "Specific subclass of CMO algorithm" }
+
+    AlgorithmDetails:
+      type: object
+      properties:
+        algorithmLabel:           { type: string }
+        algorithmType:            { type: string }
+        platformLabel:            { type: string }
+        programmingLanguageLabel: { type: string }
+        familyLabel:              { type: string }
+        relatedAlgorithmLabel:    { type: string }
+
+    Experiment:
+      type: object
+      properties:
+        experiment: { type: string, description: "IRI of the experiment" }
+        label:      { type: string }
+
+    Provenance:
+      type: object
+      properties:
+        dataset:      { type: string, description: "IRI of the dataset" }
+        version:      { type: string }
+        keywords:     { type: string, description: "Semicolon-separated list" }
+        creators:     { type: string, description: "Semicolon-separated list" }
+        contacts:     { type: string, description: "Semicolon-separated list" }
+        versionNotes: { type: string }
+
+    ExecutionDataRow:
+      type: object
+      properties:
+        experimentExecution: { type: string }
+        runId:               { type: string }
+        iterationId:         { type: string }
+        evalId:              { type: string }
+        indicator:           { type: string, description: "Indicator type, e.g. HV" }
+        indicatorValue:      { type: string }
+
+    ValidationError:
+      type: object
+      properties:
+        error:
+          type: string
+        validValues:
+          type: array
+          items:
+            type: string
+
+    NotFound:
+      type: object
+      properties:
+        error:
+          type: string
+          example: 'No results found for problem "unknown_problem".'
+        validValues:
+          type: array
+          description: Valid values accepted for this parameter
+          items:
+            type: string
+
+  responses:
+    InternalError:
+      description: Internal server error or no results from the SPARQL endpoint
+      content:
+        text/plain:
+          example: "No results."
+
+    NotFoundWithValidValues:
+      description: No results found; response includes the list of valid values
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/NotFound"
