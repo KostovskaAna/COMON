@@ -92,7 +92,7 @@
         "gradientAvailablity":false,
         "numberOfFidelityLevels":1,
         "noise":false,
-        "paretoFrontApproximation":"COMON/data/raw_data/problem_metadata/cre31.pf",
+        "paretoFrontApproximation":"https://github.com/KostovskaAna/COMON/blob/main/data/raw_data/pf/cre31.pf",
         "nadir":"[42.76801098311608, 3.999999847304438, 12.521056581667494]",
         "ideal":"[23.585677298251674, 3.5852500000000003, 10.610643779947306]",
         "OPTION:number_of_objectives":3,

@@ -92,7 +92,7 @@
       "gradientAvailablity":     false,
       "numberOfFidelityLevels":    1,
       "noise":                     false,
-      "paretoFrontApproximation":  "COMON/data/raw_data/problem_metadata/cobi1.pf",
+      "paretoFrontApproximation":  "https://github.com/KostovskaAna/COMON/blob/main/data/raw_data/pf/cobi1.pf",
       "nadir":                     "[17.612327481130862,-0.2631848782716837]",
       "ideal":                     "[-7.700969314975628, -9.366759212506546]",
       "OPTION:number_of_objectives": 2,

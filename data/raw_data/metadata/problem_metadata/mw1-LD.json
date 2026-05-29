@@ -92,7 +92,7 @@
       "gradientAvailablity":     false,
       "numberOfFidelityLevels":    1,
       "noise":                     false,
-      "paretoFrontApproximation":  "COMON/data/raw_data/problem_metadata/mw1.pf",
+      "paretoFrontApproximation":  "https://github.com/KostovskaAna/COMON/blob/main/data/raw_data/pf/mw1.pf",
       "nadir":                     "[1.0, 1.0]",
       "ideal":                     "[0.0, 0.15]",
       "OPTION:number_of_objectives": 2,

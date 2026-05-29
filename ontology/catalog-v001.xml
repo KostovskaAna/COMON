@@ -2,9 +2,7 @@
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl" uri="external/iao.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1778839658680" name="http://purl.obolibrary.org/obo/iao.owl" uri="external/iao.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1778839658680" name="http://www.semanticweb.org/anakostovska/ontologies/2025/10/untitled-ontology-229" uri="COMON.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1778839658680" name="https://w3id.org/moody" uri="moody-v1.0.0/moody.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1778839658680" name="shadowed:https://w3id.org/moody" uri="moody-v1.0.0/examples/knowledge_graph/GECCO19.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1779174554127" name="http://purl.obolibrary.org/obo/iao.owl" uri="external/iao.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1779174554127" name="http://www.semanticweb.org/anakostovska/ontologies/2025/10/untitled-ontology-229" uri="COMON.owl"/>
     </group>
 </catalog>

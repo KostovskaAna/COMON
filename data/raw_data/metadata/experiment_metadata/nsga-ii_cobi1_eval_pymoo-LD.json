@@ -117,7 +117,7 @@
             "maxNumberOfSolutionEvaluations": 20000,
             "costModel": "uniform",
             "stoppingCriteria": "max evaluations reached",
-            "algorithmParameterSettings": "pymoo defaults",
+            "algorithmParameterSettings": "pop=100 xover_prob=0.9 xover_dist=20 mut_prob=1/numberofVariables mut_dist=20",
             "is_concretized_as": {
                 "@id": "COMON:nsga-ii_cobi1_eval_pymoo_experiment_implementation"
             },

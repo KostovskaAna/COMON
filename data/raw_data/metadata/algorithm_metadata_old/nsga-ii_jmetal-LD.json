@@ -1,0 +1,69 @@
+{
+  "@context": {
+    "owl":  "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd":  "http://www.w3.org/2001/XMLSchema#",
+    "OPTION": "http://w3id.org/ontoopt/",
+    "dc":   "http://purl.org/dc/elements/1.1/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "COMON":"http://w3id.org/COMON/",
+    "OBO": "http://purl.obolibrary.org/obo/",
+
+
+    "identifier": { "@id": "dc:identifier" },
+    "label":      { "@id": "rdfs:label" },
+
+    "is_concretized_as": "OBO:OBI_0000297",
+		"is_about": "OBO:IAO_0000136",
+    "isMemberOfProblemFamily": "COMON:COMON_000066",
+    "isRelatedToAlgorithm": "COMON:COMON_000067",
+    "implementedInLanguage": "COMON:COMON_000068",
+
+
+    "CMOAlgorithmImplementation": "COMON:COMON_000004",
+    "SoftwareLibrary": "OBO:IAO_0000593",
+	  "ProgrammingLanguage": "OBO:IAO_0000025",
+    "CMOAlgorithm": "COMON:COMON_000001",
+    "AlgorithmType1": "COMON:COMON_000058",
+    "AlgorithmType2": "COMON:COMON_000059",
+    "AlgorithmType3": "COMON:COMON_000061",
+    "AlgorithmType4": "COMON:COMON_000063",
+    "AlgorithmType5": "COMON:COMON_000064",
+    "AlgorithmFamily": "COMON:COMON_000065"
+  },
+    "@graph": [
+      { "@id": "OBO:BFO_0000051",    "@type": "owl:ObjectProperty" },
+      { "@id": "OBO:OBI_0000297",    "@type": "owl:ObjectProperty" },
+      { "@id": "OBO:IAO_0000136",    "@type": "owl:ObjectProperty" },
+      { "@id": "COMON:COMON_000066",    "@type": "owl:ObjectProperty" },
+      { "@id": "COMON:COMON_000067",    "@type": "owl:ObjectProperty" },
+      { "@id": "COMON:COMON_000068",    "@type": "owl:ObjectProperty" },
+      {
+        "@id":      "COMON:nsga-ii_algorithm",
+        "@type":    "AlgorithmType4",
+        "label": "nsga-ii algorithm",
+        "is_concretized_as": {
+          "@id":      "COMON:nsga-ii_jmetal_algorithm_implementation",
+          "@type":    "CMOAlgorithmImplementation",
+          "label": "nsga-ii jmetal algorithm implementation"
+        },
+        "isMemberOfProblemFamily": {
+          "@id":      "COMON:nsga-ii_algorithm_family",
+          "@type":    "AlgorithmFamily",
+          "label": "nsga-ii algorithm family"
+        },
+        "isRelatedToAlgorithm": {"@id":      "COMON:spea2_algorithm"}
+      },
+      {
+        "@id":      "COMON:jmetal",
+        "@type":    "SoftwareLibrary",
+        "label": "jmetal platform",
+        "is_about": { "@id": "COMON:nsga-ii_jmetal_algorithm_implementation" },
+        "implementedInLanguage": {
+            "@id":      "COMON:java",
+            "@type":    "ProgrammingLanguage",
+            "label": "Java"
+        }
+      }
+    ]
+}

@@ -1,4 +1,7 @@
 deprecated/
 data/annotations/RDFannotations/
+data/annotations/RDFannotations_old/
+data/metadata/algorithm_metadata_old/
+data/metadata/experiment_metadata_old/
 data/raw_data/experiment_data/gde3_mw1_eval_pymoode.csv
 other_resources/
