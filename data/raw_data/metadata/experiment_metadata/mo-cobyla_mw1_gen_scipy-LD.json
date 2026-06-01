@@ -145,7 +145,7 @@
         {
             "@id": "COMON:mo-cobyla_mw1_gen_scipy_experiment_implementation",
             "@type": "CMO_experiment_implementation",
-            "label": "mom-cobyla_mw1_gen_scipy_experiment_implementation",
+            "label": "mo-cobyla_mw1_gen_scipy_experiment_implementation",
             "uses": [
                 {
                     "@id": "COMON:mw1_pymoo_problem_implementation"
