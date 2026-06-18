@@ -1,50 +1,68 @@
 # COMON — Constrained Multi-Objective Optimization ONtology
 
-COMON is a knowledge graph framework for representing and querying constrained multi-objective optimization experiments using semantic web technologies (OWL, RDF, SHACL).
-
-## What it does
-
-COMON provides a shared vocabulary and data model for describing:
-- **Algorithms** — their implementations, platforms, and family relationships
-- **Optimization problems** — objectives, constraints, variables, reference sets
-- **Experiments** — configurations, execution parameters, stopping criteria
-- **Results** — per-run performance indicator values (HV, IGD+, ICMOP, CV)
-
-Raw metadata is authored in JSON-LD, validated with SHACL, and converted to RDF/XML for use in Protégé or any OWL/SPARQL toolchain.
+This repository contains the COMON ontology, the COMON knowledge base (KB), and the querying infrastructure.
 
 ## Repository structure
 
 ```
 COMON/
-├── ontology/            Core OWL ontology (COMON.owl)
+├── ontology/                  Core OWL ontology
+│   ├── COMON.owl              Ontology in RDF/XML format
+│   ├── COMON-inferred.owl     Inferred version
+│   └── external/
+│       └── iao.owl            Local copy of the IAO dependency
+│
+├── shapes/                    SHACL validation shapes
+│   ├── COMON_algorithm_shapes.ttl
+│   ├── COMON_experiment_shapes.ttl
+│   └── COMON_problem_shapes.ttl
+│
 ├── data/
-│   ├── raw_data/        Source metadata (JSON-LD) and experiment results (CSV)
-│   └── annotations/     Converted RDF/OWL files ready for Protégé / SPARQL
-├── shapes/              SHACL validation schemas
-├── python_scripts/      Jupyter notebooks for conversion and annotation
-└── figures/             Diagrams and logos
+│   ├── raw_data/
+│   │   ├── metadata/          Source metadata in JSON-LD
+│   │   │   ├── algorithm_metadata/
+│   │   │   ├── experiment_metadata/
+│   │   │   └── problem_metadata/
+│   │   ├── experiment_data/   Raw experiment result CSV files
+│   │   └── pf/                Pareto front reference data
+│   └── annotations/
+│       └── RDFannotations/    Validated and converted RDF/XML files
+│           ├── algorithm_metadata/
+│           ├── experiment_metadata/
+│           ├── problem_metadata/
+│           └── experiment_data/
+│
+├── experiments_scripts/        Scripts for implementing algorithms and running experiments
+│
+├── knowledge_base_scripts/            Jupyter notebooks generating inferred version of the ontology and scripts for data annotation
+│   ├── generate_inferred_ontology_versions.ipynb
+│   ├── convert_jsonld_to_rdf.ipynb
+│   └── experiment_data_annotation.ipynb
+│
+├── querying/                  Querying infrastructure
+│   ├── README.md              SPARQL endpoint descriptions and query examples
+│   ├── openapi.yaml           REST API specification
+│   └── index.html             REST API documentation (OpenAPI)
+│
+├── use_cases/                 Use cases
+│   ├── UseCaseA.ipynb         Automatic Data Integration
+│   └── UseCaseB.ipynb         Comparison of an algorithm across different implementations
+│
+└── figures/                   Figures and diagrams
 ```
 
-## Problems covered
+## Components
 
-| Problem | Objectives | Constraints | Variables |
-|---------|-----------|-------------|-----------|
-| COBI1   | 2         | 2           | 2         |
-| CRE31   | 2         | 2           | 3         |
-| MW1     | 2         | 1           | 30        |
+**Ontology (`ontology/`)** — The COMON OWL ontology defines the shared vocabulary for CMO algorithms, problems, experiments, and performance indicators. It imports IAO from OBO Foundry and reuses properties from OBI, BFO, Dublin Core, and DCAT. See [ontology/README.md](ontology/README.md).
 
-## Algorithms
+**SHACL shapes (`shapes/`)** — Validation constraints for the three main metadata categories (algorithms, experiments, problems). All JSON-LD metadata files are validated against these shapes before being converted to RDF.
 
-16 algorithm implementations across platforms PlatEMO, pymoo, jMetal, jMetalPy, CMA, pyMOODE, and custom author implementations:
-BiCo, CCMO, COMO-CMA, CSOP-RS, DMulti-MADS, GDE3, ILS, MCCMO, MOEADD, MO-CMA, MO-COBYLA, NSGA-II, RS, SMS-EMOA, SPEA2.
+**Data (`data/`)** — Raw metadata authored in JSON-LD and raw experiment results stored as CSV, together with their validated RDF/XML annotations comprising the COMON KB.
 
-## Quick start
+**Experiment scripts (`experiments_scripts/`)** — Scripts for implementing CMO algorithms and running experiments to generate the raw data stored in `data/raw_data/`.
 
-1. Open `python_scripts/convert_jsonld_to_rdf.ipynb` to convert JSON-LD metadata to RDF/OWL.
-2. Open `python_scripts/experiment_data_annotation.ipynb` to annotate CSV experiment results.
-3. Load generated `.owl` / `.rdf` files from `data/annotations/` into Protégé together with `ontology/COMON.owl`.
+**Knowledge base scripts (`knowledge_base_scripts/`)** — Jupyter notebooks that build the KB: ontology inference, JSON-LD validation and conversion, and experiment data annotation. See [knowledge_base_scripts/README.md](knowledge_base_scripts/README.md).
 
-## Key documents
+**Querying infrastructure (`querying/`)** — The COMON KB is hosted on three SPARQL endpoints and exposed through a REST API for users who do not need to write SPARQL. See [querying/README.md](querying/README.md).
 
-- `Algorithm_taxonomy_COMON_2025-10-14.pdf` — algorithm taxonomy overview
-- `COMON_Definitions.xlsx` — term and concept definitions
+**Use cases (`use_cases/`)** — Two notebooks showcasing the usability of the ontology: Use Case A (Automatic Data Integration) and Use Case B (Comparison of an algorithm across different implementations).

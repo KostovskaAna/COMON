@@ -709,7 +709,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A single iteration, generation, or step within the execution of a CMO algorithm.</obo:IAO_0000115>
-        <rdfs:label>CMO algorithm iteration execution</rdfs:label>
+        <rdfs:label>CMO algorithm generation execution</rdfs:label>
     </owl:Class>
     
 

@@ -10,7 +10,15 @@ The COMON KB consists of **3 separate datasets**, each hosted on its own SPARQL 
 
 > When querying experiment data, send the same query to each endpoint and merge the results. The COMON REST API does this automatically.
 
-## How to run queries
+
+## REST API
+
+The COMON KB is accessible through a REST API via simple HTTP GET requests. While the approach above offers full flexibility to express any custom query over the SPARQL endpoints, the REST API provides a set of predefined, structured endpoints designed for users who are not proficient in SPARQL — no knowledge of RDF or query languages is required.
+
+Full API documentation: [https://kostovskaana.github.io/COMON/querying/index.html](https://kostovskaana.github.io/COMON/querying/index.html)
+
+
+## How to run SPARQK queries directly
 
 1. Go to [YASGUI](https://yasgui.triply.cc/)
 2. Set the endpoint URL — see which endpoint to use below
@@ -417,8 +425,4 @@ LIMIT 100
 
 ---
 
-## REST API
 
-The COMON KB is also accessible through a REST API via simple HTTP GET requests. While the approach above offers full flexibility to express any custom query over the SPARQL endpoints, the REST API provides a set of predefined, structured endpoints designed for users who are not proficient in SPARQL — no knowledge of RDF or query languages is required.
-
-Full API documentation: [https://kostovskaana.github.io/COMON/querying/index.html](https://kostovskaana.github.io/COMON/querying/index.html)
