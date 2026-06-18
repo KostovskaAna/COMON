@@ -18,7 +18,7 @@ The COMON KB is accessible through a REST API via simple HTTP GET requests. Whil
 Full API documentation: [https://kostovskaana.github.io/COMON/querying/index.html](https://kostovskaana.github.io/COMON/querying/index.html)
 
 
-## How to run SPARQK queries directly
+## How to run SPARQL queries directly
 
 1. Go to [YASGUI](https://yasgui.triply.cc/)
 2. Set the endpoint URL — see which endpoint to use below
